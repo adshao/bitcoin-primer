@@ -1,0 +1,274 @@
+import TopicTemplate from '../components/TopicTemplate'
+
+function Banking() {
+  const sections = [
+    {
+      title: '传统银行体系：中介化的金融',
+      content: [
+        {
+          subtitle: '部分准备金制度',
+          points: [
+            '准备金要求：银行只保留部分存款作为准备金',
+            '信用创造：通过放贷创造新的货币供应',
+            '货币乘数：放大货币供应量的机制',
+            '系统风险：银行挤兑的可能性'
+          ]
+        },
+        {
+          subtitle: '中央银行的作用',
+          points: [
+            '最后贷款人：在危机时提供流动性',
+            '货币政策：通过利率调控经济',
+            '金融监管：维护金融系统稳定',
+            '支付系统：管理国家支付基础设施'
+          ]
+        }
+      ]
+    },
+    {
+      title: '支付清算系统：复杂的中介网络',
+      content: [
+        {
+          subtitle: '传统支付流程',
+          points: [
+            'SWIFT系统：国际银行间的信息传递网络',
+            '代理银行：跨境支付的中介链条',
+            '清算延迟：T+1到T+3的结算周期',
+            '多重中介：涉及众多金融机构',
+            '高昂成本：每层中介都收取费用'
+          ]
+        },
+        {
+          subtitle: '比特币的直接支付',
+          points: [
+            '点对点转账：无需任何中介机构',
+            '10分钟确认：全球统一的确认时间',
+            '24/7运行：不受银行营业时间限制',
+            '低成本：只需支付网络手续费',
+            '跨境无障碍：不区分国内国际转账'
+          ]
+        }
+      ]
+    },
+    {
+      title: '金融中介功能：信任与风险管理',
+      content: [
+        {
+          subtitle: '传统银行的中介价值',
+          points: [
+            '信任中介：在陌生人之间建立信任',
+            '风险评估：专业的信用风险管理',
+            '期限转换：短期存款转长期贷款',
+            '流动性提供：随时提取资金的承诺',
+            '支付便利：提供支付工具和服务'
+          ]
+        },
+        {
+          subtitle: '比特币的去中介化',
+          points: [
+            '密码学信任：用数学替代人际信任',
+            '协议执行：自动化的规则执行',
+            '无需许可：不需要机构批准',
+            '自我托管：用户直接控制资产',
+            '透明验证：所有交易公开可验证'
+          ]
+        }
+      ]
+    },
+    {
+      title: '金融危机的根源：系统性风险',
+      content: [
+        {
+          subtitle: '2008年金融危机',
+          points: [
+            '次贷危机：房地产泡沫破裂',
+            '杠杆过度：银行高风险运作',
+            '道德风险：大而不倒的问题',
+            '连锁反应：雷曼兄弟破产引发系统崩溃',
+            '政府救助：纳税人承担银行损失'
+          ]
+        },
+        {
+          subtitle: '比特币的诞生背景',
+          points: [
+            '创世区块：嵌入泰晤士报关于银行救助的标题',
+            '固定供应：2100万枚上限，避免货币超发',
+            '去中心化：没有单点故障的风险',
+            '透明账本：所有人都可以审计',
+            '不可篡改：防止事后修改规则'
+          ]
+        }
+      ]
+    },
+    {
+      title: '银行业务革命：新旧模式对比',
+      content: [
+        {
+          subtitle: '存储与托管',
+          points: [
+            '银行存款：银行承诺支付，但资金被放贷',
+            '比特币自托管：用户直接拥有私钥控制权',
+            '保险差异：存款保险vs自我承担风险',
+            '访问权限：银行可冻结账户vs不可没收'
+          ]
+        },
+        {
+          subtitle: '跨境支付革命',
+          points: [
+            '传统汇款：高费用、长时间、多环节',
+            '比特币转账：低成本、快速、直接',
+            'KYC/AML：传统严格审查vs比特币假名性',
+            '营业时间：工作日限制vs 24/7全天候',
+            '准入门槛：银行账户要求vs互联网访问'
+          ]
+        }
+      ]
+    },
+    {
+      title: '央行数字货币(CBDC)：传统与创新的结合',
+      content: [
+        {
+          subtitle: 'CBDC的特征',
+          points: [
+            '央行发行：保持货币主权',
+            '数字形态：提高支付效率',
+            '可编程性：附加使用条件',
+            '隐私权衡：交易透明vs用户隐私',
+            '金融普惠：降低金融服务门槛'
+          ]
+        },
+        {
+          subtitle: 'CBDC vs 比特币',
+          points: [
+            '发行主体：央行控制vs去中心化',
+            '供应管理：弹性政策vs固定供应',
+            '隐私保护：有限隐私vs假名交易',
+            '可审查性：可冻结vs抗审查',
+            '跨境使用：受限制vs全球通用'
+          ]
+        }
+      ]
+    },
+    {
+      title: '金融创新的社会影响',
+      content: [
+        {
+          subtitle: '普惠金融革命',
+          points: [
+            '金融包容：为无银行账户人群提供服务',
+            '降低门槛：只需要智能手机和网络',
+            '成本降低：去除中介费用',
+            '全球访问：不受地理限制'
+          ]
+        },
+        {
+          subtitle: '系统性变革',
+          points: [
+            '信任模式：从机构信任到算法信任',
+            '实时结算：消除清算延迟',
+            '全球标准：统一的支付协议',
+            '透明度：公开账本便于监督'
+          ]
+        }
+      ]
+    }
+  ]
+
+  const keyInsights = [
+    '银行的核心价值是信任中介，比特币用密码学替代了这种信任',
+    '部分准备金制度是现代金融危机的根源之一',
+    '去中介化能显著降低金融服务成本',
+    '传统银行与比特币系统可能长期共存并相互学习'
+  ]
+
+  const resources = {
+    books: [
+      {
+        title: 'The End of Banking',
+        author: 'Jonathan McMillan',
+        description: '对传统银行业模式的深刻批判和重新思考'
+      },
+      {
+        title: 'The Mystery of Banking',
+        author: 'Murray Rothbard',
+        description: '揭示银行系统的运作机制'
+      },
+      {
+        title: 'Central Banking 101',
+        author: 'Joseph Wang',
+        description: '央行运作机制的内部视角'
+      },
+      {
+        title: 'The Banker\'s New Clothes',
+        author: 'Anat Admati & Martin Hellwig',
+        description: '银行业问题和改革的深度分析'
+      },
+      {
+        title: 'Other People\'s Money',
+        author: 'John Kay',
+        description: '金融系统如何为社会服务'
+      }
+    ],
+    papers: [
+      {
+        title: 'The Role of Banks in the Monetary System',
+        author: 'Bank for International Settlements',
+        link: 'https://www.bis.org/publ/bppdf/bispap104.pdf'
+      },
+      {
+        title: 'Bitcoin: A Peer-to-Peer Electronic Cash System',
+        author: 'Satoshi Nakamoto',
+        link: 'https://bitcoin.org/bitcoin.pdf'
+      },
+      {
+        title: 'The Anatomy of a Money-like Informational Commodity',
+        author: 'Joshua S. Gans & Hanna Halaburda',
+        link: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2650786'
+      }
+    ],
+    websites: [
+      {
+        title: 'Bank for International Settlements',
+        link: 'https://www.bis.org/',
+        description: '国际清算银行研究报告'
+      },
+      {
+        title: 'Federal Reserve Economic Data',
+        link: 'https://fred.stlouisfed.org/',
+        description: '美联储经济数据'
+      },
+      {
+        title: 'The Bitcoin Standard Podcast',
+        link: 'https://saifedean.com/podcast/',
+        description: '深度探讨货币和银行体系'
+      },
+      {
+        title: 'MIT OpenCourseWare - Banking',
+        link: 'https://ocw.mit.edu/',
+        description: 'MIT银行学公开课'
+      }
+    ]
+  }
+
+  const reflectionQuestions = [
+    '如果没有部分准备金制度，经济增长会受到什么影响？',
+    '银行的哪些功能是社会必需的，哪些可能被技术替代？',
+    '央行数字货币会加强还是削弱政府对经济的控制？',
+    '去中心化金融如何处理系统性风险和危机救助？'
+  ]
+
+  return (
+    <TopicTemplate
+      icon="🏦"
+      title="银行"
+      subtitle="金融中介的变革"
+      introduction="传统银行体系建立在信任中介的基础上，而比特币正在重新定义金融服务的提供方式。从部分准备金到完全准备金，从中介化到去中介化，我们正在见证金融业的根本性变革。"
+      sections={sections}
+      keyInsights={keyInsights}
+      resources={resources}
+      reflectionQuestions={reflectionQuestions}
+    />
+  )
+}
+
+export default Banking

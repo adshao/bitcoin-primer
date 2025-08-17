@@ -1,0 +1,492 @@
+/* Resources Page Styles */
+.resources {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.resources-hero {
+  background: linear-gradient(135deg, #16213e, #0f3460);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.resources-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.resources-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.resources-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Section Container */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #0f0f23;
+}
+
+.resource-category {
+  margin-bottom: 3rem;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #475569;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid #f7931a;
+}
+
+/* Books Section */
+.books-section {
+  background: #fafafa;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.book-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.book-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f0f23;
+  flex: 1;
+}
+
+.book-level {
+  padding: 0.25rem 0.75rem;
+  background: linear-gradient(135deg, #f7931a, #ff9a00);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.book-author {
+  color: #475569;
+  margin-bottom: 0.25rem;
+}
+
+.book-year {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.book-description {
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.book-language {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: #e0f2fe;
+  color: #0369a1;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+/* Courses Section */
+.courses-section {
+  background: white;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.course-card {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.course-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f0f23;
+  margin-bottom: 0.5rem;
+}
+
+.course-provider {
+  color: #f7931a;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.course-duration {
+  color: #64748b;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.course-description {
+  color: #475569;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.course-link {
+  display: inline-flex;
+  align-items: center;
+  color: #f7931a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.course-link:hover {
+  transform: translateX(4px);
+}
+
+/* Tools Section */
+.tools-section {
+  background: #f8fafc;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.tool-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tool-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f0f23;
+  margin-bottom: 0.25rem;
+}
+
+.tool-type {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: #fef3c7;
+  color: #92400e;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.tool-description {
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.tool-link {
+  display: inline-flex;
+  align-items: center;
+  color: #f7931a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.tool-link:hover {
+  transform: translateX(4px);
+}
+
+/* Community Section */
+.community-section {
+  background: white;
+}
+
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.community-card {
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.community-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.community-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f0f23;
+}
+
+.community-type {
+  padding: 0.25rem 0.5rem;
+  background: #ddd6fe;
+  color: #6b21a8;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.community-description {
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.community-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.community-language {
+  padding: 0.25rem 0.5rem;
+  background: #e0f2fe;
+  color: #0369a1;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.community-link {
+  color: #f7931a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Podcasts Section */
+.podcasts-section {
+  background: #f8fafc;
+}
+
+.podcasts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.podcast-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.podcast-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f0f23;
+  margin-bottom: 0.5rem;
+}
+
+.podcast-host {
+  color: #f7931a;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.podcast-description {
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.podcast-frequency {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: #dcfce7;
+  color: #14532d;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+/* Discipline Resources Section */
+.discipline-resources {
+  background: #f8fafc;
+  padding: 4rem 2rem;
+}
+
+.discipline-section {
+  margin-bottom: 3rem;
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid #e2e8f0;
+}
+
+.discipline-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f0f23;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f7931a;
+}
+
+.discipline-icon {
+  font-size: 1.75rem;
+}
+
+.discipline-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.resource-list {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.resource-list h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 1rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid #f7931a;
+}
+
+.resource-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resource-list li {
+  padding: 0.75rem 0;
+  color: #64748b;
+  line-height: 1.5;
+  border-bottom: 1px solid #f1f5f9;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.resource-list li:last-child {
+  border-bottom: none;
+}
+
+.resource-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #f7931a;
+  font-weight: bold;
+}
+
+/* Tips Section */
+.resources-tips {
+  background: linear-gradient(135deg, #0f0f23, #1a1a2e);
+  padding: 4rem 2rem;
+}
+
+.tips-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tips-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.tips-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.tip-box {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.tip-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.tip-box p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resources-title {
+    font-size: 2rem;
+  }
+  
+  .books-grid,
+  .courses-grid,
+  .tools-grid,
+  .community-grid,
+  .podcasts-grid,
+  .discipline-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .discipline-section {
+    padding: 1.5rem;
+  }
+}

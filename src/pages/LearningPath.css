@@ -1,0 +1,432 @@
+/* Learning Path Styles */
+.learning-path {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.path-hero {
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.path-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.path-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.path-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Stages Section */
+.path-stages {
+  padding: 4rem 2rem;
+  background: #f8fafc;
+}
+
+.stages-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stages-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #0f0f23;
+}
+
+/* Stage Section */
+.stage-section {
+  margin-bottom: 4rem;
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.stage-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.stage-number {
+  background: linear-gradient(135deg, #f7931a, #ff9a00);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.stage-info {
+  flex: 1;
+}
+
+.stage-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #0f0f23;
+  margin-bottom: 0.25rem;
+}
+
+.stage-duration {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.stage-description {
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Modules Grid */
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 1.5rem;
+}
+
+.module-card {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.module-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.module-icon {
+  font-size: 1.5rem;
+}
+
+.module-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f0f23;
+  flex: 1;
+}
+
+.module-time {
+  padding: 0.25rem 0.75rem;
+  background: #e0f2fe;
+  color: #0369a1;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.module-focus {
+  color: #f7931a;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.module-content {
+  margin-bottom: 1.5rem;
+}
+
+.module-content h5 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.key-points,
+.exercises {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.key-points li,
+.exercises li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.key-points li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #f7931a;
+  font-weight: bold;
+}
+
+.exercises li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+}
+
+.module-link {
+  display: inline-flex;
+  align-items: center;
+  color: #f7931a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.module-link:hover {
+  transform: translateX(4px);
+}
+
+/* Milestones Section */
+.path-milestones {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.milestones-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.milestones-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #0f0f23;
+}
+
+.milestones-timeline {
+  display: grid;
+  gap: 2rem;
+}
+
+.milestone-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.milestone-marker {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #f7931a, #ff9a00);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.milestone-item:not(:last-child) .milestone-marker:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: calc(2rem + 48px);
+  background: linear-gradient(to bottom, #f7931a, transparent);
+}
+
+.marker-number {
+  color: white;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.milestone-content {
+  flex: 1;
+  padding-top: 0.5rem;
+}
+
+.milestone-week {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #fef3c7;
+  color: #92400e;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.milestone-achievement {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f0f23;
+  margin-bottom: 0.5rem;
+}
+
+.milestone-checkpoint {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+}
+
+.checkpoint-icon {
+  color: #10b981;
+  font-weight: bold;
+}
+
+/* Tips Section */
+.path-tips {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
+}
+
+.tips-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tips-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #0f0f23;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.tip-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.tip-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.tip-card h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #0f0f23;
+  margin-bottom: 0.5rem;
+}
+
+.tip-card p {
+  color: #64748b;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Navigation Section */
+.path-navigation {
+  padding: 4rem 2rem;
+  background: #0f0f23;
+}
+
+.nav-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.nav-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.nav-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.nav-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.nav-card p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.nav-arrow {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.25rem;
+  color: #f7931a;
+  transition: transform 0.3s;
+}
+
+.nav-card:hover .nav-arrow {
+  transform: translateX(4px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .path-title {
+    font-size: 2rem;
+  }
+  
+  .path-overview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .modules-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .nav-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .stage-section {
+    padding: 1.5rem;
+  }
+}

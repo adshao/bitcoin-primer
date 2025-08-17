@@ -1,0 +1,156 @@
+import './TopicTemplate.css'
+
+function TopicTemplate({ 
+  icon, 
+  title, 
+  subtitle, 
+  introduction, 
+  sections, 
+  keyInsights, 
+  resources, 
+  reflectionQuestions 
+}) {
+  return (
+    <div className="topic-template">
+      {/* Hero Section */}
+      <section className="topic-hero">
+        <div className="topic-hero-background">
+          <div className="topic-grid-pattern"></div>
+          <div className="topic-gradient-orb"></div>
+        </div>
+        <div className="topic-hero-content">
+          <div className="topic-icon-wrapper">
+            <span className="topic-icon">{icon}</span>
+          </div>
+          <h1 className="topic-title">{title}</h1>
+          <p className="topic-subtitle">{subtitle}</p>
+          <p className="topic-introduction">{introduction}</p>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="topic-main">
+        <div className="topic-container">
+          <div className="topic-content-grid">
+            {/* Left Column - Main Content */}
+            <div className="topic-content">
+              {sections.map((section, index) => (
+                <div key={index} className="content-section">
+                  <h2 className="section-title">
+                    <span className="section-number">{String(index + 1).padStart(2, '0')}</span>
+                    {section.title}
+                  </h2>
+                  {section.content.map((subsection, i) => (
+                    <div key={i} className="subsection">
+                      <h3 className="subsection-title">{subsection.subtitle}</h3>
+                      <ul className="content-list">
+                        {subsection.points.map((point, j) => (
+                          <li key={j} className="content-item">
+                            <span className="item-bullet"></span>
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
+
+            {/* Right Column - Sidebar */}
+            <aside className="topic-sidebar">
+              {/* Key Insights Card */}
+              <div className="sidebar-card insights-card">
+                <h3 className="card-title">
+                  <span className="card-icon">💡</span>
+                  关键洞察
+                </h3>
+                <div className="insights-content">
+                  {keyInsights.map((insight, index) => (
+                    <div key={index} className="insight-item">
+                      <span className="insight-index">{index + 1}</span>
+                      <p className="insight-text">{insight}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Resources Card */}
+              <div className="sidebar-card resources-card">
+                <h3 className="card-title">
+                  <span className="card-icon">📚</span>
+                  推荐资源
+                </h3>
+                <div className="resources-content">
+                  {resources.books && (
+                    <div className="resource-section">
+                      <h4 className="resource-label">经典书籍</h4>
+                      <ul className="resource-list">
+                        {resources.books.map((book, index) => (
+                          <li key={index} className="resource-item">
+                            <strong>{book.title}</strong>
+                            {book.author && <span className="resource-author"> - {book.author}</span>}
+                            {book.description && <p className="resource-desc">{book.description}</p>}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  
+                  {resources.papers && (
+                    <div className="resource-section">
+                      <h4 className="resource-label">重要论文</h4>
+                      <ul className="resource-list">
+                        {resources.papers.map((paper, index) => (
+                          <li key={index} className="resource-item">
+                            <a href={paper.link} target="_blank" rel="noopener noreferrer">
+                              {paper.title}
+                            </a>
+                            {paper.author && <span className="resource-author"> - {paper.author}</span>}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  
+                  {resources.websites && (
+                    <div className="resource-section">
+                      <h4 className="resource-label">在线资源</h4>
+                      <ul className="resource-list">
+                        {resources.websites.map((site, index) => (
+                          <li key={index} className="resource-item">
+                            <a href={site.link} target="_blank" rel="noopener noreferrer">
+                              {site.title}
+                            </a>
+                            {site.description && <p className="resource-desc">{site.description}</p>}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Reflection Questions Card */}
+              <div className="sidebar-card reflection-card">
+                <h3 className="card-title">
+                  <span className="card-icon">🤔</span>
+                  深度思考
+                </h3>
+                <div className="reflection-content">
+                  {reflectionQuestions.map((question, index) => (
+                    <p key={index} className="reflection-question">
+                      {question}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default TopicTemplate
