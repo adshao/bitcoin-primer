@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { HelmetProvider } from 'react-helmet-async'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import ComputerScience from './pages/ComputerScience'
@@ -27,25 +28,27 @@ function App() {
     console.log('Available languages:', i18n.languages)
   }, [i18n])
   return (
-    <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/computer-science" element={<ComputerScience />} />
-          <Route path="/economics" element={<Economics />} />
-          <Route path="/game-theory" element={<GameTheory />} />
-          <Route path="/politics" element={<Politics />} />
-          <Route path="/money" element={<Money />} />
-          <Route path="/banking" element={<Banking />} />
-          <Route path="/law" element={<Law />} />
-          <Route path="/philosophy" element={<Philosophy />} />
-          <Route path="/energy" element={<Energy />} />
-          <Route path="/learning-path" element={<LearningPath />} />
-          <Route path="/study-guide" element={<StudyGuide />} />
-          <Route path="/resources" element={<Resources />} />
-        </Routes>
-      </Layout>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/computer-science" element={<ComputerScience />} />
+            <Route path="/economics" element={<Economics />} />
+            <Route path="/game-theory" element={<GameTheory />} />
+            <Route path="/politics" element={<Politics />} />
+            <Route path="/money" element={<Money />} />
+            <Route path="/banking" element={<Banking />} />
+            <Route path="/law" element={<Law />} />
+            <Route path="/philosophy" element={<Philosophy />} />
+            <Route path="/energy" element={<Energy />} />
+            <Route path="/learning-path" element={<LearningPath />} />
+            <Route path="/study-guide" element={<StudyGuide />} />
+            <Route path="/resources" element={<Resources />} />
+          </Routes>
+        </Layout>
+      </Router>
+    </HelmetProvider>
   )
 }
 

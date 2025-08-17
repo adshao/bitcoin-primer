@@ -1,4 +1,7 @@
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
+import { useLocation } from 'react-router-dom'
+import SEO from './SEO'
+import { useSEO } from '../hooks/useSEO'
 import './TopicTemplate.css'
 
 function TopicTemplate({ 
@@ -12,9 +15,13 @@ function TopicTemplate({
   reflectionQuestions 
 }) {
   const { t } = useFormattedTranslation()
+  const location = useLocation()
+  const pageName = location.pathname.slice(1) // Remove leading '/'
+  const seoData = useSEO(pageName)
   
   return (
     <div className="topic-template">
+      <SEO {...seoData} />
       {/* Hero Section */}
       <section className="topic-hero">
         <div className="topic-hero-background">

@@ -19,7 +19,7 @@ export function useMultiLanguage() {
   }
   
   // Get discipline-specific content (simplified for now)
-  const getDiscipline = (disciplineName) => {
+  const getDiscipline = () => {
     // This will be implemented per page
     return {}
   }

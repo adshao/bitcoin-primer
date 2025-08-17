@@ -1,0 +1,44 @@
+# Bitcoin Primer Robots.txt
+# https://bitcoinprimer.com
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Allow search engines to crawl all content pages
+Allow: /money
+Allow: /banking
+Allow: /economics
+Allow: /computer-science
+Allow: /game-theory
+Allow: /energy
+Allow: /politics
+Allow: /philosophy
+Allow: /law
+Allow: /learning-path
+Allow: /study-guide
+Allow: /resources
+
+# Sitemap location
+Sitemap: https://bitcoinprimer.com/sitemap.xml
+
+# Crawl-delay for responsible crawling
+Crawl-delay: 1
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1

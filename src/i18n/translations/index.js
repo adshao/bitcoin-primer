@@ -14,7 +14,7 @@ export const supportedLanguages = [
 
 // Helper function to get discipline content
 // This will be dynamically loaded to avoid import issues
-export const getDisciplineContent = (discipline, language) => {
+export const getDisciplineContent = () => {
   // For now, return empty object - will be populated from actual page data
   return {}
 }

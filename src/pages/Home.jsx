@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
+import SEO from '../components/SEO'
 import './Home.css'
 
 function Home() {
@@ -82,8 +83,35 @@ function Home() {
     }
   ]
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Bitcoin Primer",
+    "description": "Comprehensive Bitcoin education platform from multiple disciplinary perspectives",
+    "url": "https://bitcoinprimer.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://bitcoinprimer.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bitcoin Primer",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bitcoinprimer.com/bitcoin-icon.svg"
+      }
+    }
+  }
+
   return (
     <div className="home">
+      <SEO 
+        title="Bitcoin Primer - Understanding Bitcoin from Multiple Perspectives"
+        description="Deep dive into Bitcoin from nine disciplinary perspectives: money, banking, economics, computer science, game theory, energy, politics, philosophy, and law. Systematic learning path and comprehensive educational resources."
+        keywords="Bitcoin,Bitcoin education,cryptocurrency,blockchain,decentralization,digital currency,Bitcoin learning,monetary economics,cryptography,distributed systems,proof of work"
+        jsonLd={structuredData}
+      />
       {/* 新设计的Hero部分 */}
       <section className="hero-section">
         <div className="hero-background">

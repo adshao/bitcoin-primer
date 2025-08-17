@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom'
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
+import SEO from '../components/SEO'
+import { useSEO } from '../hooks/useSEO'
 import './LearningPath.css'
 
 function LearningPath() {
   const { t, i18n } = useFormattedTranslation(['learningPath', 'translation'])
+  const seoData = useSEO('learning-path')
   
   // Build learning stages from translations
   const learningStages = [1, 2, 3].map(stageNum => ({
