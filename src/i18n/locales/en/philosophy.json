@@ -1,0 +1,192 @@
+{
+  "icon": "🤔",
+  "title": "Philosophy",
+  "subtitle": "Existence, Value, and Freedom: Philosophical Reflections in the Digital Age",
+  "introduction": "Bitcoin raises profound philosophical questions: What is real? Where does value come from? What is freedom? When a string of numbers can be worth fortunes, when algorithms replace human will, when consensus creates new realities, we need to re-examine these eternal philosophical propositions. Bitcoin is not just technological innovation, but a philosophical exploration of the nature of existence.",
+  "sections": [
+    {
+      "title": "Core Questions: What is Real? What is Value? What is Freedom?",
+      "content": [
+        {
+          "subtitle": "Ontology: The Nature of Existence",
+          "points": [
+            "Physical Reality: Material world composed of atoms and molecules",
+            "Digital Reality: Digital world composed of bits and information",
+            "Bitcoin's Existence: Neither material nor pure information, but consensus",
+            "Question of Authenticity: Is digital scarcity equivalent to physical scarcity?"
+          ]
+        },
+        {
+          "subtitle": "Epistemology: The Nature of Truth",
+          "points": [
+            "Objective Truth: Facts independent of observers",
+            "Subjective Consensus: \"Truth\" created by collective agreement",
+            "Mathematical Truth: Cryptographic foundation that Bitcoin relies on",
+            "Social Construction: Is value created or discovered?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Philosophy of Value: Where Does Meaning Come From",
+      "content": [
+        {
+          "subtitle": "Intrinsic vs Instrumental Value",
+          "points": [
+            "Gold: Beautiful and rare, but value mainly comes from consensus",
+            "Fiat Currency: No intrinsic value, purely social contract",
+            "Bitcoin: Energy converted into digital scarcity",
+            "Value Paradox: The useless is useful, the useful is great use"
+          ]
+        },
+        {
+          "subtitle": "Labor Value vs Subjective Value",
+          "points": [
+            "Marx: Value comes from socially necessary labor time",
+            "Austrian School: Value comes from subjective utility",
+            "Proof of Work: Converting labor (computation) into value",
+            "Power of Belief: To believe is to exist, consensus is value"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Free Will: Philosophical Foundation of Individual Sovereignty",
+      "content": [
+        {
+          "subtitle": "Determinism vs Free Will",
+          "points": [
+            "Physical Determinism: Everything is a causal chain",
+            "Free Will: Humans have genuine ability to choose",
+            "Cryptographic Sovereignty: Private keys give absolute control",
+            "Code as Rules: Philosophical foundation of algorithmic governance"
+          ]
+        },
+        {
+          "subtitle": "Individual vs Collective",
+          "points": [
+            "Individualism: Individual rights take priority",
+            "Collectivism: Collective interests are paramount",
+            "Bitcoin's Balance: Individual control, collective consensus",
+            "Decentralization Paradox: Everyone's system, no one's system"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Philosophy of Time: Present and Future",
+      "content": [
+        {
+          "subtitle": "Time Preference",
+          "points": [
+            "Instant Gratification: Philosophy of living in the moment",
+            "Delayed Gratification: Wisdom of saving for the future",
+            "Inflation Psychology: Spend money early",
+            "Deflation Psychology: Saving equals appreciation"
+          ]
+        },
+        {
+          "subtitle": "Irreversibility of Time",
+          "points": [
+            "Law of Entropy Increase: Physical foundation of time's arrow",
+            "Blockchain: Chain-like record of time",
+            "Immutability: Eternity of the past",
+            "Probabilistic Finality: Uncertainty of the future"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Philosophy of Technology: Instrumental vs Value Rationality",
+      "content": [
+        {
+          "subtitle": "Technology Neutrality Theory",
+          "points": [
+            "Tools Have No Good or Evil: Technology itself is neutral",
+            "Use Determines Value: Human choices determine impact",
+            "Double-Edged Cryptography: Privacy protection vs criminal tool",
+            "Cost of Decentralization: Trade-off between efficiency and freedom"
+          ]
+        },
+        {
+          "subtitle": "Technological Determinism",
+          "points": [
+            "Technology Shapes Society: Printing press, Internet, blockchain",
+            "Inevitability: Technological development has its internal logic",
+            "Bitcoin's Inevitability: Inevitable product of the digital age",
+            "The Future is Here: Just unevenly distributed"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Existentialist Perspective: Creation of Meaning",
+      "content": [
+        {
+          "subtitle": "Existence Precedes Essence",
+          "points": [
+            "Bitcoin Has No Preset Purpose: Uses defined by users",
+            "Attribution of Value: Humans give it meaning",
+            "Self-Creation: Each person defines their own view of wealth",
+            "Responsibility and Freedom: Controlling private keys means taking responsibility"
+          ]
+        },
+        {
+          "subtitle": "Absurdity and Rebellion",
+          "points": [
+            "Absurdity of Fiat: Infinitely printed paper",
+            "Bitcoin's Rebellion: Saying no to the existing system",
+            "Sisyphus: Eternal mining",
+            "Creation of Meaning: Creating value in absurdity"
+          ]
+        }
+      ]
+    }
+  ],
+  "keyInsights": [
+    "Value is not discovered, but created—through consensus",
+    "Reality no longer depends on physical existence, mathematical truth becomes the new foundation",
+    "The price of freedom is responsibility, absolute control means absolute responsibility",
+    "Technology is not just a tool, but a force that reshapes human existence"
+  ],
+  "resources": {
+    "title": "Recommended Resources",
+    "books": [
+      {
+        "title": "Being and Time",
+        "author": "Martin Heidegger",
+        "description": "Core work of existentialist philosophy"
+      },
+      {
+        "title": "Critique of Pure Reason",
+        "author": "Immanuel Kant",
+        "description": "Milestone of Western philosophy"
+      },
+      {
+        "title": "Thus Spoke Zarathustra",
+        "author": "Friedrich Nietzsche",
+        "description": "Philosophical manifesto of value revaluation"
+      }
+    ],
+    "papers": [
+      {
+        "title": "The Myth of Sisyphus",
+        "author": "Albert Camus",
+        "link": "https://www.vintage-books.net/download/pdfs/myth_of_sisyphus.pdf"
+      }
+    ],
+    "websites": [
+      {
+        "title": "Stanford Encyclopedia of Philosophy",
+        "link": "https://plato.stanford.edu/",
+        "description": "Stanford Encyclopedia of Philosophy"
+      }
+    ]
+  },
+  "reflectionQuestions": [
+    "If consciousness can be uploaded, how would Bitcoin ownership be defined?",
+    "In a future where virtual worlds are completely real, does physical scarcity still matter?",
+    "If AI can own Bitcoin, do they possess economic personhood?",
+    "Are eternal blockchain records a form of human immortality?"
+  ]
+}

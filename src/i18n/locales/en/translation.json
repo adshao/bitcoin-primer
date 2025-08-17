@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "logo": "Bitcoin Primer",
+    "disciplines": "Disciplines",
+    "learningPath": "Learning Path",
+    "studyGuide": "Study Guide",
+    "resources": "Resources",
+    "startLearning": "Start Learning",
+    "startLearningJourney": "Start Your Journey"
+  },
+  "disciplines": {
+    "money": {
+      "title": "Money",
+      "description": "From fiat to cryptocurrency"
+    },
+    "banking": {
+      "title": "Banking",
+      "description": "Evolution of financial systems"
+    },
+    "economics": {
+      "title": "Economics",
+      "description": "Scarcity and store of value"
+    },
+    "computerScience": {
+      "title": "Computer Science",
+      "description": "Cryptography and distributed systems"
+    },
+    "gameTheory": {
+      "title": "Game Theory",
+      "description": "Incentives and Nash equilibrium"
+    },
+    "energy": {
+      "title": "Energy",
+      "description": "Physical world meets digital value"
+    },
+    "politics": {
+      "title": "Politics",
+      "description": "Power distribution and decentralization"
+    },
+    "philosophy": {
+      "title": "Philosophy",
+      "description": "Existence, freedom, and value"
+    },
+    "law": {
+      "title": "Law",
+      "description": "Code as law in practice"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Explore the Intersection of Technology and Society",
+      "title1": "Understanding Society Through ",
+      "bitcoin": "Bitcoin",
+      "title2": "",
+      "subtitle": "Bitcoin is not just a technological innovation, but a window into understanding how human society operates. Through nine different perspectives, explore the nature of trust, value, and power.",
+      "learnMore": "Learn More",
+      "whitepaper": "Read Whitepaper"
+    },
+    "perspectives": {
+      "title": "Nine Perspectives",
+      "subtitle": "Deep Understanding of Bitcoin",
+      "description": "Each perspective is a window that allows you to understand Bitcoin's deeper meaning and social impact from different dimensions."
+    },
+    "cta": {
+      "title": "Ready to Start Exploring?",
+      "subtitle": "Begin with any perspective that interests you and gradually build a comprehensive understanding of Bitcoin",
+      "button": "Start Your Journey",
+      "or": "or",
+      "viewResources": "View Resources"
+    }
+  },
+  "footer": {
+    "brand": {
+      "title": "Bitcoin Primer",
+      "subtitle": "Understanding Society Through Bitcoin"
+    },
+    "links": {
+      "whitepaper": "Whitepaper",
+      "source": "Source Code",
+      "wiki": "Wiki",
+      "magazine": "Magazine"
+    },
+    "copyright": "© {{year}} Bitcoin Primer - Open Source Education Project"
+  },
+  "insights": {
+    "label": "Key Insights",
+    "title": "Why This Matters",
+    "trust": {
+      "title": "Rethinking Trust",
+      "description": "Understanding how to build trust systems without relying on centralized institutions"
+    },
+    "value": {
+      "title": "The Nature of Value",
+      "description": "Exploring how value is created, stored, and transferred, and the meaning of scarcity"
+    },
+    "power": {
+      "title": "Restructuring Power",
+      "description": "Witnessing how technology changes power distribution, achieving true decentralized governance"
+    },
+    "future": {
+      "title": "Future of Money",
+      "description": "Foreseeing the financial infrastructure and global value flow system of the digital age"
+    }
+  },
+  "learningPath": {
+    "title": "Learning Path",
+    "subtitle": "Master Bitcoin Knowledge Step by Step",
+    "description": "We've designed a 10-week learning plan to build a comprehensive understanding of Bitcoin from multiple disciplinary perspectives.",
+    "estimatedTime": "Estimated Time",
+    "weeks": "weeks",
+    "keyPoints": "Key Points",
+    "exercises": "Practical Exercises",
+    "resources": "Recommended Resources"
+  },
+  "studyGuide": {
+    "title": "Study Guide",
+    "subtitle": "Master Effective Learning Methods and Practical Techniques"
+  },
+  "resourcesPage": {
+    "title": "Resources",
+    "subtitle": "Curated Learning Materials and Tools"
+  },
+  "cta2": {
+    "techStart": "Start with Technology",
+    "econStart": "Start with Economics"
+  },
+  "template": {
+    "keyInsights": "Key Insights",
+    "resources": "Recommended Resources",
+    "books": "Classic Books",
+    "papers": "Important Papers",
+    "websites": "Online Resources",
+    "reflection": "Deep Reflection",
+    "sections": {
+      "introduction": "Overview",
+      "keyInsights": "Key Insights",
+      "resources": "Learning Resources",
+      "reflection": "Reflection Questions"
+    },
+    "resourceTypes": {
+      "mustRead": "Must Read",
+      "videos": "Video Tutorials",
+      "tools": "Practical Tools"
+    }
+  }
+}

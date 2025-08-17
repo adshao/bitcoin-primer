@@ -1,0 +1,262 @@
+{
+  "title": "学习指南",
+  "subtitle": "掌握有效的学习方法和实践技巧",
+  "sections": {
+    "principles": "学习原则",
+    "paths": "学习路径选择",
+    "methods": "学习方法",
+    "exercises": "实践练习",
+    "community": "社区参与",
+    "summary": "开始你的学习之旅"
+  },
+  "principles": [
+    {
+      "title": "理解优先于记忆",
+      "description": "重点理解原理和逻辑，而非死记硬背术语",
+      "practices": [
+        "通过类比理解抽象概念",
+        "画图解释复杂系统",
+        "用自己的话重新表述"
+      ]
+    },
+    {
+      "title": "实践验证理论",
+      "description": "通过亲身体验加深对理论的理解",
+      "practices": [
+        "使用测试网实验",
+        "运行自己的节点",
+        "分析真实交易"
+      ]
+    },
+    {
+      "title": "多维度探索",
+      "description": "从不同角度理解同一概念",
+      "practices": [
+        "技术实现层面",
+        "经济激励层面",
+        "社会影响层面"
+      ]
+    },
+    {
+      "title": "批判性思考",
+      "description": "保持独立思考，质疑和验证",
+      "practices": [
+        "对比不同观点",
+        "寻找反对意见",
+        "形成自己的判断"
+      ]
+    }
+  ],
+  "paths": [
+    {
+      "type": "技术路线",
+      "suitable": "程序员、工程师",
+      "focus": "深入理解技术实现",
+      "stepsLabel": "学习步骤",
+      "steps": [
+        { "phase": "基础", "content": "学习密码学基础、哈希函数、数字签名" },
+        { "phase": "核心", "content": "理解区块链结构、共识机制、P2P网络" },
+        { "phase": "进阶", "content": "研究源代码、BIP提案、二层协议" },
+        { "phase": "实践", "content": "搭建节点、开发应用、参与贡献" }
+      ],
+      "resourcesLabel": "推荐资源",
+      "resources": ["Mastering Bitcoin", "Programming Bitcoin", "Bitcoin Core源码"]
+    },
+    {
+      "type": "经济路线",
+      "suitable": "经济学者、投资者",
+      "focus": "理解经济模型和价值",
+      "stepsLabel": "学习步骤",
+      "steps": [
+        { "phase": "基础", "content": "货币理论、奥地利经济学派" },
+        { "phase": "核心", "content": "稀缺性、通缩模型、价值存储" },
+        { "phase": "进阶", "content": "宏观经济影响、货币政策对比" },
+        { "phase": "实践", "content": "市场分析、风险管理、投资策略" }
+      ],
+      "resourcesLabel": "推荐资源",
+      "resources": ["The Bitcoin Standard", "货币的非国家化", "Stock-to-Flow模型"]
+    },
+    {
+      "type": "社会路线",
+      "suitable": "社会学者、政策制定者",
+      "focus": "理解社会影响和变革",
+      "stepsLabel": "学习步骤",
+      "steps": [
+        { "phase": "基础", "content": "去中心化理念、个人主权" },
+        { "phase": "核心", "content": "信任机制、权力结构、治理模式" },
+        { "phase": "进阶", "content": "法律框架、监管政策、国际影响" },
+        { "phase": "实践", "content": "案例研究、政策分析、未来展望" }
+      ],
+      "resourcesLabel": "推荐资源",
+      "resources": ["The Sovereign Individual", "Digital Gold", "各国监管政策"]
+    }
+  ],
+  "pathSuitable": "适合：",
+  "methods": [
+    {
+      "name": "深度研究法",
+      "description": "选择核心主题深入探索",
+      "processLabel": "实施步骤",
+      "process": [
+        "选择一个核心概念（如\"工作量证明\"）",
+        "收集权威资料和不同观点",
+        "理解技术原理和设计哲学",
+        "分析优势、局限和替代方案",
+        "形成全面深入的认识"
+      ],
+      "exampleLabel": "案例：",
+      "example": "深入研究比特币的共识机制，理解为什么选择PoW而非其他方案"
+    },
+    {
+      "name": "对比分析法",
+      "description": "通过对比加深理解",
+      "processLabel": "实施步骤",
+      "process": [
+        "选择对比对象（如比特币vs传统银行）",
+        "列出各自特点和机制",
+        "分析本质差异",
+        "理解各自的适用场景",
+        "得出客观结论"
+      ],
+      "exampleLabel": "案例：",
+      "example": "对比比特币与央行数字货币（CBDC）的本质区别"
+    },
+    {
+      "name": "问题驱动法",
+      "description": "带着问题去学习",
+      "processLabel": "实施步骤",
+      "process": [
+        "提出具体问题",
+        "寻找相关资料",
+        "理解背后原理",
+        "验证答案正确性",
+        "延伸相关问题"
+      ],
+      "exampleLabel": "案例：",
+      "example": "\"比特币如何防止双花？\"引导学习UTXO模型和确认机制"
+    }
+  ],
+  "exercises": {
+    "levels": [
+      {
+        "level": "初级",
+        "exercises": [
+          {
+            "title": "创建钱包",
+            "description": "下载钱包软件，生成地址，理解公私钥",
+            "toolsLabel": "工具：",
+            "tools": ["Electrum", "Blue Wallet"],
+            "learningLabel": "学习要点：",
+            "learning": "理解非对称加密和地址生成"
+          },
+          {
+            "title": "测试网交易",
+            "description": "在测试网获取币并发送交易",
+            "toolsLabel": "工具：",
+            "tools": ["Bitcoin Testnet", "Faucet"],
+            "learningLabel": "学习要点：",
+            "learning": "理解交易流程和手续费机制"
+          },
+          {
+            "title": "区块浏览",
+            "description": "使用区块浏览器分析交易和区块",
+            "toolsLabel": "工具：",
+            "tools": ["Mempool.space", "Blockstream.info"],
+            "learningLabel": "学习要点：",
+            "learning": "理解区块结构和交易确认"
+          }
+        ]
+      },
+      {
+        "level": "中级",
+        "exercises": [
+          {
+            "title": "运行节点",
+            "description": "搭建并运行完整节点",
+            "toolsLabel": "工具：",
+            "tools": ["Bitcoin Core", "Umbrel"],
+            "learningLabel": "学习要点：",
+            "learning": "理解P2P网络和数据验证"
+          },
+          {
+            "title": "闪电网络",
+            "description": "开通闪电通道，进行即时支付",
+            "toolsLabel": "工具：",
+            "tools": ["Lightning Network", "Phoenix"],
+            "learningLabel": "学习要点：",
+            "learning": "理解二层扩容方案"
+          },
+          {
+            "title": "多签钱包",
+            "description": "创建和使用多签名钱包",
+            "toolsLabel": "工具：",
+            "tools": ["Sparrow Wallet", "Specter"],
+            "learningLabel": "学习要点：",
+            "learning": "理解多签机制和安全策略"
+          }
+        ]
+      },
+      {
+        "level": "高级",
+        "exercises": [
+          {
+            "title": "脚本编程",
+            "description": "编写和测试比特币脚本",
+            "toolsLabel": "工具：",
+            "tools": ["Bitcoin Script", "btcdeb"],
+            "learningLabel": "学习要点：",
+            "learning": "深入理解交易验证逻辑"
+          },
+          {
+            "title": "协议开发",
+            "description": "研究BIP提案，参与改进",
+            "toolsLabel": "工具：",
+            "tools": ["Bitcoin Core", "GitHub"],
+            "learningLabel": "学习要点：",
+            "learning": "理解协议演进和治理"
+          },
+          {
+            "title": "应用开发",
+            "description": "开发基于比特币的应用",
+            "toolsLabel": "工具：",
+            "tools": ["BitcoinJS", "BTCPay Server"],
+            "learningLabel": "学习要点：",
+            "learning": "实际应用比特币技术"
+          }
+        ]
+      }
+    ]
+  },
+  "community": [
+    {
+      "type": "学习社区",
+      "platforms": [
+        { "name": "Bitcoin Talk", "description": "最早的比特币论坛" },
+        { "name": "Reddit r/Bitcoin", "description": "活跃的讨论社区" },
+        { "name": "Bitcoin Stack Exchange", "description": "技术问答平台" }
+      ]
+    },
+    {
+      "type": "开发社区",
+      "platforms": [
+        { "name": "Bitcoin Core GitHub", "description": "核心开发仓库" },
+        { "name": "Bitcoin Optech", "description": "技术周报" },
+        { "name": "Bitcoin Dev Mailing List", "description": "开发者邮件列表" }
+      ]
+    },
+    {
+      "type": "教育资源",
+      "platforms": [
+        { "name": "Bitcoin.org", "description": "官方教育资源" },
+        { "name": "Lopp.net", "description": "Jameson Lopp的资源汇总" },
+        { "name": "21 Lessons", "description": "比特币哲学思考" }
+      ]
+    }
+  ],
+  "visitLink": "访问 →",
+  "summary": {
+    "content": "比特币学习是一个持续的过程，需要耐心和坚持。选择适合自己的路径，运用正确的方法，通过实践加深理解，参与社区交流，你将逐步建立对比特币的深刻认识。",
+    "viewPath": "查看学习路径",
+    "browseResources": "浏览学习资源"
+  }
+}

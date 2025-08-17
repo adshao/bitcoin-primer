@@ -1,70 +1,84 @@
 import { Link } from 'react-router-dom'
+import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
 import './Home.css'
 
 function Home() {
+  const { t } = useFormattedTranslation()
+  
+  const handleLearnMoreClick = (e) => {
+    e.preventDefault()
+    const perspectivesSection = document.getElementById('perspectives')
+    if (perspectivesSection) {
+      perspectivesSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
+  
   const perspectives = [
     {
-      title: '货币',
+      titleKey: 'disciplines.money.title',
       icon: '💰',
       path: '/money',
       color: '#059669',
-      description: '从法币到加密货币'
+      descriptionKey: 'disciplines.money.description'
     },
     {
-      title: '银行',
+      titleKey: 'disciplines.banking.title',
       icon: '🏦',
       path: '/banking',
       color: '#7C2D12',
-      description: '金融系统的演化'
+      descriptionKey: 'disciplines.banking.description'
     },
     {
-      title: '经济学',
+      titleKey: 'disciplines.economics.title',
       icon: '📊',
       path: '/economics',
       color: '#0891B2',
-      description: '稀缺性与价值存储'
+      descriptionKey: 'disciplines.economics.description'
     },
     {
-      title: '计算机科学',
+      titleKey: 'disciplines.computerScience.title',
       icon: '💻',
       path: '/computer-science',
       color: '#4F46E5',
-      description: '密码学与分布式系统'
+      descriptionKey: 'disciplines.computerScience.description'
     },
     {
-      title: '博弈论',
+      titleKey: 'disciplines.gameTheory.title',
       icon: '🎯',
       path: '/game-theory',
       color: '#7C3AED',
-      description: '激励机制与纳什均衡'
+      descriptionKey: 'disciplines.gameTheory.description'
     },
     {
-      title: '能源',
+      titleKey: 'disciplines.energy.title',
       icon: '⚡',
       path: '/energy',
       color: '#2563EB',
-      description: '物理世界与数字价值'
+      descriptionKey: 'disciplines.energy.description'
     },
     {
-      title: '政治',
+      titleKey: 'disciplines.politics.title',
       icon: '🏛️',
       path: '/politics',
       color: '#EA580C',
-      description: '权力分配与去中心化'
+      descriptionKey: 'disciplines.politics.description'
     },
     {
-      title: '哲学',
+      titleKey: 'disciplines.philosophy.title',
       icon: '🔮',
       path: '/philosophy',
       color: '#6366F1',
-      description: '存在、自由与价值'
+      descriptionKey: 'disciplines.philosophy.description'
     },
     {
-      title: '法律',
+      titleKey: 'disciplines.law.title',
       icon: '⚖️',
       path: '/law',
       color: '#DC2626',
-      description: '代码即法律的实践'
+      descriptionKey: 'disciplines.law.description'
     }
   ]
 
@@ -82,26 +96,25 @@ function Home() {
           <div className="hero-content">
             <div className="hero-badge">
               <span className="badge-dot"></span>
-              探索技术与社会的交汇点
+              {t('home.hero.badge')}
             </div>
             
             <h1 className="hero-title">
-              <span className="title-line">通过<span className="highlight-bitcoin">比特币</span></span>
-              <span className="title-line">理解社会运行机制</span>
+              <span className="title-line">{t('home.hero.title1')}<span className="highlight-bitcoin">{t('home.hero.bitcoin')}</span></span>
+              <span className="title-line">{t('home.hero.title2')}</span>
             </h1>
             
             <p className="hero-subtitle">
-              比特币不仅是技术创新，更是理解人类社会运行机制的窗口。
-              通过九个不同视角，深入探索信任、价值、权力的本质。
+              {t('home.hero.subtitle')}
             </p>
             
             <div className="hero-actions">
-              <a href="#perspectives" className="btn-primary">
-                了解更多
+              <a href="#perspectives" className="btn-primary" onClick={handleLearnMoreClick}>
+                {t('home.hero.learnMore')}
                 <span className="btn-arrow">↓</span>
               </a>
               <Link to="/learning-path" className="btn-secondary">
-                开始探索
+                {t('nav.startLearning')}
                 <span className="btn-icon">→</span>
               </Link>
             </div>
@@ -145,10 +158,10 @@ function Home() {
       <section id="perspectives" className="perspectives-section">
         <div className="section-container">
           <div className="section-header">
-            <span className="section-label">九个视角</span>
-            <h2 className="section-title">多维度理解比特币</h2>
+            <span className="section-label">{t('home.perspectives.title')}</span>
+            <h2 className="section-title">{t('home.perspectives.subtitle')}</h2>
             <p className="section-description">
-              从不同学科视角审视比特币，发现传统系统与去中心化系统的本质差异
+              {t('home.perspectives.description')}
             </p>
           </div>
           
@@ -164,8 +177,8 @@ function Home() {
                   <span>{item.icon}</span>
                 </div>
                 <div className="card-content">
-                  <h3 className="card-title">{item.title}</h3>
-                  <p className="card-description">{item.description}</p>
+                  <h3 className="card-title">{t(item.titleKey)}</h3>
+                  <p className="card-description">{t(item.descriptionKey)}</p>
                 </div>
                 <div className="card-arrow">→</div>
               </Link>
@@ -178,8 +191,8 @@ function Home() {
       <section className="insights-section">
         <div className="section-container">
           <div className="section-header">
-            <span className="section-label">核心洞察</span>
-            <h2 className="section-title">为什么这很重要？</h2>
+            <span className="section-label">{t('insights.label')}</span>
+            <h2 className="section-title">{t('insights.title')}</h2>
           </div>
           
           <div className="insights-grid">
@@ -189,8 +202,8 @@ function Home() {
                   <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
-              <h3>重新思考信任</h3>
-              <p>理解如何在不依赖中心化机构的情况下建立信任体系</p>
+              <h3>{t('insights.trust.title')}</h3>
+              <p>{t('insights.trust.description')}</p>
             </div>
             
             <div className="insight-card">
@@ -199,8 +212,8 @@ function Home() {
                   <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3>价值的本质</h3>
-              <p>探索价值如何被创造、存储和转移，以及稀缺性的意义</p>
+              <h3>{t('insights.value.title')}</h3>
+              <p>{t('insights.value.description')}</p>
             </div>
             
             <div className="insight-card">
@@ -209,8 +222,8 @@ function Home() {
                   <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3>权力的重构</h3>
-              <p>见证技术如何改变权力分配，实现真正的去中心化治理</p>
+              <h3>{t('insights.power.title')}</h3>
+              <p>{t('insights.power.description')}</p>
             </div>
             
             <div className="insight-card">
@@ -219,8 +232,8 @@ function Home() {
                   <path d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3>未来的货币</h3>
-              <p>预见数字时代的金融基础设施和全球价值流转体系</p>
+              <h3>{t('insights.future.title')}</h3>
+              <p>{t('insights.future.description')}</p>
             </div>
           </div>
         </div>
@@ -230,17 +243,17 @@ function Home() {
       <section className="cta-section">
         <div className="section-container">
           <div className="cta-content">
-            <h2 className="cta-title">准备好开始探索了吗？</h2>
+            <h2 className="cta-title">{t('home.cta.title')}</h2>
             <p className="cta-description">
-              选择一个你感兴趣的视角，开始你的比特币认知之旅
+              {t('home.cta.subtitle')}
             </p>
             <div className="cta-actions">
               <Link to="/computer-science" className="btn-primary">
-                从技术开始
+                {t('cta2.techStart')}
                 <span className="btn-arrow">→</span>
               </Link>
               <Link to="/economics" className="btn-outline">
-                从经济开始
+                {t('cta2.econStart')}
                 <span className="btn-arrow">→</span>
               </Link>
             </div>

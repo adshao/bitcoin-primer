@@ -1,0 +1,212 @@
+{
+  "icon": "💰",
+  "title": "Money",
+  "subtitle": "Understanding Society Through Money",
+  "introduction": "Money is the foundation of civilization, the hidden language of human cooperation. It's not just a medium of exchange, but the crystallization of trust, power, and value. Bitcoin, as the first truly scarce digital commodity, is redefining our understanding of money. This transformation is not only technological but also touches the very fabric of social organization.",
+  "sections": [
+    {
+      "title": "The Nature of Money: Evolution of Medium of Exchange",
+      "content": [
+        {
+          "subtitle": "Core Functions of Money",
+          "points": [
+            "Medium of Exchange: Facilitates exchange of goods and services, solving the double coincidence of wants problem",
+            "Unit of Account: Provides a unified pricing unit for comparing value of goods",
+            "Store of Value: Preserves purchasing power over time, hedging against inflation",
+            "Standard of Deferred Payment: Pricing standard for debts and contracts"
+          ]
+        },
+        {
+          "subtitle": "Characteristics of Good Money",
+          "points": [
+            "Scarcity: Limited and predictable supply",
+            "Durability: Resistant to decay or damage",
+            "Divisibility: Can be divided into small units",
+            "Portability: Easy to transport and transfer",
+            "Verifiability: Authenticity easily verified",
+            "Fungibility: Units are perfectly interchangeable"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Monetary Evolution: From Physical to Digital",
+      "content": [
+        {
+          "subtitle": "Historical Development Stages",
+          "points": [
+            "Commodity Money: Shells, salt, livestock and other items with intrinsic value",
+            "Metal Money: Gold and silver became primary currencies due to scarcity and divisibility",
+            "Representative Money: Paper notes representing a certain amount of precious metals",
+            "Fiat Currency: Government-issued currency without intrinsic value",
+            "Digital Currency: Decentralized digital currency pioneered by Bitcoin"
+          ]
+        },
+        {
+          "subtitle": "Drivers of Each Revolution",
+          "points": [
+            "Technological Progress: Improving physical properties of money",
+            "Transaction Needs: Reducing transaction costs and complexity",
+            "Political Requirements: Government control over money supply",
+            "Globalization: Convenience needs for cross-border trade"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Analysis of Bitcoin's Monetary Properties",
+      "content": [
+        {
+          "subtitle": "Technology-Enabled Advantages",
+          "points": [
+            "Absolute Scarcity: Fixed cap of 21 million coins, more predictable than gold",
+            "Ultimate Divisibility: Can be divided to 8 decimal places (1 satoshi = 0.00000001 BTC)",
+            "Borderless Portability: Digital form, no physical limits on cross-border transfers",
+            "Eternal Durability: As long as the network exists, Bitcoin never degrades",
+            "Cryptographic Verification: Quick authenticity verification through cryptography",
+            "Protocol Uniformity: Every Bitcoin is identical at the protocol level"
+          ]
+        },
+        {
+          "subtitle": "Comparison with Traditional Money",
+          "points": [
+            "Gold vs Bitcoin: Digital gold has more verifiable scarcity",
+            "Fiat vs Bitcoin: Decentralized vs centralized control",
+            "Banking System vs Blockchain: Intermediated vs disintermediated",
+            "Physical vs Digital: Fundamental differences in storage and transfer"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gresham's Law and Monetary Competition",
+      "content": [
+        {
+          "subtitle": "Bad Money Drives Out Good",
+          "points": [
+            "Classic Theory: People tend to spend depreciating currency and save appreciating currency",
+            "Bitcoin Phenomenon: As \"good money\" it tends to be saved rather than circulated",
+            "Dual Role: Both a store of value and medium of exchange",
+            "Time Preference: Low time preference individuals tend to hold Bitcoin"
+          ]
+        },
+        {
+          "subtitle": "New Landscape of Monetary Competition",
+          "points": [
+            "Multiple Choices: Coexistence of fiat, gold, and Bitcoin",
+            "Market Selection: Users choose different currencies based on needs",
+            "Network Effects: The more users, the greater the value",
+            "Institutional Competition: Survival of the fittest among different monetary systems"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Monetary Policy Revolution: Algorithm vs Human Control",
+      "content": [
+        {
+          "subtitle": "Traditional Monetary Policy",
+          "points": [
+            "Central Bank Control: Managing economy through interest rates and money supply",
+            "Subjective Decisions: Based on economic theory and political considerations",
+            "Flexibility: Policy can be adjusted according to circumstances",
+            "Moral Hazard: May be captured by political interests"
+          ]
+        },
+        {
+          "subtitle": "Bitcoin's Algorithmic Governance",
+          "points": [
+            "Code is Law: Algorithmic monetary policy, immune to human intervention",
+            "Predictability: Supply schedule is completely transparent and certain",
+            "Deflationary Design: Long-term deflation vs fiat's inflationary tendency",
+            "Depoliticization: Monetary policy unaffected by political cycles"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Monetary Network Effects: From Acceptance to Adoption",
+      "content": [
+        {
+          "subtitle": "Adoption Process",
+          "points": [
+            "Early Adopters: Tech experts and speculators",
+            "Merchant Acceptance: Addition of payment options",
+            "User Growth: Enhancement of network value",
+            "Institutional Adoption: Participation by corporations and governments"
+          ]
+        },
+        {
+          "subtitle": "Infrastructure Development",
+          "points": [
+            "Payment Systems: Wallets and payment processors",
+            "Exchanges: Fiat to Bitcoin conversion",
+            "Financial Services: Lending and derivatives markets",
+            "Regulatory Framework: Clarification of legal status"
+          ]
+        }
+      ]
+    }
+  ],
+  "keyInsights": [
+    "Money is a Social Consensus: Any money derives value from social consensus, Bitcoin consensus is algorithmic",
+    "Scarcity is Key: Bitcoin proves scarcity creates not only value but also trust",
+    "From Physical to Digital: Currency digitization is irreversible, Bitcoin is the ultimate digital form",
+    "Neutrality of Money: Bitcoin is the world's first politically neutral currency"
+  ],
+  "resources": {
+    "title": "Recommended Resources",
+    "books": [
+      {
+        "title": "The Bitcoin Standard",
+        "author": "Saifedean Ammous",
+        "description": "A comprehensive analysis of Bitcoin's value proposition from a monetary history perspective"
+      },
+      {
+        "title": "What Has Government Done to Our Money?",
+        "author": "Murray Rothbard",
+        "description": "Austrian School critique of government control over money"
+      },
+      {
+        "title": "The Denationalization of Money",
+        "author": "F.A. Hayek",
+        "description": "Hayek's classic treatise on monetary competition"
+      }
+    ],
+    "papers": [
+      {
+        "title": "Shelling Out: The Origins of Money",
+        "author": "Nick Szabo",
+        "link": "https://nakamotoinstitute.org/shelling-out/"
+      },
+      {
+        "title": "Bitcoin: A Peer-to-Peer Electronic Cash System",
+        "author": "Satoshi Nakamoto",
+        "link": "https://bitcoin.org/bitcoin.pdf"
+      }
+    ],
+    "websites": [
+      {
+        "title": "Bitcoin Whitepaper",
+        "link": "https://bitcoin.org/bitcoin.pdf",
+        "description": "The original whitepaper by Satoshi Nakamoto"
+      },
+      {
+        "title": "Nakamoto Institute",
+        "link": "https://nakamotoinstitute.org/",
+        "description": "Authoritative collection of Bitcoin-related literature"
+      },
+      {
+        "title": "Bitcoin Wiki",
+        "link": "https://en.bitcoin.it/wiki/",
+        "description": "Encyclopedia of Bitcoin technology and concepts"
+      }
+    ]
+  },
+  "reflectionQuestions": [
+    "If money is trust, where does Bitcoin's trust come from?",
+    "Why has gold maintained monetary status for thousands of years? Can Bitcoin achieve the same?",
+    "Is good money necessarily suitable as a payment method?",
+    "How will competition between fiat and Bitcoin evolve?"
+  ]
+}

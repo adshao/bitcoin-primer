@@ -1,0 +1,377 @@
+{
+  "title": "资源",
+  "subtitle": "精选学习材料和工具",
+  "sections": {
+    "books": "推荐书籍",
+    "courses": "在线课程",
+    "tools": "实用工具",
+    "community": "社区资源",
+    "podcasts": "播客推荐",
+    "tips": "学习建议"
+  },
+  "books": {
+    "categories": {
+      "essential": "入门必读",
+      "technical": "技术深入",
+      "economics": "经济与社会"
+    },
+    "items": {
+      "bitcoinStandard": {
+        "description": "从经济学和货币史角度理解比特币"
+      },
+      "whitepaper": {
+        "description": "比特币白皮书，一切的起点"
+      },
+      "littleBitcoin": {
+        "description": "简明扼要的比特币入门书"
+      },
+      "masteringBitcoin": {
+        "description": "比特币技术圣经，程序员必读"
+      },
+      "programmingBitcoin": {
+        "description": "通过编程学习比特币原理"
+      },
+      "cryptoTechnologies": {
+        "description": "普林斯顿大学加密货币教材"
+      },
+      "fiatStandard": {
+        "description": "法币体系的分析与批判"
+      },
+      "priceTomorrow": {
+        "description": "通缩时代的经济学思考"
+      },
+      "digitalGold": {
+        "description": "比特币的历史故事"
+      }
+    },
+    "level": {
+      "beginner": "入门",
+      "intermediate": "中级",
+      "advanced": "进阶"
+    },
+    "language": {
+      "chinese": "有中文版",
+      "english": "英文"
+    }
+  },
+  "disciplines": {
+    "money": {
+      "title": "货币学",
+      "books": "推荐书籍",
+      "papers": "重要论文",
+      "booksList": [
+        "《The History of Money》 - Jack Weatherford",
+        "《What Has Government Done to Our Money?》 - Murray Rothbard",
+        "《The Denationalization of Money》 - F.A. Hayek",
+        "《The Ethics of Money Production》 - Jörg Guido Hülsmann",
+        "《Money, Bank Credit, and Economic Cycles》 - Jesús Huerta de Soto"
+      ],
+      "papersList": [
+        "Shelling Out: The Origins of Money - Nick Szabo",
+        "The Island of Stone Money - Milton Friedman"
+      ]
+    },
+    "banking": {
+      "title": "银行学",
+      "books": "推荐书籍",
+      "research": "研究方向",
+      "booksList": [
+        "《The End of Banking》 - Jonathan McMillan",
+        "《The Mystery of Banking》 - Murray Rothbard",
+        "《Central Banking 101》 - Joseph Wang",
+        "《The Banker's New Clothes》 - Anat Admati & Martin Hellwig",
+        "《Other People's Money》 - John Kay"
+      ],
+      "researchList": [
+        "The Role of Banks in the Monetary System - BIS",
+        "比特币对传统银行体系的影响",
+        "央行数字货币(CBDC)发展趋势"
+      ]
+    },
+    "economics": {
+      "title": "经济学",
+      "books": "推荐书籍",
+      "papers": "研究论文",
+      "booksList": [
+        "《The Bitcoin Standard》 - Saifedean Ammous",
+        "《The Price of Tomorrow》 - Jeff Booth",
+        "《Digital Gold》 - Nathaniel Popper",
+        "《The Fiat Standard》 - Saifedean Ammous",
+        "《Layered Money》 - Nik Bhatia"
+      ],
+      "papersList": [
+        "The Economic Limits of Bitcoin and the Blockchain",
+        "比特币作为数字黄金的经济学分析",
+        "加密货币的货币属性研究"
+      ]
+    },
+    "computerScience": {
+      "title": "计算机科学",
+      "books": "推荐书籍",
+      "papers": "重要论文",
+      "booksList": [
+        "《Mastering Bitcoin》 - Andreas M. Antonopoulos",
+        "《Bitcoin and Cryptocurrency Technologies》 - Narayanan et al.",
+        "《Programming Bitcoin》 - Jimmy Song",
+        "《The Bitcoin Standard》 - Saifedean Ammous"
+      ],
+      "papersList": [
+        "Bitcoin: A Peer-to-Peer Electronic Cash System - Satoshi Nakamoto",
+        "Hashcash - A Denial of Service Counter-Measure - Adam Back",
+        "The Byzantine Generals Problem - Lamport, Shostak, Pease"
+      ]
+    },
+    "gameTheory": {
+      "title": "博弈论",
+      "books": "推荐书籍",
+      "papers": "研究论文",
+      "booksList": [
+        "《The Theory of Games and Economic Behavior》 - von Neumann & Morgenstern",
+        "《The Evolution of Cooperation》 - Robert Axelrod",
+        "《Mechanism Design Theory》 - Eric Maskin",
+        "《Cryptoeconomics》 - Eric Voskuil"
+      ],
+      "papersList": [
+        "Bitcoin's Security Model Revisited - Yonatan Sompolinsky",
+        "The Economics of Bitcoin Mining",
+        "自私挖矿策略研究"
+      ]
+    },
+    "energy": {
+      "title": "能源",
+      "books": "推荐书籍",
+      "papers": "研究论文",
+      "booksList": [
+        "《The Bitcoin Mining Council Survey》 - Michael Saylor",
+        "《The Energy Revolution》 - Menyah Heymann",
+        "《Energy and Human Ambitions on a Finite Planet》 - Tom Murphy",
+        "《Sustainable Energy - Without the Hot Air》 - David MacKay",
+        "《The Kardashev Scale》 - Nikolai Kardashev"
+      ],
+      "papersList": [
+        "On Bitcoin's Energy Consumption: A Quantitative Approach",
+        "比特币挖矿能源报告 - Cambridge Centre",
+        "比特币与可再生能源 - ARK Invest"
+      ]
+    },
+    "politics": {
+      "title": "政治学",
+      "books": "推荐书籍",
+      "papers": "研究论文",
+      "booksList": [
+        "《The Politics of Bitcoin》 - David Golumbia",
+        "《Digital Gold》 - Nathaniel Popper",
+        "《The Sovereign Individual》 - James Dale Davidson",
+        "《Bitcoin and Human Rights》 - Alex Gladstein"
+      ],
+      "papersList": [
+        "Cryptocurrency and the Problem of Intermediation - Jonathan Zittrain",
+        "Virtual Currencies and Beyond: Initial Considerations",
+        "比特币与国家主权的关系"
+      ]
+    },
+    "philosophy": {
+      "title": "哲学",
+      "books": "推荐书籍",
+      "papers": "研究论文",
+      "booksList": [
+        "《Being and Time》 - Martin Heidegger",
+        "《The Sovereign Individual》 - Davidson & Rees-Mogg",
+        "《The Construction of Social Reality》 - John Searle",
+        "《Sapiens: A Brief History of Humankind》 - Yuval Noah Harari",
+        "《The Technology Trap》 - Carl Benedikt Frey"
+      ],
+      "papersList": [
+        "The Philosophy of Money",
+        "数字时代的信任本质",
+        "去中心化的哲学含义"
+      ]
+    },
+    "law": {
+      "title": "法律",
+      "books": "推荐书籍",
+      "papers": "研究论文",
+      "booksList": [
+        "《Code and Other Laws of Cyberspace》 - Lawrence Lessig",
+        "《Cryptoeconomics: Economic Mechanisms for Digital Information》 - Nick Szabo",
+        "《The Rule of Law》 - Tom Bingham",
+        "《Blockchain and the Law》 - De Filippi & Wright",
+        "《The Ethics of Influence》 - Cass Sunstein"
+      ],
+      "papersList": [
+        "The Nature of the Agreement in the Blockchain",
+        "代码化规则的法律地位",
+        "加密资产的产权定义"
+      ]
+    }
+  },
+  "courses": {
+    "categories": {
+      "free": "免费课程",
+      "video": "视频资源"
+    },
+    "duration": "时长：",
+    "visitCourse": "访问课程 →",
+    "items": [
+      {
+        "title": "Bitcoin and Cryptocurrency Technologies",
+        "provider": "Coursera (Princeton)",
+        "duration": "11 周",
+        "description": "普林斯顿大学的系统性课程"
+      },
+      {
+        "title": "Introduction to Digital Currencies",
+        "provider": "University of Nicosia",
+        "duration": "12 周",
+        "description": "第一个大学级别的数字货币课程"
+      },
+      {
+        "title": "Bitcoin for Everybody",
+        "provider": "Saylor Academy",
+        "duration": "自定进度",
+        "description": "MicroStrategy创始人的比特币课程"
+      },
+      {
+        "title": "Andreas Antonopoulos YouTube",
+        "provider": "YouTube",
+        "duration": "持续更新",
+        "description": "最好的比特币教育视频"
+      },
+      {
+        "title": "MIT 6.824 Distributed Systems",
+        "provider": "MIT OpenCourseWare",
+        "duration": "一学期",
+        "description": "MIT分布式系统课程"
+      },
+      {
+        "title": "Bitcoin Fundamentals",
+        "provider": "Khan Academy",
+        "duration": "2 小时",
+        "description": "可汗学院的基础教程"
+      }
+    ]
+  },
+  "tools": {
+    "categories": {
+      "wallets": "钱包工具",
+      "explorers": "区块浏览器",
+      "development": "开发工具"
+    },
+    "useTool": "使用工具 →",
+    "items": {
+      "bitcoinCore": {
+        "type": "全节点钱包",
+        "description": "官方客户端，最安全但需要下载全部区块链"
+      },
+      "electrum": {
+        "type": "轻钱包",
+        "description": "功能强大的轻量级钱包"
+      },
+      "blueWallet": {
+        "type": "移动钱包",
+        "description": "用户友好的移动端钱包，支持闪电网络"
+      },
+      "blockstream": {
+        "type": "区块浏览器",
+        "description": "开源、注重隐私的区块浏览器"
+      },
+      "mempool": {
+        "type": "内存池可视化",
+        "description": "实时查看内存池和手续费"
+      },
+      "blockchain": {
+        "type": "区块浏览器",
+        "description": "最老牌的区块浏览器"
+      },
+      "testnet": {
+        "type": "测试网络",
+        "description": "用于开发和测试的比特币测试网"
+      },
+      "bitcoinjs": {
+        "type": "JavaScript库",
+        "description": "用于比特币开发的JavaScript库"
+      },
+      "btcpay": {
+        "type": "支付处理",
+        "description": "自托管的比特币支付处理器"
+      }
+    }
+  },
+  "community": {
+    "visit": "访问 →",
+    "items": [
+      {
+        "name": "Bitcoin Talk",
+        "type": "论坛",
+        "description": "最早的比特币论坛，中本聪曾在此活跃",
+        "language": "英文"
+      },
+      {
+        "name": "r/Bitcoin",
+        "type": "Reddit",
+        "description": "Reddit上最大的比特币社区",
+        "language": "英文"
+      },
+      {
+        "name": "Bitcoin Twitter",
+        "type": "Twitter",
+        "description": "关注#Bitcoin标签和知名人士",
+        "language": "多语言"
+      },
+      {
+        "name": "Bitcoin Optech",
+        "type": "技术社区",
+        "description": "面向开发者的技术资源",
+        "language": "英文"
+      },
+      {
+        "name": "巴比特",
+        "type": "中文社区",
+        "description": "中文区块链资讯和社区",
+        "language": "中文"
+      }
+    ]
+  },
+  "podcasts": {
+    "host": "主持人：",
+    "frequency": {
+      "weekly": "每周更新",
+      "daily": "每日更新"
+    },
+    "items": [
+      {
+        "name": "What Bitcoin Did",
+        "host": "Peter McCormack",
+        "description": "深度访谈比特币领域的重要人物",
+        "frequency": "每周更新"
+      },
+      {
+        "name": "The Pomp Podcast",
+        "host": "Anthony Pompliano",
+        "description": "比特币和加密货币投资视角",
+        "frequency": "每日更新"
+      },
+      {
+        "name": "Stephan Livera Podcast",
+        "host": "Stephan Livera",
+        "description": "技术和经济学深度讨论",
+        "frequency": "每周更新"
+      },
+      {
+        "name": "Tales from the Crypt",
+        "host": "Marty Bent",
+        "description": "比特币文化和哲学探讨",
+        "frequency": "每周更新"
+      }
+    ]
+  },
+  "tips": {
+    "title": "学习建议",
+    "items": [
+      "从自己最感兴趣的角度入手，不必按照固定顺序",
+      "理论与实践结合，使用工具加深理解",
+      "加入社区，与他人交流可以获得不同视角",
+      "保持学习，比特币生态在快速发展"
+    ]
+  }
+}

@@ -1,3 +1,4 @@
+import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
 import './TopicTemplate.css'
 
 function TopicTemplate({ 
@@ -10,6 +11,8 @@ function TopicTemplate({
   resources, 
   reflectionQuestions 
 }) {
+  const { t } = useFormattedTranslation()
+  
   return (
     <div className="topic-template">
       {/* Hero Section */}
@@ -63,7 +66,7 @@ function TopicTemplate({
               <div className="sidebar-card insights-card">
                 <h3 className="card-title">
                   <span className="card-icon">💡</span>
-                  关键洞察
+                  {t('template.keyInsights')}
                 </h3>
                 <div className="insights-content">
                   {keyInsights.map((insight, index) => (
@@ -79,12 +82,12 @@ function TopicTemplate({
               <div className="sidebar-card resources-card">
                 <h3 className="card-title">
                   <span className="card-icon">📚</span>
-                  推荐资源
+                  {t('template.resources')}
                 </h3>
                 <div className="resources-content">
                   {resources.books && (
                     <div className="resource-section">
-                      <h4 className="resource-label">经典书籍</h4>
+                      <h4 className="resource-label">{t('template.books')}</h4>
                       <ul className="resource-list">
                         {resources.books.map((book, index) => (
                           <li key={index} className="resource-item">
@@ -99,7 +102,7 @@ function TopicTemplate({
                   
                   {resources.papers && (
                     <div className="resource-section">
-                      <h4 className="resource-label">重要论文</h4>
+                      <h4 className="resource-label">{t('template.papers')}</h4>
                       <ul className="resource-list">
                         {resources.papers.map((paper, index) => (
                           <li key={index} className="resource-item">
@@ -115,7 +118,7 @@ function TopicTemplate({
                   
                   {resources.websites && (
                     <div className="resource-section">
-                      <h4 className="resource-label">在线资源</h4>
+                      <h4 className="resource-label">{t('template.websites')}</h4>
                       <ul className="resource-list">
                         {resources.websites.map((site, index) => (
                           <li key={index} className="resource-item">
@@ -135,7 +138,7 @@ function TopicTemplate({
               <div className="sidebar-card reflection-card">
                 <h3 className="card-title">
                   <span className="card-icon">🤔</span>
-                  深度思考
+                  {t('template.reflection')}
                 </h3>
                 <div className="reflection-content">
                   {reflectionQuestions.map((question, index) => (

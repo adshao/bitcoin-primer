@@ -1,0 +1,262 @@
+{
+  "title": "Study Guide",
+  "subtitle": "Master Effective Learning Methods and Practical Techniques",
+  "sections": {
+    "principles": "Learning Principles",
+    "paths": "Learning Path Selection",
+    "methods": "Study Methods",
+    "exercises": "Practical Exercises",
+    "community": "Community Engagement",
+    "summary": "Start Your Learning Journey"
+  },
+  "principles": [
+    {
+      "title": "Understanding Over Memorization",
+      "description": "Focus on understanding principles and logic rather than memorizing terms",
+      "practices": [
+        "Understand abstract concepts through analogies",
+        "Draw diagrams to explain complex systems",
+        "Rephrase in your own words"
+      ]
+    },
+    {
+      "title": "Practice Validates Theory",
+      "description": "Deepen theoretical understanding through hands-on experience",
+      "practices": [
+        "Experiment on testnet",
+        "Run your own node",
+        "Analyze real transactions"
+      ]
+    },
+    {
+      "title": "Multi-Dimensional Exploration",
+      "description": "Understand the same concept from different angles",
+      "practices": [
+        "Technical implementation level",
+        "Economic incentive level",
+        "Social impact level"
+      ]
+    },
+    {
+      "title": "Critical Thinking",
+      "description": "Maintain independent thinking, question and verify",
+      "practices": [
+        "Compare different viewpoints",
+        "Seek opposing opinions",
+        "Form your own judgment"
+      ]
+    }
+  ],
+  "paths": [
+    {
+      "type": "Technical Route",
+      "suitable": "Programmers, Engineers",
+      "focus": "Deep understanding of technical implementation",
+      "stepsLabel": "Learning Steps",
+      "steps": [
+        { "phase": "Basics", "content": "Learn cryptography basics, hash functions, digital signatures" },
+        { "phase": "Core", "content": "Understand blockchain structure, consensus mechanisms, P2P networks" },
+        { "phase": "Advanced", "content": "Study source code, BIP proposals, layer-2 protocols" },
+        { "phase": "Practice", "content": "Run nodes, develop applications, contribute to projects" }
+      ],
+      "resourcesLabel": "Recommended Resources",
+      "resources": ["Mastering Bitcoin", "Programming Bitcoin", "Bitcoin Core Source Code"]
+    },
+    {
+      "type": "Economic Route",
+      "suitable": "Economists, Investors",
+      "focus": "Understanding economic models and value",
+      "stepsLabel": "Learning Steps",
+      "steps": [
+        { "phase": "Basics", "content": "Monetary theory, Austrian economics" },
+        { "phase": "Core", "content": "Scarcity, deflationary model, store of value" },
+        { "phase": "Advanced", "content": "Macroeconomic impacts, monetary policy comparisons" },
+        { "phase": "Practice", "content": "Market analysis, risk management, investment strategies" }
+      ],
+      "resourcesLabel": "Recommended Resources",
+      "resources": ["The Bitcoin Standard", "Denationalization of Money", "Stock-to-Flow Model"]
+    },
+    {
+      "type": "Social Route",
+      "suitable": "Sociologists, Policy Makers",
+      "focus": "Understanding social impact and transformation",
+      "stepsLabel": "Learning Steps",
+      "steps": [
+        { "phase": "Basics", "content": "Decentralization ideology, individual sovereignty" },
+        { "phase": "Core", "content": "Trust mechanisms, power structures, governance models" },
+        { "phase": "Advanced", "content": "Legal frameworks, regulatory policies, international impacts" },
+        { "phase": "Practice", "content": "Case studies, policy analysis, future outlook" }
+      ],
+      "resourcesLabel": "Recommended Resources",
+      "resources": ["The Sovereign Individual", "Digital Gold", "National Regulatory Policies"]
+    }
+  ],
+  "pathSuitable": "Suitable for:",
+  "methods": [
+    {
+      "name": "Deep Research Method",
+      "description": "Choose core topics for in-depth exploration",
+      "processLabel": "Implementation Steps",
+      "process": [
+        "Select a core concept (e.g., 'Proof of Work')",
+        "Collect authoritative materials and different viewpoints",
+        "Understand technical principles and design philosophy",
+        "Analyze advantages, limitations, and alternatives",
+        "Form comprehensive and deep understanding"
+      ],
+      "exampleLabel": "Example:",
+      "example": "Deep dive into Bitcoin's consensus mechanism, understand why PoW was chosen over other options"
+    },
+    {
+      "name": "Comparative Analysis",
+      "description": "Deepen understanding through comparison",
+      "processLabel": "Implementation Steps",
+      "process": [
+        "Select comparison objects (e.g., Bitcoin vs Traditional Banks)",
+        "List characteristics and mechanisms of each",
+        "Analyze essential differences",
+        "Understand applicable scenarios for each",
+        "Draw objective conclusions"
+      ],
+      "exampleLabel": "Example:",
+      "example": "Compare the essential differences between Bitcoin and Central Bank Digital Currencies (CBDCs)"
+    },
+    {
+      "name": "Problem-Driven Learning",
+      "description": "Learn with specific questions in mind",
+      "processLabel": "Implementation Steps",
+      "process": [
+        "Pose specific questions",
+        "Find relevant materials",
+        "Understand underlying principles",
+        "Verify answer correctness",
+        "Explore related questions"
+      ],
+      "exampleLabel": "Example:",
+      "example": "'How does Bitcoin prevent double-spending?' leads to learning about UTXO model and confirmation mechanisms"
+    }
+  ],
+  "exercises": {
+    "levels": [
+      {
+        "level": "Beginner",
+        "exercises": [
+          {
+            "title": "Create Wallet",
+            "description": "Download wallet software, generate address, understand public/private keys",
+            "toolsLabel": "Tools:",
+            "tools": ["Electrum", "Blue Wallet"],
+            "learningLabel": "Learning Points:",
+            "learning": "Understand asymmetric encryption and address generation"
+          },
+          {
+            "title": "Testnet Transaction",
+            "description": "Get coins on testnet and send transactions",
+            "toolsLabel": "Tools:",
+            "tools": ["Bitcoin Testnet", "Faucet"],
+            "learningLabel": "Learning Points:",
+            "learning": "Understand transaction flow and fee mechanisms"
+          },
+          {
+            "title": "Block Exploration",
+            "description": "Use block explorer to analyze transactions and blocks",
+            "toolsLabel": "Tools:",
+            "tools": ["Mempool.space", "Blockstream.info"],
+            "learningLabel": "Learning Points:",
+            "learning": "Understand block structure and transaction confirmation"
+          }
+        ]
+      },
+      {
+        "level": "Intermediate",
+        "exercises": [
+          {
+            "title": "Run Node",
+            "description": "Set up and run a full node",
+            "toolsLabel": "Tools:",
+            "tools": ["Bitcoin Core", "Umbrel"],
+            "learningLabel": "Learning Points:",
+            "learning": "Understand P2P network and data validation"
+          },
+          {
+            "title": "Lightning Network",
+            "description": "Open lightning channels, make instant payments",
+            "toolsLabel": "Tools:",
+            "tools": ["Lightning Network", "Phoenix"],
+            "learningLabel": "Learning Points:",
+            "learning": "Understand layer-2 scaling solutions"
+          },
+          {
+            "title": "Multi-Sig Wallet",
+            "description": "Create and use multi-signature wallet",
+            "toolsLabel": "Tools:",
+            "tools": ["Sparrow Wallet", "Specter"],
+            "learningLabel": "Learning Points:",
+            "learning": "Understand multi-sig mechanisms and security strategies"
+          }
+        ]
+      },
+      {
+        "level": "Advanced",
+        "exercises": [
+          {
+            "title": "Script Programming",
+            "description": "Write and test Bitcoin scripts",
+            "toolsLabel": "Tools:",
+            "tools": ["Bitcoin Script", "btcdeb"],
+            "learningLabel": "Learning Points:",
+            "learning": "Deep understanding of transaction validation logic"
+          },
+          {
+            "title": "Protocol Development",
+            "description": "Study BIP proposals, participate in improvements",
+            "toolsLabel": "Tools:",
+            "tools": ["Bitcoin Core", "GitHub"],
+            "learningLabel": "Learning Points:",
+            "learning": "Understand protocol evolution and governance"
+          },
+          {
+            "title": "Application Development",
+            "description": "Develop Bitcoin-based applications",
+            "toolsLabel": "Tools:",
+            "tools": ["BitcoinJS", "BTCPay Server"],
+            "learningLabel": "Learning Points:",
+            "learning": "Practical application of Bitcoin technology"
+          }
+        ]
+      }
+    ]
+  },
+  "community": [
+    {
+      "type": "Learning Communities",
+      "platforms": [
+        { "name": "Bitcoin Talk", "description": "The original Bitcoin forum" },
+        { "name": "Reddit r/Bitcoin", "description": "Active discussion community" },
+        { "name": "Bitcoin Stack Exchange", "description": "Technical Q&A platform" }
+      ]
+    },
+    {
+      "type": "Development Communities",
+      "platforms": [
+        { "name": "Bitcoin Core GitHub", "description": "Core development repository" },
+        { "name": "Bitcoin Optech", "description": "Technical newsletter" },
+        { "name": "Bitcoin Dev Mailing List", "description": "Developer mailing list" }
+      ]
+    },
+    {
+      "type": "Educational Resources",
+      "platforms": [
+        { "name": "Bitcoin.org", "description": "Official educational resources" },
+        { "name": "Lopp.net", "description": "Jameson Lopp's resource compilation" },
+        { "name": "21 Lessons", "description": "Bitcoin philosophical reflections" }
+      ]
+    }
+  ],
+  "visitLink": "Visit →",
+  "summary": {
+    "content": "Learning Bitcoin is an ongoing process that requires patience and persistence. Choose a path that suits you, apply the right methods, deepen understanding through practice, engage with the community, and you will gradually build a deep understanding of Bitcoin.",
+    "viewPath": "View Learning Path",
+    "browseResources": "Browse Learning Resources"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "icon": "📈",
+  "title": "Economics",
+  "subtitle": "From Scarcity to Value: The Economic Principles of Bitcoin",
+  "introduction": "Economics studies the allocation of scarce resources. Bitcoin creates absolute scarcity through algorithms, challenging many assumptions of traditional economics. From Austrian School monetary theory to modern macroeconomics, Bitcoin provides a real-world laboratory for economic theory. It's not just a monetary phenomenon, but a rethinking of value, incentives, and economic coordination mechanisms.",
+  "sections": [
+    {
+      "title": "Monetary Theory: The Nature of Value",
+      "content": [
+        {
+          "subtitle": "Functions of Money",
+          "points": [
+            "Medium of Exchange: Solving the double coincidence of wants",
+            "Store of Value: Preserving purchasing power over time",
+            "Unit of Account: Unified standard for measuring value",
+            "Deferred Payment: Basis for debt and contract pricing"
+          ]
+        },
+        {
+          "subtitle": "Evolution of Money",
+          "points": [
+            "Commodity Money: Physical items like shells, cattle, salt",
+            "Metallic Money: Natural scarcity of gold and silver",
+            "Fiat Currency: Government-backed paper money",
+            "Digital Currency: Algorithm-guaranteed digital scarcity"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Economics of Scarcity: Supply and Demand",
+      "content": [
+        {
+          "subtitle": "Bitcoin's Supply Mechanism",
+          "points": [
+            "Fixed Supply: 21 million coin cap",
+            "Halving Cycles: New supply halves every 4 years",
+            "Stock-to-Flow: Gradually approaching gold",
+            "Non-Inflationary: Cannot change supply through policy"
+          ]
+        },
+        {
+          "subtitle": "Demand Drivers",
+          "points": [
+            "Store of Value Demand: Hedge against inflation and currency devaluation",
+            "Transaction Demand: Cross-border payments and unbanked services",
+            "Speculative Demand: Opportunities from price volatility",
+            "Institutional Demand: Corporate and national reserves"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inflation vs Deflation",
+      "content": [
+        {
+          "subtitle": "Fiat Currency Inflation Model",
+          "points": [
+            "Money Supply Growth: Central bank quantitative easing",
+            "Inflation Targets: 2% \"healthy\" inflation rate",
+            "Wealth Redistribution: From savers to borrowers",
+            "Keynesian Approach: Stimulating consumption and investment"
+          ]
+        },
+        {
+          "subtitle": "Bitcoin's Deflationary Model",
+          "points": [
+            "Decreasing Supply: Mining rewards continuously halving",
+            "Purchasing Power Growth: Long-term appreciation expectation",
+            "Savings Incentive: Reward for delayed consumption",
+            "Austrian School: Natural market adjustment"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Store of Value: Digital Gold",
+      "content": [
+        {
+          "subtitle": "Comparison with Gold",
+          "points": [
+            "Scarcity: Bitcoin is more predictable",
+            "Divisibility: Bitcoin divisible to 8 decimal places",
+            "Portability: Bitcoin easier for cross-border transfer",
+            "Verifiability: Bitcoin authenticity easier to verify"
+          ]
+        },
+        {
+          "subtitle": "Store of Value Characteristics",
+          "points": [
+            "Durability: Cannot rot or be damaged",
+            "Scarcity: Limited and predictable supply",
+            "Acceptability: Widely recognized and accepted",
+            "Liquidity: Easy to buy, sell, and convert"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Market Microstructure: Price Discovery",
+      "content": [
+        {
+          "subtitle": "Exchange Ecosystem",
+          "points": [
+            "Centralized Exchanges: High liquidity but requires trust",
+            "Decentralized Exchanges: Trustless but lower liquidity",
+            "Over-the-Counter (OTC): Large trades avoiding slippage",
+            "Futures and Derivatives: Leverage and hedging tools"
+          ]
+        },
+        {
+          "subtitle": "Price Formation Mechanism",
+          "points": [
+            "Supply-Demand Equilibrium: Buyer-seller dynamics",
+            "Arbitrage Mechanism: Price convergence across markets",
+            "Market Depth: Order book thickness",
+            "Volatility: Characteristic of emerging markets"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Macroeconomic Impact",
+      "content": [
+        {
+          "subtitle": "Monetary Policy Challenges",
+          "points": [
+            "Weakened Central Bank Control: Cannot regulate Bitcoin supply",
+            "Free Capital Flow: Breaking through capital controls",
+            "Currency Competition: Fiat monopoly broken",
+            "Policy Transmission Blocked: Traditional tools ineffective"
+          ]
+        },
+        {
+          "subtitle": "Financial System Transformation",
+          "points": [
+            "Disintermediation: Direct peer-to-peer transactions",
+            "Financial Inclusion: Opportunities for the unbanked",
+            "Systemic Risk: New financial stability challenges",
+            "Regulatory Dilemma: Cross-border nature and anonymity"
+          ]
+        }
+      ]
+    }
+  ],
+  "keyInsights": [
+    "Scarcity is an important source of value, but not the only one",
+    "Centralized control of monetary policy is both an advantage and a risk",
+    "Deflationary economics may change consumption and investment behavior",
+    "Digital scarcity has created a new economic paradigm"
+  ],
+  "resources": {
+    "title": "Recommended Resources",
+    "books": [
+      {
+        "title": "Human Action",
+        "author": "Ludwig von Mises",
+        "description": "Foundational work of Austrian School economics"
+      },
+      {
+        "title": "The Wealth of Nations",
+        "author": "Adam Smith",
+        "description": "The founding work of economics, foundation for understanding market economy"
+      },
+      {
+        "title": "The General Theory",
+        "author": "John Maynard Keynes",
+        "description": "Foundational work of modern macroeconomics"
+      }
+    ],
+    "papers": [
+      {
+        "title": "The Use of Knowledge in Society",
+        "author": "F.A. Hayek",
+        "link": "https://www.jstor.org/stable/1809376"
+      },
+      {
+        "title": "A Monetary History of the United States",
+        "author": "Milton Friedman & Anna Schwartz",
+        "link": "https://www.nber.org/books/frie63-1"
+      }
+    ],
+    "websites": [
+      {
+        "title": "Mises Institute",
+        "link": "https://mises.org/",
+        "description": "Austrian School economics research center"
+      },
+      {
+        "title": "NBER Working Papers",
+        "link": "https://www.nber.org/papers",
+        "description": "National Bureau of Economic Research working papers"
+      }
+    ]
+  },
+  "reflectionQuestions": [
+    "How would the world economy change if Bitcoin became the global reserve currency?",
+    "How would businesses incentivize investment and innovation under a deflationary currency system?",
+    "How will the competition between Central Bank Digital Currencies (CBDCs) and Bitcoin evolve?",
+    "Will Bitcoin's price eventually stabilize? At what level?"
+  ]
+}

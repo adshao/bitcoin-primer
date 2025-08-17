@@ -1,0 +1,202 @@
+{
+  "icon": "💻",
+  "title": "Computer Science",
+  "subtitle": "The Crystallization of Cryptography, Distributed Systems, and Consensus Algorithms",
+  "introduction": "Bitcoin is a culmination of multiple fields in computer science. It ingeniously combines cryptography, distributed systems, peer-to-peer networks, and game theory to solve the Byzantine Generals Problem that had long puzzled computer scientists. Through Proof of Work, Bitcoin creates a trustless distributed ledger, marking a significant breakthrough in computer science history.",
+  "sections": [
+    {
+      "title": "Cryptographic Foundations: From Encryption to Signatures",
+      "content": [
+        {
+          "subtitle": "Hash Functions",
+          "points": [
+            "SHA-256: One-way function that produces fixed 256-bit output from any input",
+            "Collision Resistance: Computationally infeasible to find two inputs with same hash",
+            "Merkle Tree: Efficiently verify large amounts of data using hash trees",
+            "Proof of Work: Creating computational cost through hash puzzles"
+          ]
+        },
+        {
+          "subtitle": "Asymmetric Encryption",
+          "points": [
+            "Public/Private Key Pairs: Public key is open, private key is secret",
+            "Elliptic Curve Cryptography (ECDSA): More efficient compared to RSA",
+            "Digital Signatures: Prove message comes from private key holder",
+            "Key Derivation: Generate deterministic key sequences from seed"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Distributed Systems: Challenges of Decentralization",
+      "content": [
+        {
+          "subtitle": "Byzantine Generals Problem",
+          "points": [
+            "Distributed Consensus: Reaching agreement in unreliable networks",
+            "FLP Impossibility Theorem: Cannot guarantee consensus in asynchronous networks",
+            "CAP Theorem: Cannot have consistency, availability, and partition tolerance",
+            "Bitcoin's Choice: Eventual consistency, sacrificing some availability"
+          ]
+        },
+        {
+          "subtitle": "P2P Networks",
+          "points": [
+            "Node Discovery: Establish connections through DNS seeds and node exchange",
+            "Message Propagation: Flooding protocol ensures information dissemination",
+            "Network Partitions: Handling network splits and healing",
+            "Eclipse Attacks: Network attacks that isolate nodes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data Structures: Building the Blockchain",
+      "content": [
+        {
+          "subtitle": "Block Structure",
+          "points": [
+            "Block Header: Contains version, previous block hash, Merkle root and other metadata",
+            "Transaction List: Transactions organized using Merkle Tree",
+            "Block Size: Balancing throughput and decentralization",
+            "Segregated Witness: Separating signature data to improve capacity"
+          ]
+        },
+        {
+          "subtitle": "UTXO Model",
+          "points": [
+            "Unspent Outputs: Each transaction consumes old UTXOs and creates new ones",
+            "Stateless Verification: Only need to check if UTXO exists",
+            "Parallel Processing: UTXOs are independent, can be verified in parallel",
+            "Privacy Features: Using new addresses increases anonymity"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Consensus Mechanism: Nakamoto Consensus",
+      "content": [
+        {
+          "subtitle": "Proof of Work (PoW)",
+          "points": [
+            "Mining: Finding block hash that meets difficulty target",
+            "Difficulty Adjustment: Adjusts every 2016 blocks to maintain 10-minute blocks",
+            "Longest Chain Rule: Chain with most cumulative work is the main chain",
+            "51% Attack: Controlling majority hashpower could reorganize blockchain"
+          ]
+        },
+        {
+          "subtitle": "Incentive Mechanism",
+          "points": [
+            "Block Reward: New coin issuance + transaction fees",
+            "Halving Mechanism: Reward halves every 210,000 blocks",
+            "Selfish Mining: Hiding blocks to gain unfair advantage",
+            "Fee Market: Bidding mechanism for limited block space"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Network Security: Attack and Defense",
+      "content": [
+        {
+          "subtitle": "Common Attacks",
+          "points": [
+            "Double Spending: Spending the same money twice",
+            "Sybil Attack: Creating many fake identities",
+            "Timestamp Attack: Manipulating block timestamps",
+            "Partition Attack: Splitting network to cause forks"
+          ]
+        },
+        {
+          "subtitle": "Defense Mechanisms",
+          "points": [
+            "6 Confirmations: Waiting sufficient depth to prevent reorganization",
+            "Checkpoints: Hard-coded historical blocks prevent deep reorganizations",
+            "Alert System: Notify network of abnormal situations",
+            "BIP Standards: Standardized improvement process"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scalability Solutions",
+      "content": [
+        {
+          "subtitle": "On-Chain Scaling",
+          "points": [
+            "Block Size Increase: Simple but centralization risk",
+            "SegWit: Separating witness data, effectively increasing capacity",
+            "Schnorr Signatures: Signature aggregation reduces data volume",
+            "MAST: Merklized scripts, hiding unexecuted paths"
+          ]
+        },
+        {
+          "subtitle": "Off-Chain Scaling",
+          "points": [
+            "Lightning Network: Payment channels enable instant micropayments",
+            "Sidechains: Independent blockchains with two-way peg to main chain",
+            "Rollups: Off-chain computation, on-chain verification",
+            "State Channels: Off-chain interaction, on-chain settlement"
+          ]
+        }
+      ]
+    }
+  ],
+  "keyInsights": [
+    "Cryptography provides trustless mathematical guarantees",
+    "Distributed systems achieve fault tolerance through redundancy",
+    "Combining economic incentives with technical mechanisms creates security",
+    "Trade-offs are necessary between decentralization and efficiency"
+  ],
+  "resources": {
+    "title": "Recommended Resources",
+    "books": [
+      {
+        "title": "Introduction to Algorithms",
+        "author": "Thomas H. Cormen",
+        "description": "Classic computer science textbook"
+      },
+      {
+        "title": "Structure and Interpretation of Computer Programs",
+        "author": "Harold Abelson & Gerald Jay Sussman",
+        "description": "MIT classic computer science textbook"
+      },
+      {
+        "title": "Cryptography: Theory and Practice",
+        "author": "Douglas Stinson",
+        "description": "Authoritative textbook on cryptography"
+      }
+    ],
+    "papers": [
+      {
+        "title": "Bitcoin: A Peer-to-Peer Electronic Cash System",
+        "author": "Satoshi Nakamoto",
+        "link": "https://bitcoin.org/bitcoin.pdf"
+      },
+      {
+        "title": "The Byzantine Generals Problem",
+        "author": "Leslie Lamport",
+        "link": "https://lamport.azurewebsites.net/pubs/byz.pdf"
+      }
+    ],
+    "websites": [
+      {
+        "title": "Bitcoin Developer Documentation",
+        "link": "https://developer.bitcoin.org/",
+        "description": "Official Bitcoin developer documentation"
+      },
+      {
+        "title": "Bitcoin Core",
+        "link": "https://github.com/bitcoin/bitcoin",
+        "description": "Bitcoin Core client source code"
+      }
+    ]
+  },
+  "reflectionQuestions": [
+    "If quantum computers break elliptic curve cryptography, how would Bitcoin respond?",
+    "Is complete decentralization worth sacrificing efficiency?",
+    "Is Proof of Work's energy consumption a necessary security cost or waste?",
+    "In Bitcoin's technical architecture, what is accidental and what is inevitable?"
+  ]
+}

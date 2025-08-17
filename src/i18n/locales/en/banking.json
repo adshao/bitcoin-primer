@@ -1,0 +1,234 @@
+{
+  "icon": "🏦",
+  "title": "Banking",
+  "subtitle": "From Intermediation to Disintermediation: The Paradigm Shift in Financial Services",
+  "introduction": "The banking system is the core infrastructure of the modern economy, but its fractional reserve system and centralized architecture are also the root causes of financial crises. Bitcoin offers a peer-to-peer value transfer method without banks, challenging the necessity of banks as financial intermediaries. This is not just technological innovation, but a fundamental rethinking of the nature of financial services.",
+  "sections": [
+    {
+      "title": "Traditional Banking System: Intermediated Finance",
+      "content": [
+        {
+          "subtitle": "Fractional Reserve Banking",
+          "points": [
+            "Reserve Requirements: Banks only keep a fraction of deposits as reserves",
+            "Credit Creation: Creating new money supply through lending",
+            "Money Multiplier: Mechanism that amplifies money supply",
+            "Systemic Risk: Possibility of bank runs"
+          ]
+        },
+        {
+          "subtitle": "Role of Central Banks",
+          "points": [
+            "Lender of Last Resort: Providing liquidity during crises",
+            "Monetary Policy: Controlling economy through interest rates",
+            "Financial Regulation: Maintaining financial system stability",
+            "Payment Systems: Managing national payment infrastructure"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Payment and Settlement Systems: Complex Intermediary Networks",
+      "content": [
+        {
+          "subtitle": "Traditional Payment Process",
+          "points": [
+            "SWIFT System: International inter-bank messaging network",
+            "Correspondent Banking: Chain of intermediaries for cross-border payments",
+            "Settlement Delays: T+1 to T+3 settlement cycles",
+            "Multiple Intermediaries: Involving numerous financial institutions",
+            "High Costs: Each intermediary layer charges fees"
+          ]
+        },
+        {
+          "subtitle": "Bitcoin's Direct Payments",
+          "points": [
+            "Peer-to-Peer Transfers: No intermediaries required",
+            "10-Minute Confirmation: Global unified confirmation time",
+            "24/7 Operation: Not limited by banking hours",
+            "Low Cost: Only network fees required",
+            "Borderless: No distinction between domestic and international transfers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Financial Intermediation: Trust and Risk Management",
+      "content": [
+        {
+          "subtitle": "Traditional Bank Intermediation Value",
+          "points": [
+            "Trust Intermediary: Establishing trust between strangers",
+            "Risk Assessment: Professional credit risk management",
+            "Maturity Transformation: Converting short-term deposits to long-term loans",
+            "Liquidity Provision: Promise of fund withdrawal anytime",
+            "Payment Convenience: Providing payment tools and services"
+          ]
+        },
+        {
+          "subtitle": "Bitcoin's Disintermediation",
+          "points": [
+            "Cryptographic Trust: Mathematics replacing interpersonal trust",
+            "Protocol Enforcement: Automated rule execution",
+            "Permissionless: No institutional approval needed",
+            "Self-Custody: Users directly control assets",
+            "Transparent Verification: All transactions publicly verifiable"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Roots of Financial Crises: Systemic Risk",
+      "content": [
+        {
+          "subtitle": "2008 Financial Crisis",
+          "points": [
+            "Subprime Crisis: Real estate bubble burst",
+            "Excessive Leverage: Banks' high-risk operations",
+            "Moral Hazard: Too-big-to-fail problem",
+            "Chain Reaction: Lehman Brothers bankruptcy triggering system collapse",
+            "Government Bailouts: Taxpayers bearing bank losses"
+          ]
+        },
+        {
+          "subtitle": "Bitcoin's Genesis Context",
+          "points": [
+            "Genesis Block: Embedded Times headline about bank bailouts",
+            "Fixed Supply: 21 million cap, preventing monetary inflation",
+            "Decentralization: No single point of failure",
+            "Transparent Ledger: Everyone can audit",
+            "Immutability: Preventing post-facto rule changes"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Banking Revolution: Old vs New Models",
+      "content": [
+        {
+          "subtitle": "Storage and Custody",
+          "points": [
+            "Bank Deposits: Bank promises to pay, but funds are lent out",
+            "Bitcoin Self-Custody: Users directly own private key control",
+            "Insurance Differences: Deposit insurance vs self-assumed risk",
+            "Access Rights: Banks can freeze accounts vs unconfiscatable"
+          ]
+        },
+        {
+          "subtitle": "Cross-Border Payment Revolution",
+          "points": [
+            "Traditional Remittance: High fees, long time, multiple steps",
+            "Bitcoin Transfer: Low cost, fast, direct",
+            "KYC/AML: Traditional strict review vs Bitcoin pseudonymity",
+            "Operating Hours: Weekday limitations vs 24/7 availability",
+            "Entry Barriers: Bank account requirements vs internet access"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Central Bank Digital Currency (CBDC): Combining Traditional and Innovation",
+      "content": [
+        {
+          "subtitle": "CBDC Characteristics",
+          "points": [
+            "Central Bank Issuance: Maintaining monetary sovereignty",
+            "Digital Form: Improving payment efficiency",
+            "Programmability: Attached usage conditions",
+            "Privacy Trade-offs: Transaction transparency vs user privacy",
+            "Financial Inclusion: Lowering financial service barriers"
+          ]
+        },
+        {
+          "subtitle": "CBDC vs Bitcoin",
+          "points": [
+            "Issuer: Central bank control vs decentralized",
+            "Supply Management: Flexible policy vs fixed supply",
+            "Privacy Protection: Limited privacy vs pseudonymous transactions",
+            "Censorship: Can be frozen vs censorship-resistant",
+            "Cross-Border Use: Restricted vs globally universal"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Social Impact of Financial Innovation",
+      "content": [
+        {
+          "subtitle": "Financial Inclusion Revolution",
+          "points": [
+            "Financial Inclusion: Serving the unbanked population",
+            "Lower Barriers: Only smartphone and internet needed",
+            "Cost Reduction: Removing intermediary fees",
+            "Global Access: Not limited by geography"
+          ]
+        },
+        {
+          "subtitle": "Systemic Changes",
+          "points": [
+            "Trust Model: From institutional trust to algorithmic trust",
+            "Real-Time Settlement: Eliminating clearing delays",
+            "Global Standards: Unified payment protocol",
+            "Transparency: Public ledger enabling oversight"
+          ]
+        }
+      ]
+    }
+  ],
+  "keyInsights": [
+    "Banks' core value is trust intermediation, Bitcoin replaces this trust with cryptography",
+    "Fractional reserve banking is one of the root causes of modern financial crises",
+    "Disintermediation can significantly reduce financial service costs",
+    "Traditional banks and Bitcoin systems may coexist and learn from each other long-term"
+  ],
+  "resources": {
+    "title": "Recommended Resources",
+    "books": [
+      {
+        "title": "The Mystery of Banking",
+        "author": "Murray Rothbard",
+        "description": "Exposing the essence of fractional reserve banking"
+      },
+      {
+        "title": "The Ascent of Money",
+        "author": "Niall Ferguson",
+        "description": "Historical evolution of the financial system"
+      },
+      {
+        "title": "Lombard Street",
+        "author": "Walter Bagehot",
+        "description": "Classic treatise on central banking as lender of last resort"
+      }
+    ],
+    "papers": [
+      {
+        "title": "The Nature of the Firm",
+        "author": "Ronald Coase",
+        "link": "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1468-0335.1937.tb00002.x"
+      },
+      {
+        "title": "Bank Runs, Deposit Insurance, and Liquidity",
+        "author": "Diamond & Dybvig",
+        "link": "https://www.jstor.org/stable/1837095"
+      }
+    ],
+    "websites": [
+      {
+        "title": "Bank for International Settlements (BIS)",
+        "link": "https://www.bis.org/",
+        "description": "The central bank of central banks"
+      },
+      {
+        "title": "Federal Reserve Economic Data (FRED)",
+        "link": "https://fred.stlouisfed.org/",
+        "description": "Global economic and financial data"
+      }
+    ]
+  },
+  "reflectionQuestions": [
+    "How would economic growth be affected without fractional reserve banking?",
+    "Which banking functions are socially necessary, and which could be replaced by technology?",
+    "Will central bank digital currencies strengthen or weaken government control over the economy?",
+    "How does decentralized finance handle systemic risk and crisis bailouts?"
+  ]
+}

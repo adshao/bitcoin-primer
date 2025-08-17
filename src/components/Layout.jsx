@@ -1,24 +1,27 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState, useEffect, useRef } from 'react'
+import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
+import LanguageSwitcher from './LanguageSwitcher'
 import './Layout.css'
 
 function Layout({ children }) {
   const location = useLocation()
+  const { t, i18n } = useFormattedTranslation()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [disciplinesOpen, setDisciplinesOpen] = useState(false)
   const dropdownRef = useRef(null)
   
   // 学科导航项
   const disciplines = [
-    { name: '货币', path: '/money', icon: '💰' },
-    { name: '银行', path: '/banking', icon: '🏦' },
-    { name: '经济学', path: '/economics', icon: '📊' },
-    { name: '计算机科学', path: '/computer-science', icon: '💻' },
-    { name: '博弈论', path: '/game-theory', icon: '🎯' },
-    { name: '能源', path: '/energy', icon: '⚡' },
-    { name: '政治', path: '/politics', icon: '🏛️' },
-    { name: '哲学', path: '/philosophy', icon: '🔮' },
-    { name: '法律', path: '/law', icon: '⚖️' }
+    { nameKey: 'disciplines.money.title', path: '/money', icon: '💰' },
+    { nameKey: 'disciplines.banking.title', path: '/banking', icon: '🏦' },
+    { nameKey: 'disciplines.economics.title', path: '/economics', icon: '📊' },
+    { nameKey: 'disciplines.computerScience.title', path: '/computer-science', icon: '💻' },
+    { nameKey: 'disciplines.gameTheory.title', path: '/game-theory', icon: '🎯' },
+    { nameKey: 'disciplines.energy.title', path: '/energy', icon: '⚡' },
+    { nameKey: 'disciplines.politics.title', path: '/politics', icon: '🏛️' },
+    { nameKey: 'disciplines.philosophy.title', path: '/philosophy', icon: '🔮' },
+    { nameKey: 'disciplines.law.title', path: '/law', icon: '⚖️' }
   ]
 
   // 点击外部关闭下拉菜单
@@ -48,7 +51,7 @@ function Layout({ children }) {
           {/* Logo */}
           <Link to="/" className="logo">
             <span className="logo-icon">₿</span>
-            <span className="logo-text">Bitcoin Primer</span>
+            <span className="logo-text">{t('nav.logo')}</span>
           </Link>
           
           {/* Desktop Navigation */}
@@ -60,7 +63,7 @@ function Layout({ children }) {
                   className={`nav-item dropdown-toggle ${disciplines.some(d => d.path === location.pathname) ? 'active' : ''}`}
                   onClick={() => setDisciplinesOpen(!disciplinesOpen)}
                 >
-                  学科视角
+                  {t('nav.disciplines')}
                   <svg className={`dropdown-arrow ${disciplinesOpen ? 'open' : ''}`} width="12" height="12" viewBox="0 0 12 12">
                     <path d="M2 4L6 8L10 4" stroke="currentColor" strokeWidth="2" fill="none"/>
                   </svg>
@@ -76,7 +79,7 @@ function Layout({ children }) {
                         onClick={() => setDisciplinesOpen(false)}
                       >
                         <span className="item-icon">{item.icon}</span>
-                        <span className="item-text">{item.name}</span>
+                        <span className="item-text">{t(item.nameKey)}</span>
                       </Link>
                     ))}
                   </div>
@@ -88,30 +91,25 @@ function Layout({ children }) {
                 to="/learning-path" 
                 className={`nav-item ${location.pathname === '/learning-path' ? 'active' : ''}`}
               >
-                学习路径
+                {t('nav.learningPath')}
               </Link>
               <Link 
                 to="/study-guide" 
                 className={`nav-item ${location.pathname === '/study-guide' ? 'active' : ''}`}
               >
-                自学指南
+                {t('nav.studyGuide')}
               </Link>
               <Link 
                 to="/resources" 
                 className={`nav-item ${location.pathname === '/resources' ? 'active' : ''}`}
               >
-                资源汇总
+                {t('nav.resources')}
               </Link>
             </div>
-
-            {/* CTA Button */}
-            <Link to="/learning-path" className="nav-cta">
-              <span>开始学习</span>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="2"/>
-              </svg>
-            </Link>
           </nav>
+          
+          {/* Language Switcher - Right side */}
+          <LanguageSwitcher />
 
           {/* Mobile Menu Button */}
           <button 
@@ -131,7 +129,7 @@ function Layout({ children }) {
         <nav className={`nav-mobile ${mobileMenuOpen ? 'open' : ''}`}>
           <div className="mobile-nav-content">
             <div className="mobile-section">
-              <div className="mobile-section-title">学科视角</div>
+              <div className="mobile-section-title">{t('nav.disciplines')}</div>
               <div className="mobile-grid">
                 {disciplines.map((item) => (
                   <Link
@@ -140,7 +138,7 @@ function Layout({ children }) {
                     className={`mobile-grid-item ${location.pathname === item.path ? 'active' : ''}`}
                   >
                     <span className="mobile-item-icon">{item.icon}</span>
-                    <span className="mobile-item-text">{item.name}</span>
+                    <span className="mobile-item-text">{t(item.nameKey)}</span>
                   </Link>
                 ))}
               </div>
@@ -154,27 +152,27 @@ function Layout({ children }) {
                 className={`mobile-link ${location.pathname === '/learning-path' ? 'active' : ''}`}
               >
                 <span className="mobile-link-icon">📖</span>
-                <span>学习路径</span>
+                <span>{t('nav.learningPath')}</span>
               </Link>
               <Link 
                 to="/study-guide" 
                 className={`mobile-link ${location.pathname === '/study-guide' ? 'active' : ''}`}
               >
                 <span className="mobile-link-icon">📚</span>
-                <span>自学指南</span>
+                <span>{t('nav.studyGuide')}</span>
               </Link>
               <Link 
                 to="/resources" 
                 className={`mobile-link ${location.pathname === '/resources' ? 'active' : ''}`}
               >
                 <span className="mobile-link-icon">🔗</span>
-                <span>资源汇总</span>
+                <span>{t('nav.resources')}</span>
               </Link>
             </div>
 
             <div className="mobile-cta">
               <Link to="/learning-path" className="mobile-cta-btn">
-                开始学习之旅
+                {t('nav.startLearningJourney')}
               </Link>
             </div>
           </div>
@@ -189,18 +187,18 @@ function Layout({ children }) {
         <div className="footer-container">
           <div className="footer-content">
             <div className="footer-brand">
-              <h3>Bitcoin Primer</h3>
-              <p>通过比特币理解社会运行机制</p>
+              <h3>{t('footer.brand.title')}</h3>
+              <p>{t('footer.brand.subtitle')}</p>
             </div>
             <div className="footer-links">
-              <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener noreferrer">白皮书</a>
-              <a href="https://github.com/bitcoin/bitcoin" target="_blank" rel="noopener noreferrer">源码</a>
-              <a href="https://en.bitcoin.it/wiki" target="_blank" rel="noopener noreferrer">Wiki</a>
-              <a href="https://bitcoinmagazine.com" target="_blank" rel="noopener noreferrer">Magazine</a>
+              <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener noreferrer">{t('footer.links.whitepaper')}</a>
+              <a href="https://github.com/bitcoin/bitcoin" target="_blank" rel="noopener noreferrer">{t('footer.links.source')}</a>
+              <a href="https://en.bitcoin.it/wiki" target="_blank" rel="noopener noreferrer">{t('footer.links.wiki')}</a>
+              <a href="https://bitcoinmagazine.com" target="_blank" rel="noopener noreferrer">{t('footer.links.magazine')}</a>
             </div>
           </div>
           <div className="footer-bottom">
-            <p>© {new Date().getFullYear()} Bitcoin Primer - 开源教育项目</p>
+            <p>{t('footer.copyright', { year: new Date().getFullYear() })}</p>
           </div>
         </div>
       </footer>

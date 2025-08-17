@@ -1,0 +1,216 @@
+{
+  "title": "Learning Path",
+  "subtitle": "Master Bitcoin Knowledge Step by Step",
+  "stagesTitle": "Three Learning Stages",
+  "milestonesTitle": "Learning Milestones",
+  "tipsTitle": "Learning Tips",
+  "stage": "Stage",
+  "suggestedDuration": "Suggested Duration",
+  "startLearning": "Start Learning →",
+  "keyPointsLabel": "Key Points:",
+  "exercisesLabel": "Practical Exercises:",
+  "stages": {
+    "1": {
+      "title": "Economic Foundation",
+      "duration": "3 weeks",
+      "description": "Understand the nature of money, banking systems, and economic principles",
+      "modules": {
+        "money": {
+          "topic": "Money",
+          "focus": "Understanding the nature and evolution of money",
+          "estimatedTime": "1 week",
+          "keyPoints": [
+            "Origin and historical evolution of money",
+            "Four functions of money: medium of exchange, unit of account, store of value, standard of deferred payment",
+            "Formation and problems of fiat currency systems",
+            "Background of digital currency emergence"
+          ],
+          "exercises": [
+            "Research: Trace the history of your country's currency",
+            "Think: Why was gold once money?"
+          ]
+        },
+        "banking": {
+          "topic": "Banking",
+          "focus": "Understanding traditional banking systems and financial innovation",
+          "estimatedTime": "1 week",
+          "keyPoints": [
+            "Operation of fractional reserve banking",
+            "Role of central banks and monetary policy",
+            "Root causes of financial crises",
+            "Development of Central Bank Digital Currencies (CBDC)"
+          ],
+          "exercises": [
+            "Calculate: If reserve ratio is 10%, how much money can the banking system create?",
+            "Research: Causes and impacts of the 2008 financial crisis"
+          ]
+        },
+        "economics": {
+          "topic": "Economics",
+          "focus": "Understanding economic principles and Bitcoin's economic properties",
+          "estimatedTime": "1 week",
+          "keyPoints": [
+            "Supply and demand relationship and price discovery",
+            "Relationship between scarcity and value",
+            "Impact of inflation vs deflation",
+            "Austrian school of economics perspective"
+          ],
+          "exercises": [
+            "Calculate: If annual inflation is 3%, what's the purchasing power of $100 after 10 years?",
+            "Analyze: Impact of Bitcoin's deflationary model on the economy"
+          ]
+        }
+      }
+    },
+    "2": {
+      "title": "Technical Principles",
+      "duration": "4 weeks",
+      "description": "Deep understanding of Bitcoin's technical implementation and operating mechanisms",
+      "modules": {
+        "computerScience": {
+          "topic": "Computer Science",
+          "focus": "Master cryptography and distributed systems fundamentals",
+          "estimatedTime": "2 weeks",
+          "keyPoints": [
+            "Principles of hash functions and digital signatures",
+            "Blockchain data structure",
+            "P2P networks and distributed consensus",
+            "Proof of Work mechanism"
+          ],
+          "exercises": [
+            "Practice: Generate a Bitcoin address using online tools",
+            "Calculate: If network hashrate is X, what's the attack cost?",
+            "Programming (optional): Implement a simple blockchain"
+          ]
+        },
+        "gameTheory": {
+          "topic": "Game Theory",
+          "focus": "Understanding incentive mechanisms and security guarantees",
+          "estimatedTime": "1 week",
+          "keyPoints": [
+            "Prisoner's dilemma and Nash equilibrium",
+            "Mining incentives and economic security",
+            "51% attack cost analysis",
+            "Game theory analysis of forks"
+          ],
+          "exercises": [
+            "Analyze: Why wouldn't rational miners attack the network?",
+            "Simulate: Design a simple incentive mechanism"
+          ]
+        },
+        "energy": {
+          "topic": "Energy",
+          "focus": "Understanding the necessity of energy consumption",
+          "estimatedTime": "1 week",
+          "keyPoints": [
+            "Proof of Work and energy consumption",
+            "Energy as value anchor",
+            "Environmental impact of Bitcoin mining",
+            "Renewable energy opportunities"
+          ],
+          "exercises": [
+            "Research: Bitcoin network energy consumption vs traditional banking system",
+            "Think: Is energy consumption a bug or a feature?"
+          ]
+        }
+      }
+    },
+    "3": {
+      "title": "Social Impact",
+      "duration": "3 weeks",
+      "description": "Understanding Bitcoin's profound impact from social institutions and philosophical perspectives",
+      "modules": {
+        "politics": {
+          "topic": "Politics",
+          "focus": "Transformation of power structures",
+          "estimatedTime": "1 week",
+          "keyPoints": [
+            "Challenge to monetary sovereignty",
+            "Decentralized governance models",
+            "Geopolitical impacts",
+            "Individual sovereignty vs state sovereignty"
+          ],
+          "exercises": [
+            "Research: Impact of El Salvador's Bitcoin adoption",
+            "Debate: Is decentralization truly possible?"
+          ]
+        },
+        "philosophy": {
+          "topic": "Philosophy",
+          "focus": "Understanding Bitcoin's philosophical significance",
+          "estimatedTime": "1 week",
+          "keyPoints": [
+            "What is value? How is value created and recognized?",
+            "How is authenticity defined in the digital world?",
+            "Philosophical foundations of individual sovereignty and freedom",
+            "Deeper meaning of decentralization"
+          ],
+          "exercises": [
+            "Think: How would society function without centralized institutions?",
+            "Write down your understanding of 'trust', compare after completing the course"
+          ]
+        },
+        "law": {
+          "topic": "Law",
+          "focus": "Meaning of code as law",
+          "estimatedTime": "1 week",
+          "keyPoints": [
+            "Coded rules vs human rules",
+            "Regulatory challenges and compliance requirements",
+            "Innovation in property rights definition",
+            "Cross-border legal issues"
+          ],
+          "exercises": [
+            "Case study: Research a Bitcoin-related legal case",
+            "Compare: Regulatory policies in different countries"
+          ]
+        }
+      }
+    }
+  },
+  "milestones": [
+    {
+      "week": "Week 1-3",
+      "achievement": "Master Economic Foundation",
+      "checkpoint": "Understand the nature of money and financial systems"
+    },
+    {
+      "week": "Week 4-7",
+      "achievement": "Deep Dive into Technical Principles",
+      "checkpoint": "Understand Bitcoin's technical implementation"
+    },
+    {
+      "week": "Week 8-10",
+      "achievement": "Analyze Social Impact",
+      "checkpoint": "Understand Bitcoin's social significance"
+    }
+  ],
+  "tips": {
+    "stepByStep": {
+      "title": "Step by Step",
+      "description": "Follow the recommended order, each stage builds foundation for the next"
+    },
+    "takeNotes": {
+      "title": "Take Notes",
+      "description": "Record key concepts and your thoughts, review regularly"
+    },
+    "joinCommunity": {
+      "title": "Join Community",
+      "description": "Join discussion groups, exchanging ideas deepens understanding"
+    },
+    "practiceVerify": {
+      "title": "Practice and Verify",
+      "description": "Verify theoretical knowledge through practice to deepen understanding"
+    }
+  },
+  "navigation": {
+    "studyGuide": {
+      "title": "Study Guide",
+      "description": "Detailed learning methods and techniques"
+    },
+    "resources": {
+      "title": "Learning Resources",
+      "description": "Curated books, courses and tools"
+    }
+  }
+}

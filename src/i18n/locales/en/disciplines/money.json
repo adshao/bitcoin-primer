@@ -1,0 +1,51 @@
+{
+  "title": "Money Perspective",
+  "subtitle": "From Medium of Exchange to Store of Value",
+  "introduction": "Bitcoin is first and foremost a monetary innovation. Understanding the nature of money, its historical evolution, and economic functions is the starting point for understanding Bitcoin's value proposition.",
+  "sections": [
+    {
+      "title": "The Nature of Money: Evolution of Medium of Exchange",
+      "content": [
+        {
+          "subtitle": "Core Functions of Money",
+          "points": [
+            "Medium of Exchange: Facilitates exchange of goods and services, solving the double coincidence of wants problem",
+            "Unit of Account: Provides a unified pricing unit for comparing value of goods",
+            "Store of Value: Preserves purchasing power over time, hedging against inflation",
+            "Standard of Deferred Payment: Pricing standard for debts and contracts"
+          ]
+        },
+        {
+          "subtitle": "Characteristics of Good Money",
+          "points": [
+            "Scarcity: Limited and predictable supply",
+            "Durability: Resistant to decay or damage",
+            "Divisibility: Can be divided into small units",
+            "Portability: Easy to transport and transfer",
+            "Verifiability: Authenticity easily verified",
+            "Fungibility: Units are perfectly interchangeable"
+          ]
+        }
+      ]
+    }
+  ],
+  "keyInsights": [
+    "Bitcoin is the first absolutely scarce digital asset in human history",
+    "The value of money comes from social consensus, not government backing",
+    "Technological progress is changing the physical and social attributes of money"
+  ],
+  "resources": {
+    "books": [
+      {
+        "title": "The Bitcoin Standard",
+        "author": "Saifedean Ammous",
+        "description": "Understanding Bitcoin from an Austrian Economics perspective"
+      }
+    ]
+  },
+  "reflectionQuestions": [
+    "If money becomes completely decentralized, how will the role of government change?",
+    "In the digital age, does physical scarcity still matter?",
+    "Can Bitcoin function as both a medium of exchange and store of value?"
+  ]
+}

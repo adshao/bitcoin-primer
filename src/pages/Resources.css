@@ -144,6 +144,9 @@
   border-radius: 12px;
   padding: 1.5rem;
   border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
 }
 
 .course-title {
@@ -169,6 +172,7 @@
   color: #475569;
   line-height: 1.5;
   margin-bottom: 1rem;
+  flex: 1;
 }
 
 .course-link {
@@ -178,6 +182,8 @@
   text-decoration: none;
   font-weight: 500;
   transition: transform 0.2s;
+  align-self: flex-start;
+  margin-top: auto;
 }
 
 .course-link:hover {
@@ -200,29 +206,35 @@
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
 }
 
 .tool-name {
   font-size: 1.25rem;
   font-weight: 600;
   color: #0f0f23;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .tool-type {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.75rem;
   background: #fef3c7;
   color: #92400e;
   border-radius: 4px;
   font-size: 0.75rem;
   margin-bottom: 1rem;
+  width: fit-content;
+  white-space: nowrap;
 }
 
 .tool-description {
   color: #64748b;
   line-height: 1.5;
   margin-bottom: 1rem;
+  flex: 1;
 }
 
 .tool-link {
@@ -232,6 +244,8 @@
   text-decoration: none;
   font-weight: 500;
   transition: transform 0.2s;
+  align-self: flex-start;
+  margin-top: auto;
 }
 
 .tool-link:hover {

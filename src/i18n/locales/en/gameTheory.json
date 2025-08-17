@@ -1,0 +1,197 @@
+{
+  "icon": "🎯",
+  "title": "Game Theory",
+  "subtitle": "Incentive Compatibility and Nash Equilibrium: Bitcoin's Game Design",
+  "introduction": "Bitcoin is a carefully designed game system. The interests of miners, users, and developers are balanced through clever incentive mechanisms. From the prisoner's dilemma of mining to the cost-benefit analysis of 51% attacks, Bitcoin demonstrates how to maintain system security through economic incentives rather than legal enforcement. This is a perfect real-world application of game theory.",
+  "sections": [
+    {
+      "title": "Prisoner's Dilemma: The Challenge of Cooperation",
+      "content": [
+        {
+          "subtitle": "Classic Prisoner's Dilemma",
+          "points": [
+            "Individual vs Collective Rationality: Defection is the dominant strategy",
+            "Nash Equilibrium: Stable state where both parties defect",
+            "Social Dilemma: Individual optimum does not equal collective optimum",
+            "Value of Trust: Cooperation creates greater benefits"
+          ]
+        },
+        {
+          "subtitle": "Bitcoin's Solution",
+          "points": [
+            "Changing the Payoff Matrix: Honest mining yields greater rewards than attacks",
+            "Repeated Games: Long-term benefits outweigh short-term cheating",
+            "Verifiability: Cheating is immediately detected",
+            "Sunk Costs: Attacks require enormous upfront investment"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Incentive Design: Making Selfishness Produce Cooperation",
+      "content": [
+        {
+          "subtitle": "Mining Incentives",
+          "points": [
+            "Block Rewards: Direct returns for honest work",
+            "Transaction Fees: Priority for packaging high-value transactions",
+            "Orphan Block Penalties: Dishonest behavior leads to losses",
+            "Difficulty Adjustment: Automatic mechanism maintaining equilibrium"
+          ]
+        },
+        {
+          "subtitle": "Economic Security",
+          "points": [
+            "Attack Costs: 51% attacks are economically infeasible",
+            "Incentive Compatibility: Personal interests align with system interests",
+            "Nash Equilibrium: Honesty is the optimal strategy",
+            "Self-Reinforcement: More participants make the system more secure"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Coordination Games: Formation of Consensus",
+      "content": [
+        {
+          "subtitle": "Schelling Points",
+          "points": [
+            "Focal Effect: Longest chain as natural focal point",
+            "Coordination Costs: Forks lead to value fragmentation",
+            "Network Effects: Rationality of following the majority",
+            "Path Dependence: Historical choices influence future"
+          ]
+        },
+        {
+          "subtitle": "Fork Games",
+          "points": [
+            "Hard Forks: Incompatible rule changes",
+            "Soft Forks: Backward-compatible upgrades",
+            "Economic Voting: Market determines winners",
+            "UASF: User Activated Soft Forks"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Byzantine Generals Problem: Distributed Consensus",
+      "content": [
+        {
+          "subtitle": "Problem Essence",
+          "points": [
+            "Unreliable Communication: Messages may be lost or tampered",
+            "Traitors Present: Some nodes may be malicious",
+            "Consensus Requirement: Honest nodes must reach agreement",
+            "Traditional Solution: Requires trusted third party"
+          ]
+        },
+        {
+          "subtitle": "Proof of Work Solution",
+          "points": [
+            "Probabilistic Consensus: Longest chain converges probabilistically",
+            "Economic Cost: Betrayal requires paying a price",
+            "Asynchronous Network: No need for synchronized clocks",
+            "Open Participation: No identity authentication required"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Zero-Sum vs Positive-Sum Games",
+      "content": [
+        {
+          "subtitle": "Zero-Sum Characteristics of Traditional Finance",
+          "points": [
+            "Transaction Costs: Intermediaries extract value",
+            "Information Asymmetry: Insider trading advantages",
+            "Systemic Risk: Too-big-to-fail moral hazard",
+            "Wealth Concentration: Matthew effect intensifies"
+          ]
+        },
+        {
+          "subtitle": "Bitcoin's Positive-Sum Potential",
+          "points": [
+            "Reduced Transaction Costs: Eliminating intermediary fees",
+            "Information Transparency: Blockchain is publicly verifiable",
+            "Financial Inclusion: Permissionless participation",
+            "Value Creation: Network effects bring appreciation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Evolutionary Games: Evolution of Strategies",
+      "content": [
+        {
+          "subtitle": "Mining Strategy Evolution",
+          "points": [
+            "Solo Mining → Mining Pools: Economies of scale",
+            "CPU → GPU → ASIC: Arms race",
+            "Geographic Migration: Chasing cheap energy",
+            "Strategy Differentiation: Large miners vs small miners"
+          ]
+        },
+        {
+          "subtitle": "Ecosystem Evolution",
+          "points": [
+            "Protocol Upgrades: SegWit, Taproot, etc.",
+            "Layer-2 Networks: Lightning Network and other extensions",
+            "Lightning Network: Game design for layer-2 scaling",
+            "Institutional Evolution: From anarchy to self-governance"
+          ]
+        }
+      ]
+    }
+  ],
+  "keyInsights": [
+    "Selfish individuals can produce cooperative behavior through proper incentives",
+    "Decentralized systems require carefully designed game mechanisms",
+    "Economic incentives are more effective than technical safeguards for system security",
+    "Long-term games change participants' behavioral patterns"
+  ],
+  "resources": {
+    "title": "Recommended Resources",
+    "books": [
+      {
+        "title": "Game Theory",
+        "author": "Drew Fudenberg & Jean Tirole",
+        "description": "Authoritative textbook on game theory"
+      },
+      {
+        "title": "Thinking Strategically",
+        "author": "Avinash Dixit & Barry Nalebuff",
+        "description": "Popular introduction to game theory"
+      },
+      {
+        "title": "Evolution and the Theory of Games",
+        "author": "John Maynard Smith",
+        "description": "Pioneering work on evolutionary game theory"
+      }
+    ],
+    "papers": [
+      {
+        "title": "Non-Cooperative Games",
+        "author": "John Nash",
+        "link": "https://www.jstor.org/stable/1969529"
+      },
+      {
+        "title": "The Logic of Animal Conflict",
+        "author": "John Maynard Smith & George Price",
+        "link": "https://www.nature.com/articles/246015a0"
+      }
+    ],
+    "websites": [
+      {
+        "title": "Game Theory .net",
+        "link": "http://www.gametheory.net/",
+        "description": "Collection of game theory learning resources"
+      }
+    ]
+  },
+  "reflectionQuestions": [
+    "If mining rewards reach zero, can transaction fees alone maintain network security?",
+    "Which is more important: social consensus or algorithmic consensus?",
+    "What is the \"invisible hand\" in decentralized systems?",
+    "Does Bitcoin truly solve the Byzantine Generals Problem?"
+  ]
+}

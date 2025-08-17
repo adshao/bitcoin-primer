@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import ComputerScience from './pages/ComputerScience'
@@ -16,6 +18,14 @@ import Resources from './pages/Resources'
 import './App.css'
 
 function App() {
+  const { i18n } = useTranslation()
+  
+  useEffect(() => {
+    // Log detected language for debugging
+    console.log('Browser language:', navigator.language)
+    console.log('Detected language:', i18n.language)
+    console.log('Available languages:', i18n.languages)
+  }, [i18n])
   return (
     <Router>
       <Layout>

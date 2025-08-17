@@ -1,0 +1,197 @@
+{
+  "icon": "⚡",
+  "title": "Energy",
+  "subtitle": "From Entropy to Value: The Deep Connection Between Energy and Information",
+  "introduction": "Bitcoin mining directly converts energy into economic value, revealing the deep connection between energy, information, and value. From the second law of thermodynamics to information theory, Bitcoin embodies the bridge between the physical and digital worlds. It's not just a controversial point of energy consumption, but a paradigm shift in how human civilization utilizes energy.",
+  "sections": [
+    {
+      "title": "Core Question: How Does Value Anchor to the Physical World?",
+      "content": [
+        {
+          "subtitle": "Relationship Between Energy and Information",
+          "points": [
+            "Landauer's Principle: Information processing requires energy",
+            "Maxwell's Demon: Information can be converted to work",
+            "Entropy and Information: Negative entropy equals information, information equals order",
+            "Bitcoin Implementation: Converting energy into unforgeable information"
+          ]
+        },
+        {
+          "subtitle": "Physical Meaning of Proof of Work",
+          "points": [
+            "Energy Consumption: Real physical work",
+            "Arrow of Time: Entropy increase process is irreversible",
+            "Thermodynamic Cost: Creating order requires energy",
+            "Digital Scarcity: Real scarcity created by energy"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Energy Economics: From Joules to Bitcoin",
+      "content": [
+        {
+          "subtitle": "Energy as Universal Currency",
+          "points": [
+            "Energy Conservation: Cannot create, only convert",
+            "Joule Standard: Energy as a measure of value",
+            "Energy Arbitrage: Seeking the cheapest energy",
+            "Global Market: Energy prices tend toward equilibrium"
+          ]
+        },
+        {
+          "subtitle": "Energy Dynamics of Mining",
+          "points": [
+            "Marginal Cost: Electricity prices determine mining profitability",
+            "Geographic Arbitrage: Migrating to chase cheap energy",
+            "Demand Response: Consuming excess capacity",
+            "Renewable Energy: Perfect partner for intermittent energy"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Civilization Scale: Energy Use and Social Development",
+      "content": [
+        {
+          "subtitle": "Kardashev Civilization Scale",
+          "points": [
+            "Type I Civilization: Controls planetary energy (10^16 watts)",
+            "Type II Civilization: Controls stellar energy (10^26 watts)",
+            "Type III Civilization: Controls galactic energy (10^36 watts)",
+            "Bitcoin's Position: Tool for humanity's transition to Type I civilization"
+          ]
+        },
+        {
+          "subtitle": "Energy Density and Civilizational Progress",
+          "points": [
+            "Wood Age: Low density, limited development",
+            "Coal Age: Energy foundation of industrial revolution",
+            "Oil Age: High density, driver of globalization",
+            "Nuclear/Renewable: Energy for next generation civilization"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Environmental Impact: Two Sides of Energy Consumption",
+      "content": [
+        {
+          "subtitle": "Energy Consumption Criticism",
+          "points": [
+            "Carbon Emissions: Currently relies mainly on fossil fuels",
+            "Energy Competition: Competing with other uses for energy",
+            "Electronic Waste: Hardware replacement cycles",
+            "Thermal Pollution: Large amounts of waste heat emissions"
+          ]
+        },
+        {
+          "subtitle": "Positive Effects",
+          "points": [
+            "Renewable Energy Driver: Promotes green energy investment",
+            "Stranded Energy Utilization: Uses otherwise wasted energy",
+            "Grid Stability: Acts as adjustable load",
+            "Energy Democratization: Individuals can participate in energy markets"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Physical Security: Thermodynamic Protection",
+      "content": [
+        {
+          "subtitle": "Physical Cost of Attacks",
+          "points": [
+            "51% Attack: Requires enormous energy input",
+            "Sustained Cost: Attacks require continuous consumption",
+            "Physical Limits: Earth's total energy is finite",
+            "Economic Rationality: Attack costs exceed benefits"
+          ]
+        },
+        {
+          "subtitle": "Physical Foundation of Defense",
+          "points": [
+            "Cumulative Work: Accumulation of historical energy",
+            "Real-time Verification: Small amount of energy for verification",
+            "Decentralization: Energy distributed globally",
+            "Quantum Resistant: Based on physics, not pure mathematics"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Future Prospects: Energy and Digital Civilization",
+      "content": [
+        {
+          "subtitle": "Energy Internet",
+          "points": [
+            "Peer-to-Peer Energy Trading: Decentralized grid",
+            "Smart Grid: Automatic supply-demand balancing",
+            "Energy Tokenization: Digital representation of energy",
+            "Cross-border Energy Trade: Bitcoin as settlement layer"
+          ]
+        },
+        {
+          "subtitle": "Space Age Currency",
+          "points": [
+            "Interstellar Trade: Needs non-sovereign currency",
+            "Energy Standard: Universal value in space",
+            "Time Delays: Necessity of decentralization",
+            "Civilization Backup: Blockchain as knowledge preservation"
+          ]
+        }
+      ]
+    }
+  ],
+  "keyInsights": [
+    "Energy is the bridge connecting the digital and physical worlds",
+    "Proof of Work converts energy into unforgeable digital scarcity",
+    "Bitcoin may drive the development and utilization of renewable energy",
+    "Energy consumption is not a bug but a feature, the source of security"
+  ],
+  "resources": {
+    "title": "Recommended Resources",
+    "books": [
+      {
+        "title": "Energy: A Beginner's Guide",
+        "author": "Vaclav Smil",
+        "description": "Relationship between energy and civilization"
+      },
+      {
+        "title": "Thermodynamics",
+        "author": "Enrico Fermi",
+        "description": "Classic textbook by physics master Fermi"
+      },
+      {
+        "title": "The Mathematical Theory of Communication",
+        "author": "Claude Shannon",
+        "description": "Pioneering work on information and entropy"
+      }
+    ],
+    "papers": [
+      {
+        "title": "A Mathematical Theory of Communication",
+        "author": "Claude Shannon",
+        "link": "http://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf"
+      },
+      {
+        "title": "Bitcoin's Energy Consumption",
+        "author": "Cambridge Centre for Alternative Finance",
+        "link": "https://ccaf.io/cbeci/index"
+      }
+    ],
+    "websites": [
+      {
+        "title": "Bitcoin Mining Council",
+        "link": "https://bitcoinminingcouncil.com/",
+        "description": "Bitcoin mining energy data"
+      }
+    ]
+  },
+  "reflectionQuestions": [
+    "If controlled nuclear fusion is achieved and energy becomes nearly free, how would Bitcoin evolve?",
+    "In a Dyson sphere civilization, how would stellar energy be priced and distributed?",
+    "Would quantum computing break thermodynamic protection? Or create new equilibrium?",
+    "Could Bitcoin become a standard for measuring civilizational development levels?"
+  ]
+}

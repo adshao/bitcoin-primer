@@ -1,0 +1,377 @@
+{
+  "title": "Resources",
+  "subtitle": "Curated Learning Materials and Tools",
+  "sections": {
+    "books": "Recommended Books",
+    "courses": "Online Courses",
+    "tools": "Practical Tools",
+    "community": "Community Resources",
+    "podcasts": "Podcast Recommendations",
+    "tips": "Learning Tips"
+  },
+  "books": {
+    "categories": {
+      "essential": "Essential Reading",
+      "technical": "Technical Deep Dive",
+      "economics": "Economics & Society"
+    },
+    "items": {
+      "bitcoinStandard": {
+        "description": "Understanding Bitcoin from economics and monetary history perspective"
+      },
+      "whitepaper": {
+        "description": "Bitcoin whitepaper, where it all began"
+      },
+      "littleBitcoin": {
+        "description": "Concise introduction to Bitcoin"
+      },
+      "masteringBitcoin": {
+        "description": "Bitcoin technical bible, must-read for programmers"
+      },
+      "programmingBitcoin": {
+        "description": "Learn Bitcoin principles through programming"
+      },
+      "cryptoTechnologies": {
+        "description": "Princeton University cryptocurrency textbook"
+      },
+      "fiatStandard": {
+        "description": "Analysis and critique of the fiat system"
+      },
+      "priceTomorrow": {
+        "description": "Economic thinking in the deflationary age"
+      },
+      "digitalGold": {
+        "description": "The history and stories of Bitcoin"
+      }
+    },
+    "level": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "language": {
+      "chinese": "Chinese Available",
+      "english": "English"
+    }
+  },
+  "disciplines": {
+    "money": {
+      "title": "Monetary Studies",
+      "books": "Recommended Books",
+      "papers": "Important Papers",
+      "booksList": [
+        "The History of Money - Jack Weatherford",
+        "What Has Government Done to Our Money? - Murray Rothbard",
+        "The Denationalization of Money - F.A. Hayek",
+        "The Ethics of Money Production - Jörg Guido Hülsmann",
+        "Money, Bank Credit, and Economic Cycles - Jesús Huerta de Soto"
+      ],
+      "papersList": [
+        "Shelling Out: The Origins of Money - Nick Szabo",
+        "The Island of Stone Money - Milton Friedman"
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "books": "Recommended Books",
+      "research": "Research Directions",
+      "booksList": [
+        "The End of Banking - Jonathan McMillan",
+        "The Mystery of Banking - Murray Rothbard",
+        "Central Banking 101 - Joseph Wang",
+        "The Banker's New Clothes - Anat Admati & Martin Hellwig",
+        "Other People's Money - John Kay"
+      ],
+      "researchList": [
+        "The Role of Banks in the Monetary System - BIS",
+        "Bitcoin's Impact on Traditional Banking Systems",
+        "Central Bank Digital Currency (CBDC) Development Trends"
+      ]
+    },
+    "economics": {
+      "title": "Economics",
+      "books": "Recommended Books",
+      "papers": "Research Papers",
+      "booksList": [
+        "The Bitcoin Standard - Saifedean Ammous",
+        "The Price of Tomorrow - Jeff Booth",
+        "Digital Gold - Nathaniel Popper",
+        "The Fiat Standard - Saifedean Ammous",
+        "Layered Money - Nik Bhatia"
+      ],
+      "papersList": [
+        "The Economic Limits of Bitcoin and the Blockchain",
+        "Economic Analysis of Bitcoin as Digital Gold",
+        "Research on Monetary Properties of Cryptocurrencies"
+      ]
+    },
+    "computerScience": {
+      "title": "Computer Science",
+      "books": "Recommended Books",
+      "papers": "Important Papers",
+      "booksList": [
+        "Mastering Bitcoin - Andreas M. Antonopoulos",
+        "Bitcoin and Cryptocurrency Technologies - Narayanan et al.",
+        "Programming Bitcoin - Jimmy Song",
+        "The Bitcoin Standard - Saifedean Ammous"
+      ],
+      "papersList": [
+        "Bitcoin: A Peer-to-Peer Electronic Cash System - Satoshi Nakamoto",
+        "Hashcash - A Denial of Service Counter-Measure - Adam Back",
+        "The Byzantine Generals Problem - Lamport, Shostak, Pease"
+      ]
+    },
+    "gameTheory": {
+      "title": "Game Theory",
+      "books": "Recommended Books",
+      "papers": "Research Papers",
+      "booksList": [
+        "The Theory of Games and Economic Behavior - von Neumann & Morgenstern",
+        "The Evolution of Cooperation - Robert Axelrod",
+        "Mechanism Design Theory - Eric Maskin",
+        "Cryptoeconomics - Eric Voskuil"
+      ],
+      "papersList": [
+        "Bitcoin's Security Model Revisited - Yonatan Sompolinsky",
+        "The Economics of Bitcoin Mining",
+        "Research on Selfish Mining Strategies"
+      ]
+    },
+    "energy": {
+      "title": "Energy",
+      "books": "Recommended Books",
+      "papers": "Research Papers",
+      "booksList": [
+        "The Bitcoin Mining Council Survey - Michael Saylor",
+        "The Energy Revolution - Menyah Heymann",
+        "Energy and Human Ambitions on a Finite Planet - Tom Murphy",
+        "Sustainable Energy - Without the Hot Air - David MacKay",
+        "The Kardashev Scale - Nikolai Kardashev"
+      ],
+      "papersList": [
+        "On Bitcoin's Energy Consumption: A Quantitative Approach",
+        "Bitcoin Mining Energy Report - Cambridge Centre",
+        "Bitcoin and Renewable Energy - ARK Invest"
+      ]
+    },
+    "politics": {
+      "title": "Political Science",
+      "books": "Recommended Books",
+      "papers": "Research Papers",
+      "booksList": [
+        "The Politics of Bitcoin - David Golumbia",
+        "Digital Gold - Nathaniel Popper",
+        "The Sovereign Individual - James Dale Davidson",
+        "Bitcoin and Human Rights - Alex Gladstein"
+      ],
+      "papersList": [
+        "Cryptocurrency and the Problem of Intermediation - Jonathan Zittrain",
+        "Virtual Currencies and Beyond: Initial Considerations",
+        "The Relationship Between Bitcoin and National Sovereignty"
+      ]
+    },
+    "philosophy": {
+      "title": "Philosophy",
+      "books": "Recommended Books",
+      "papers": "Research Papers",
+      "booksList": [
+        "Being and Time - Martin Heidegger",
+        "The Sovereign Individual - Davidson & Rees-Mogg",
+        "The Construction of Social Reality - John Searle",
+        "Sapiens: A Brief History of Humankind - Yuval Noah Harari",
+        "The Technology Trap - Carl Benedikt Frey"
+      ],
+      "papersList": [
+        "The Philosophy of Money",
+        "The Nature of Trust in the Digital Age",
+        "Philosophical Implications of Decentralization"
+      ]
+    },
+    "law": {
+      "title": "Law",
+      "books": "Recommended Books",
+      "papers": "Research Papers",
+      "booksList": [
+        "Code and Other Laws of Cyberspace - Lawrence Lessig",
+        "Cryptoeconomics: Economic Mechanisms for Digital Information - Nick Szabo",
+        "The Rule of Law - Tom Bingham",
+        "Blockchain and the Law - De Filippi & Wright",
+        "The Ethics of Influence - Cass Sunstein"
+      ],
+      "papersList": [
+        "The Nature of the Agreement in the Blockchain",
+        "Legal Status of Coded Rules",
+        "Property Rights Definition for Crypto Assets"
+      ]
+    }
+  },
+  "courses": {
+    "categories": {
+      "free": "Free Courses",
+      "video": "Video Resources"
+    },
+    "duration": "Duration:",
+    "visitCourse": "Visit Course →",
+    "items": [
+      {
+        "title": "Bitcoin and Cryptocurrency Technologies",
+        "provider": "Coursera (Princeton)",
+        "duration": "11 weeks",
+        "description": "Systematic course from Princeton University"
+      },
+      {
+        "title": "Introduction to Digital Currencies",
+        "provider": "University of Nicosia",
+        "duration": "12 weeks",
+        "description": "First university-level digital currency course"
+      },
+      {
+        "title": "Bitcoin for Everybody",
+        "provider": "Saylor Academy",
+        "duration": "Self-paced",
+        "description": "Bitcoin course from MicroStrategy founder"
+      },
+      {
+        "title": "Andreas Antonopoulos YouTube",
+        "provider": "YouTube",
+        "duration": "Ongoing",
+        "description": "Best Bitcoin educational videos"
+      },
+      {
+        "title": "MIT 6.824 Distributed Systems",
+        "provider": "MIT OpenCourseWare",
+        "duration": "One semester",
+        "description": "MIT distributed systems course"
+      },
+      {
+        "title": "Bitcoin Fundamentals",
+        "provider": "Khan Academy",
+        "duration": "2 hours",
+        "description": "Khan Academy basic tutorial"
+      }
+    ]
+  },
+  "tools": {
+    "categories": {
+      "wallets": "Wallet Tools",
+      "explorers": "Block Explorers",
+      "development": "Development Tools"
+    },
+    "useTool": "Use Tool →",
+    "items": {
+      "bitcoinCore": {
+        "type": "Full Node Wallet",
+        "description": "Official client, most secure but requires downloading entire blockchain"
+      },
+      "electrum": {
+        "type": "Light Wallet",
+        "description": "Powerful lightweight wallet"
+      },
+      "blueWallet": {
+        "type": "Mobile Wallet",
+        "description": "User-friendly mobile wallet with Lightning Network support"
+      },
+      "blockstream": {
+        "type": "Block Explorer",
+        "description": "Open-source, privacy-focused block explorer"
+      },
+      "mempool": {
+        "type": "Mempool Visualizer",
+        "description": "Real-time mempool and fee monitoring"
+      },
+      "blockchain": {
+        "type": "Block Explorer",
+        "description": "The oldest block explorer"
+      },
+      "testnet": {
+        "type": "Test Network",
+        "description": "Bitcoin testnet for development and testing"
+      },
+      "bitcoinjs": {
+        "type": "JavaScript Library",
+        "description": "JavaScript library for Bitcoin development"
+      },
+      "btcpay": {
+        "type": "Payment Processor",
+        "description": "Self-hosted Bitcoin payment processor"
+      }
+    }
+  },
+  "community": {
+    "visit": "Visit →",
+    "items": [
+      {
+        "name": "Bitcoin Talk",
+        "type": "Forum",
+        "description": "The original Bitcoin forum where Satoshi was active",
+        "language": "English"
+      },
+      {
+        "name": "r/Bitcoin",
+        "type": "Reddit",
+        "description": "Largest Bitcoin community on Reddit",
+        "language": "English"
+      },
+      {
+        "name": "Bitcoin Twitter",
+        "type": "Twitter",
+        "description": "Follow #Bitcoin tag and notable figures",
+        "language": "Multilingual"
+      },
+      {
+        "name": "Bitcoin Optech",
+        "type": "Tech Community",
+        "description": "Technical resources for developers",
+        "language": "English"
+      },
+      {
+        "name": "8btc",
+        "type": "Chinese Community",
+        "description": "Chinese blockchain news and community",
+        "language": "Chinese"
+      }
+    ]
+  },
+  "podcasts": {
+    "host": "Host:",
+    "frequency": {
+      "weekly": "Weekly",
+      "daily": "Daily"
+    },
+    "items": [
+      {
+        "name": "What Bitcoin Did",
+        "host": "Peter McCormack",
+        "description": "In-depth interviews with important Bitcoin figures",
+        "frequency": "Weekly"
+      },
+      {
+        "name": "The Pomp Podcast",
+        "host": "Anthony Pompliano",
+        "description": "Bitcoin and cryptocurrency investment perspective",
+        "frequency": "Daily"
+      },
+      {
+        "name": "Stephan Livera Podcast",
+        "host": "Stephan Livera",
+        "description": "Technical and economics deep discussions",
+        "frequency": "Weekly"
+      },
+      {
+        "name": "Tales from the Crypt",
+        "host": "Marty Bent",
+        "description": "Bitcoin culture and philosophy exploration",
+        "frequency": "Weekly"
+      }
+    ]
+  },
+  "tips": {
+    "title": "Learning Tips",
+    "items": [
+      "Start from your most interested angle, no need to follow a fixed order",
+      "Combine theory with practice, use tools to deepen understanding",
+      "Join communities, exchanging with others provides different perspectives",
+      "Keep learning, the Bitcoin ecosystem is rapidly evolving"
+    ]
+  }
+}

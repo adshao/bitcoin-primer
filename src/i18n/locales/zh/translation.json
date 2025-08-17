@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "logo": "Bitcoin Primer",
+    "disciplines": "学科视角",
+    "learningPath": "学习路径",
+    "studyGuide": "自学指南",
+    "resources": "资源汇总",
+    "startLearning": "开始学习",
+    "startLearningJourney": "开始学习之旅"
+  },
+  "disciplines": {
+    "money": {
+      "title": "货币",
+      "description": "从法币到加密货币"
+    },
+    "banking": {
+      "title": "银行",
+      "description": "金融系统的演化"
+    },
+    "economics": {
+      "title": "经济学",
+      "description": "稀缺性与价值存储"
+    },
+    "computerScience": {
+      "title": "计算机科学",
+      "description": "密码学与分布式系统"
+    },
+    "gameTheory": {
+      "title": "博弈论",
+      "description": "激励机制与纳什均衡"
+    },
+    "energy": {
+      "title": "能源",
+      "description": "物理世界与数字价值"
+    },
+    "politics": {
+      "title": "政治",
+      "description": "权力分配与去中心化"
+    },
+    "philosophy": {
+      "title": "哲学",
+      "description": "存在、自由与价值"
+    },
+    "law": {
+      "title": "法律",
+      "description": "代码即法律的实践"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "探索技术与社会的交汇点",
+      "title1": "通过",
+      "bitcoin": "比特币",
+      "title2": "理解社会运行机制",
+      "subtitle": "比特币不仅是技术创新，更是理解人类社会运行机制的窗口。通过九个不同视角，深入探索信任、价值、权力的本质。",
+      "learnMore": "了解更多",
+      "whitepaper": "阅读白皮书"
+    },
+    "perspectives": {
+      "title": "九个视角",
+      "subtitle": "深入理解比特币",
+      "description": "每个视角都是一扇窗，让你从不同维度理解比特币的深层含义和社会影响。"
+    },
+    "cta": {
+      "title": "准备好开始探索了吗？",
+      "subtitle": "从任何一个你感兴趣的视角开始，逐步构建对比特币的全面理解",
+      "button": "开始学习之旅",
+      "or": "或者",
+      "viewResources": "查看学习资源"
+    }
+  },
+  "footer": {
+    "brand": {
+      "title": "Bitcoin Primer",
+      "subtitle": "通过比特币理解社会运行机制"
+    },
+    "links": {
+      "whitepaper": "白皮书",
+      "source": "源码",
+      "wiki": "Wiki",
+      "magazine": "Magazine"
+    },
+    "copyright": "© {{year}} Bitcoin Primer - 开源教育项目"
+  },
+  "insights": {
+    "label": "核心洞察",
+    "title": "为什么这很重要？",
+    "trust": {
+      "title": "重新思考信任",
+      "description": "理解如何在不依赖中心化机构的情况下建立信任体系"
+    },
+    "value": {
+      "title": "价值的本质",
+      "description": "探索价值如何被创造、存储和转移，以及稀缺性的意义"
+    },
+    "power": {
+      "title": "权力的重构",
+      "description": "见证技术如何改变权力分配，实现真正的去中心化治理"
+    },
+    "future": {
+      "title": "未来的货币",
+      "description": "预见数字时代的金融基础设施和全球价值流转体系"
+    }
+  },
+  "learningPath": {
+    "title": "学习路径",
+    "subtitle": "循序渐进，系统掌握比特币知识体系",
+    "description": "我们设计了一个10周的学习计划，从多个学科角度循序渐进地构建对比特币的全面理解。",
+    "estimatedTime": "预计时间",
+    "weeks": "周",
+    "keyPoints": "关键要点",
+    "exercises": "实践练习",
+    "resources": "推荐资源"
+  },
+  "studyGuide": {
+    "title": "自学指南",
+    "subtitle": "掌握有效的学习方法和实践技巧"
+  },
+  "resourcesPage": {
+    "title": "资源汇总",
+    "subtitle": "精心挑选的学习资料和工具"
+  },
+  "cta2": {
+    "techStart": "从技术开始",
+    "econStart": "从经济开始"
+  },
+  "template": {
+    "keyInsights": "关键洞察",
+    "resources": "推荐资源",
+    "books": "经典书籍",
+    "papers": "重要论文",
+    "websites": "在线资源",
+    "reflection": "深度思考",
+    "sections": {
+      "introduction": "概述",
+      "keyInsights": "核心洞察",
+      "resources": "学习资源",
+      "reflection": "思考问题"
+    },
+    "resourceTypes": {
+      "mustRead": "必读材料",
+      "videos": "视频教程",
+      "tools": "工具实践"
+    }
+  }
+}
