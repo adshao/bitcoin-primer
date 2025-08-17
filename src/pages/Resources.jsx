@@ -1,9 +1,12 @@
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
+import SEO from '../components/SEO'
+import { useSEO } from '../hooks/useSEO'
 import './Resources.css'
 
 function Resources() {
   const { t, i18n } = useFormattedTranslation('resources')
   const isZh = i18n.language === 'zh'
+  const seoData = useSEO('resources')
   
   const books = [
     {
@@ -211,6 +214,7 @@ function Resources() {
 
   return (
     <div className="resources">
+      <SEO {...seoData} />
       <section className="resources-hero">
         <div className="resources-hero-content">
           <h1 className="resources-title">{t('title')}</h1>

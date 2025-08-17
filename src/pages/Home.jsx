@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom'
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
+import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
+import { useSEO } from '../hooks/useSEO'
 import './Home.css'
 
 function Home() {
   const { t } = useFormattedTranslation()
+  const { i18n } = useTranslation()
+  const seoData = useSEO('home')
   
   const handleLearnMoreClick = (e) => {
     e.preventDefault()
@@ -87,7 +91,7 @@ function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Bitcoin Primer",
-    "description": "Comprehensive Bitcoin education platform from multiple disciplinary perspectives",
+    "description": seoData.description,
     "url": "https://bitcoinprimer.com",
     "potentialAction": {
       "@type": "SearchAction",
@@ -107,9 +111,9 @@ function Home() {
   return (
     <div className="home">
       <SEO 
-        title="Bitcoin Primer - Understanding Bitcoin from Multiple Perspectives"
-        description="Deep dive into Bitcoin from nine disciplinary perspectives: money, banking, economics, computer science, game theory, energy, politics, philosophy, and law. Systematic learning path and comprehensive educational resources."
-        keywords="Bitcoin,Bitcoin education,cryptocurrency,blockchain,decentralization,digital currency,Bitcoin learning,monetary economics,cryptography,distributed systems,proof of work"
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
         jsonLd={structuredData}
       />
       {/* 新设计的Hero部分 */}

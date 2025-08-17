@@ -54,6 +54,7 @@ function LearningPath() {
 
   return (
     <div className="learning-path">
+      <SEO {...seoData} />
       <section className="path-hero">
         <div className="path-hero-content">
           <h1 className="path-title">{t('learningPath:title')}</h1>

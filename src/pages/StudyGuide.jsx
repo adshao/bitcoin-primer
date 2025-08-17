@@ -1,8 +1,11 @@
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
+import SEO from '../components/SEO'
+import { useSEO } from '../hooks/useSEO'
 import './StudyGuide.css'
 
 function StudyGuide() {
   const { t } = useFormattedTranslation(['studyGuide', 'translation'])
+  const seoData = useSEO('study-guide')
   
   const learningPrinciples = t('studyGuide:principles', { returnObjects: true })
   const learningPaths = t('studyGuide:paths', { returnObjects: true })
@@ -32,6 +35,7 @@ function StudyGuide() {
 
   return (
     <div className="study-guide">
+      <SEO {...seoData} />
       <section className="guide-hero">
         <div className="guide-hero-content">
           <h1 className="guide-title">{t('studyGuide:title')}</h1>
