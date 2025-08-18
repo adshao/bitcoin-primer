@@ -1,13 +1,13 @@
 // 文章数据导入
-import moneyArticle from './money.json'
-import bankingArticle from './banking.json'
-import economicsArticle from './economics.json'
-import computerScienceArticle from './computerScience.json'
-import gameTheoryArticle from './gameTheory.json'
-import energyArticle from './energy.json'
-import politicsArticle from './politics.json'
-import philosophyArticle from './philosophy.json'
-import lawArticle from './law.json'
+import moneyArticle from './ending-monetary-politicization.json'
+import bankingArticle from './banking-disintermediation-bitcoin-challenge.json'
+import economicsArticle from './bitcoin-economics-paradigm-shift.json'
+import computerScienceArticle from './byzantine-fault-tolerance-breakthrough.json'
+import gameTheoryArticle from './bitcoin-game-theory-design.json'
+import energyArticle from './bitcoin-energy-paradigm.json'
+import politicsArticle from './sovereign-individual-in-digital-age.json'
+import philosophyArticle from './digital-gold-philosophical-revolution.json'
+import lawArticle from './code-is-law-paradigm-shift.json'
 
 // 文章映射
 export const articles = {
