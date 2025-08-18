@@ -84,15 +84,19 @@ i18n
     },
     detection: {
       // Order of detection methods
+      // First check localStorage (if user has selected), then browser language
       order: ['localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
       
       // Cache user language preference
       caches: ['localStorage'],
       
+      // Key name for localStorage
+      lookupLocalStorage: 'i18nextLng',
+      
       // Options for browser language detection
       lookupFromNavigator: true,
       
-      // Check browser language first, then localStorage
+      // Check if detected language is in our supported list
       checkWhitelist: true,
       
       // Convert zh-CN, zh-TW etc to zh
