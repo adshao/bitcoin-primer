@@ -8,12 +8,26 @@ function Article() {
   const location = useLocation()
   const { t, i18n } = useFormattedTranslation()
   
-  // Extract the discipline from the path
-  // Path format: /zh/money/articles/ending-monetary-politicization
-  // or: /money/articles/ending-monetary-politicization
+  // Extract the discipline from the article slug
+  // Path format: /zh/articles/ending-monetary-politicization
+  // or: /articles/ending-monetary-politicization
   const pathParts = location.pathname.split('/').filter(Boolean)
   const lang = pathParts[0] === 'zh' ? 'zh' : 'en'
-  const disciplineSlug = pathParts[lang === 'zh' ? 1 : 0]
+  
+  // Map article slugs to disciplines
+  const articleToDiscipline = {
+    'ending-monetary-politicization': 'money',
+    'banking-disintermediation-bitcoin-challenge': 'banking',
+    'bitcoin-economics-paradigm-shift': 'economics',
+    'byzantine-fault-tolerance-breakthrough': 'computer-science',
+    'bitcoin-game-theory-design': 'game-theory',
+    'bitcoin-energy-paradigm': 'energy',
+    'sovereign-individual-in-digital-age': 'politics',
+    'digital-gold-philosophical-revolution': 'philosophy',
+    'code-is-law-paradigm-shift': 'law'
+  }
+  
+  const disciplineSlug = articleToDiscipline[articleSlug] || 'money'
   
   // 根据 discipline 获取对应的文章数据
   const getArticleData = () => {
@@ -48,8 +62,8 @@ function Article() {
   if (!data || !data.article) {
     return (
       <div className="article-error">
-        <h1>文章未找到</h1>
-        <Link to="/">返回首页</Link>
+        <h1>{t('articlePage.notFound')}</h1>
+        <Link to="/">{t('articlePage.backToHome')}</Link>
       </div>
     )
   }
@@ -66,13 +80,13 @@ function Article() {
         </div>
         <div className="article-hero-content">
           <div className="article-breadcrumb">
-            <Link to="/" className="breadcrumb-link">首页</Link>
+            <Link to="/" className="breadcrumb-link">{t('articlePage.home')}</Link>
             <span className="breadcrumb-separator">/</span>
             <Link to={topicPath} className="breadcrumb-link">
               {topicIcon} {topicTitle}
             </Link>
             <span className="breadcrumb-separator">/</span>
-            <span className="breadcrumb-current">深度文章</span>
+            <span className="breadcrumb-current">{t('articlePage.deepArticle')}</span>
           </div>
           <h1 className="article-hero-title">{article.title}</h1>
           {article.readTime && (
@@ -146,14 +160,14 @@ function Article() {
           {/* Article Footer */}
           <div className="article-footer">
             <div className="article-tags">
-              <span className="tag-label">标签：</span>
-              <span className="tag">比特币</span>
+              <span className="tag-label">{t('articlePage.tags')}：</span>
+              <span className="tag">{t('articlePage.bitcoin')}</span>
               <span className="tag">{topicTitle}</span>
-              <span className="tag">深度分析</span>
+              <span className="tag">{t('articlePage.deepAnalysis')}</span>
             </div>
             <div className="article-actions">
               <Link to={topicPath} className="back-to-topic">
-                ← 返回
+                ← {t('articlePage.back')}
               </Link>
             </div>
           </div>

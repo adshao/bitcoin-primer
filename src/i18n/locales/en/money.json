@@ -154,6 +154,18 @@
     "From Physical to Digital: Currency digitization is irreversible, Bitcoin is the ultimate digital form",
     "Neutrality of Money: Bitcoin is the world's first politically neutral currency"
   ],
+  "deepArticles": {
+    "title": "Deep Articles",
+    "articles": [
+      {
+        "title": "Bitcoin: Ending the Politicization of Money",
+        "author": "Bitcoin Primer Editorial Team",
+        "readTime": "15 min read",
+        "summary": "Throughout human history, money has always been a tool of power. The emergence of Bitcoin marks the first time money has broken free from political control.",
+        "link": "/articles/ending-monetary-politicization"
+      }
+    ]
+  },
   "resources": {
     "title": "Recommended Resources",
     "books": [

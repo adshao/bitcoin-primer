@@ -82,7 +82,7 @@ function TopicTemplate({
                     <h4 className="article-title">{deepArticle.title}</h4>
                     <p>{deepArticle.summary}</p>
                     <Link 
-                      to={`/${i18n.language}/${pageName}/articles/${deepArticle.urlSlug || 'article'}`} 
+                      to={`${i18n.language === 'en' ? '' : '/' + i18n.language}/articles/${deepArticle.urlSlug || 'article'}`} 
                       className="article-read-more"
                     >
                       {t('template.readFullArticle')} →

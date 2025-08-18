@@ -148,6 +148,33 @@
       "tools": "工具实践"
     }
   },
+  "articlePage": {
+    "home": "首页",
+    "deepArticle": "深度文章",
+    "notFound": "文章未找到",
+    "backToHome": "返回首页",
+    "tags": "标签",
+    "bitcoin": "比特币",
+    "deepAnalysis": "深度分析",
+    "back": "返回"
+  },
+  "articlesPage": {
+    "subtitle": "深入探索比特币的多维度视角，理解其对货币、经济、技术和社会的深远影响",
+    "articlesCount": "篇文章",
+    "disciplinesCount": "个学科",
+    "noArticles": "暂无文章",
+    "backToHome": "返回首页",
+    "pagination": {
+      "previous": "上一页",
+      "next": "下一页"
+    },
+    "cta": {
+      "title": "开始你的比特币学习之旅",
+      "subtitle": "从基础概念到深度理解，循序渐进地掌握比特币知识",
+      "viewLearningPath": "查看学习路径",
+      "browseResources": "浏览资源"
+    }
+  },
   "seo": {
     "home": {
       "title": "Bitcoin Primer - 多学科视角理解比特币",

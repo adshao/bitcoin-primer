@@ -304,11 +304,13 @@
 .path-tips {
   padding: 4rem 2rem;
   background: linear-gradient(135deg, #f8fafc, #ffffff);
+  color: #0f0f23; /* Ensure text color is dark */
 }
 
 .tips-container {
   max-width: 1000px;
   margin: 0 auto;
+  color: #0f0f23; /* Ensure container text is dark */
 }
 
 .tips-title {
@@ -316,7 +318,7 @@
   font-weight: 600;
   text-align: center;
   margin-bottom: 3rem;
-  color: #0f0f23;
+  color: #0f0f23 !important; /* Force dark color */
 }
 
 .tips-grid {
@@ -343,12 +345,12 @@
 .tip-card h4 {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #0f0f23;
+  color: #0f0f23 !important; /* Force dark color */
   margin-bottom: 0.5rem;
 }
 
 .tip-card p {
-  color: #64748b;
+  color: #64748b !important; /* Force gray color */
   font-size: 0.875rem;
   line-height: 1.5;
 }

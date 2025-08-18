@@ -40,7 +40,7 @@ function Articles() {
             discipline: disciplineTitle,
             disciplineIcon: discipline.icon,
             disciplinePath: discipline.path,
-            articlePath: `${discipline.path}/articles/${article.urlSlug || 'article'}`
+            articlePath: `/articles/${article.urlSlug || 'article'}`
           })
         }
       } catch (error) {
@@ -74,17 +74,17 @@ function Articles() {
         <div className="articles-hero-content">
           <h1 className="articles-title">{t('nav.deepArticles')}</h1>
           <p className="articles-subtitle">
-            深入探索比特币的多维度视角，理解其对货币、经济、技术和社会的深远影响
+            {t('articlesPage.subtitle')}
           </p>
           <div className="articles-stats">
             <span className="stat-item">
               <span className="stat-number">{allArticles.length}</span>
-              <span className="stat-label">篇文章</span>
+              <span className="stat-label">{t('articlesPage.articlesCount')}</span>
             </span>
             <span className="stat-divider">•</span>
             <span className="stat-item">
               <span className="stat-number">9</span>
-              <span className="stat-label">个学科</span>
+              <span className="stat-label">{t('articlesPage.disciplinesCount')}</span>
             </span>
           </div>
         </div>
@@ -100,7 +100,7 @@ function Articles() {
                   <article key={index} className="article-card">
                     <div className="article-card-header">
                       <Link 
-                        to={`/${i18n.language}${article.disciplinePath}`}
+                        to={`${i18n.language === 'en' ? '' : '/' + i18n.language}${article.disciplinePath}`}
                         className="article-discipline-link"
                       >
                         <span className="article-discipline-icon">{article.disciplineIcon}</span>
@@ -118,7 +118,7 @@ function Articles() {
                     
                     <div className="article-card-footer">
                       <Link 
-                        to={`/${i18n.language}${article.articlePath}`}
+                        to={`${i18n.language === 'en' ? '' : '/' + i18n.language}/articles/${article.urlSlug || 'article'}`}
                         className="article-read-more"
                       >
                         {t('template.readFullArticle')} →
@@ -136,7 +136,7 @@ function Articles() {
                     disabled={currentPage === 1}
                     className="pagination-btn pagination-prev"
                   >
-                    ← 上一页
+                    ← {t('articlesPage.pagination.previous')}
                   </button>
                   
                   <div className="pagination-numbers">
@@ -156,16 +156,16 @@ function Articles() {
                     disabled={currentPage === totalPages}
                     className="pagination-btn pagination-next"
                   >
-                    下一页 →
+                    {t('articlesPage.pagination.next')} →
                   </button>
                 </div>
               )}
             </>
           ) : (
             <div className="no-articles">
-              <p className="no-articles-text">暂无文章</p>
+              <p className="no-articles-text">{t('articlesPage.noArticles')}</p>
               <Link to="/" className="no-articles-link">
-                返回首页
+                {t('articlesPage.backToHome')}
               </Link>
             </div>
           )}
@@ -175,17 +175,17 @@ function Articles() {
       {/* CTA Section */}
       <section className="articles-cta">
         <div className="cta-container">
-          <h2 className="cta-title">开始你的比特币学习之旅</h2>
+          <h2 className="cta-title">{t('articlesPage.cta.title')}</h2>
           <p className="cta-subtitle">
-            从基础概念到深度理解，循序渐进地掌握比特币知识
+            {t('articlesPage.cta.subtitle')}
           </p>
           <div className="cta-buttons">
-            <Link to={`/${i18n.language}/learning-path`} className="cta-btn cta-primary">
-              查看学习路径
+            <Link to={`${i18n.language === 'en' ? '' : '/' + i18n.language}/learning-path`} className="cta-btn cta-primary">
+              {t('articlesPage.cta.viewLearningPath')}
               <span className="btn-arrow">→</span>
             </Link>
-            <Link to={`/${i18n.language}/resources`} className="cta-btn cta-secondary">
-              浏览资源
+            <Link to={`${i18n.language === 'en' ? '' : '/' + i18n.language}/resources`} className="cta-btn cta-secondary">
+              {t('articlesPage.cta.browseResources')}
               <span className="btn-arrow">→</span>
             </Link>
           </div>

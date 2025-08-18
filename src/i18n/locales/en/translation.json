@@ -4,6 +4,7 @@
     "disciplines": "Disciplines",
     "learningPath": "Learning Path",
     "studyGuide": "Study Guide",
+    "deepArticles": "Deep Articles",
     "resources": "Resources",
     "startLearning": "Start Learning",
     "startLearningJourney": "Start Your Journey",
@@ -126,12 +127,15 @@
     "econStart": "Start with Economics"
   },
   "template": {
+    "deepArticle": "Deep Article",
     "keyInsights": "Key Insights",
+    "keyTakeaways": "Key Takeaways",
     "resources": "Recommended Resources",
     "books": "Classic Books",
     "papers": "Important Papers",
     "websites": "Online Resources",
     "reflection": "Deep Reflection",
+    "readFullArticle": "Read Full Article",
     "sections": {
       "introduction": "Overview",
       "keyInsights": "Key Insights",
@@ -142,6 +146,33 @@
       "mustRead": "Must Read",
       "videos": "Video Tutorials",
       "tools": "Practical Tools"
+    }
+  },
+  "articlePage": {
+    "home": "Home",
+    "deepArticle": "Deep Article",
+    "notFound": "Article not found",
+    "backToHome": "Back to Home",
+    "tags": "Tags",
+    "bitcoin": "Bitcoin",
+    "deepAnalysis": "Deep Analysis",
+    "back": "Back"
+  },
+  "articlesPage": {
+    "subtitle": "Explore Bitcoin from multiple dimensions to understand its profound impact on money, economics, technology, and society",
+    "articlesCount": "Articles",
+    "disciplinesCount": "Disciplines",
+    "noArticles": "No articles available",
+    "backToHome": "Back to Home",
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "cta": {
+      "title": "Start Your Bitcoin Learning Journey",
+      "subtitle": "Master Bitcoin knowledge progressively from basic concepts to deep understanding",
+      "viewLearningPath": "View Learning Path",
+      "browseResources": "Browse Resources"
     }
   },
   "seo": {
