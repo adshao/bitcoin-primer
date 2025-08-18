@@ -1,15 +1,17 @@
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
+import { useArticle } from '../hooks/useArticles'
 import TopicTemplate from '../components/TopicTemplate'
 
 function Law() {
   const { t } = useFormattedTranslation('law')
+  const deepArticle = useArticle('law')
   
   const data = {
     icon: t('icon'),
     title: t('title'),
     subtitle: t('subtitle'),
     introduction: t('introduction'),
-    deepArticle: t('deepArticle', { returnObjects: true }),
+    deepArticle: deepArticle,
     sections: t('sections', { returnObjects: true }),
     keyInsights: t('keyInsights', { returnObjects: true }),
     resources: t('resources', { returnObjects: true }),

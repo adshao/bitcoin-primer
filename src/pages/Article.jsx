@@ -1,5 +1,6 @@
 import { useParams, Link, useLocation } from 'react-router-dom'
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
+import { useArticle } from '../hooks/useArticles'
 import './Article.css'
 
 function Article() {
@@ -30,9 +31,9 @@ function Article() {
     
     const namespace = articleMap[disciplineSlug] || 'money'
     const { t: topicT } = useFormattedTranslation(namespace)
+    const article = useArticle(namespace)
     
     try {
-      const article = topicT('deepArticle', { returnObjects: true })
       const topicTitle = topicT('title')
       const topicIcon = topicT('icon')
       const topicPath = lang === 'zh' ? `/zh/${disciplineSlug}` : `/${disciplineSlug}`

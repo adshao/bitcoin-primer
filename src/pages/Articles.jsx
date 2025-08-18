@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
+import { useArticles } from '../hooks/useArticles'
 import SEO from '../components/SEO'
 import { useSEO } from '../hooks/useSEO'
 import './Articles.css'
@@ -8,6 +9,7 @@ import './Articles.css'
 function Articles() {
   const { t, i18n } = useFormattedTranslation()
   const seoData = useSEO('articles')
+  const articlesData = useArticles()
   const [currentPage, setCurrentPage] = useState(1)
   const articlesPerPage = 9
   
@@ -29,7 +31,7 @@ function Articles() {
     disciplines.forEach(discipline => {
       try {
         const { t: disciplineT } = useFormattedTranslation(discipline.key)
-        const article = disciplineT('deepArticle', { returnObjects: true })
+        const article = articlesData[discipline.key]
         const disciplineTitle = disciplineT('title')
         
         if (article && article.title) {
