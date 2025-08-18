@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import LocalizedLink from '../components/LocalizedLink'
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
 import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
@@ -145,10 +145,10 @@ function Home() {
                 {t('home.hero.learnMore')}
                 <span className="btn-arrow">↓</span>
               </a>
-              <Link to="/learning-path" className="btn-secondary">
+              <LocalizedLink to="/learning-path" className="btn-secondary">
                 {t('nav.startLearning')}
                 <span className="btn-icon">→</span>
-              </Link>
+              </LocalizedLink>
             </div>
           </div>
           
@@ -199,7 +199,7 @@ function Home() {
           
           <div className="perspectives-grid">
             {perspectives.map((item, index) => (
-              <Link 
+              <LocalizedLink 
                 key={item.path} 
                 to={item.path}
                 className="perspective-card"
@@ -213,7 +213,7 @@ function Home() {
                   <p className="card-description">{t(item.descriptionKey)}</p>
                 </div>
                 <div className="card-arrow">→</div>
-              </Link>
+              </LocalizedLink>
             ))}
           </div>
         </div>
@@ -280,14 +280,14 @@ function Home() {
               {t('home.cta.subtitle')}
             </p>
             <div className="cta-actions">
-              <Link to="/computer-science" className="btn-primary">
+              <LocalizedLink to="/computer-science" className="btn-primary">
                 {t('cta2.techStart')}
                 <span className="btn-arrow">→</span>
-              </Link>
-              <Link to="/economics" className="btn-outline">
+              </LocalizedLink>
+              <LocalizedLink to="/economics" className="btn-outline">
                 {t('cta2.econStart')}
                 <span className="btn-arrow">→</span>
-              </Link>
+              </LocalizedLink>
             </div>
           </div>
         </div>

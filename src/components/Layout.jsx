@@ -1,15 +1,28 @@
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { useState, useEffect, useRef } from 'react'
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
+import LocalizedLink from './LocalizedLink'
 import LanguageSwitcher from './LanguageSwitcher'
+import { useLanguageSync, getLocalizedPath } from '../utils/languageRouting'
 import './Layout.css'
 
 function Layout({ children }) {
   const location = useLocation()
+  const navigate = useNavigate()
   const { t, i18n } = useFormattedTranslation()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [disciplinesOpen, setDisciplinesOpen] = useState(false)
   const dropdownRef = useRef(null)
+  
+  // Sync language from URL
+  useLanguageSync()
+  
+  // Handle language change
+  const handleLanguageChange = (lang) => {
+    const newPath = getLocalizedPath(location.pathname, lang)
+    i18n.changeLanguage(lang)
+    navigate(newPath)
+  }
   
   // 学科导航项
   const disciplines = [
@@ -50,10 +63,10 @@ function Layout({ children }) {
       <header className="header">
         <div className="header-container">
           {/* Logo */}
-          <Link to="/" className="logo">
+          <LocalizedLink to="/" className="logo">
             <span className="logo-icon">₿</span>
             <span className="logo-text">{t('nav.logo')}</span>
-          </Link>
+          </LocalizedLink>
           
           {/* Desktop Navigation */}
           <nav className="nav-desktop">
@@ -73,39 +86,39 @@ function Layout({ children }) {
                 <div className={`dropdown-menu ${disciplinesOpen ? 'open' : ''}`}>
                   <div className="dropdown-grid">
                     {disciplines.map((item) => (
-                      <Link
+                      <LocalizedLink
                         key={item.path}
                         to={item.path}
-                        className={`dropdown-item ${location.pathname === item.path ? 'active' : ''}`}
+                        className={`dropdown-item ${location.pathname.endsWith(item.path) ? 'active' : ''}`}
                         onClick={() => setDisciplinesOpen(false)}
                       >
                         <span className="item-icon">{item.icon}</span>
                         <span className="item-text">{t(item.nameKey)}</span>
-                      </Link>
+                      </LocalizedLink>
                     ))}
                   </div>
                 </div>
               </div>
 
               {/* Direct Links */}
-              <Link 
+              <LocalizedLink 
                 to="/learning-path" 
-                className={`nav-item ${location.pathname === '/learning-path' ? 'active' : ''}`}
+                className={`nav-item ${location.pathname.endsWith('/learning-path') ? 'active' : ''}`}
               >
                 {t('nav.learningPath')}
-              </Link>
-              <Link 
+              </LocalizedLink>
+              <LocalizedLink 
                 to="/study-guide" 
-                className={`nav-item ${location.pathname === '/study-guide' ? 'active' : ''}`}
+                className={`nav-item ${location.pathname.endsWith('/study-guide') ? 'active' : ''}`}
               >
                 {t('nav.studyGuide')}
-              </Link>
-              <Link 
+              </LocalizedLink>
+              <LocalizedLink 
                 to="/resources" 
-                className={`nav-item ${location.pathname === '/resources' ? 'active' : ''}`}
+                className={`nav-item ${location.pathname.endsWith('/resources') ? 'active' : ''}`}
               >
                 {t('nav.resources')}
-              </Link>
+              </LocalizedLink>
             </div>
           </nav>
           
@@ -134,14 +147,14 @@ function Layout({ children }) {
               <div className="mobile-section-title">{t('nav.disciplines')}</div>
               <div className="mobile-grid">
                 {disciplines.map((item) => (
-                  <Link
+                  <LocalizedLink
                     key={item.path}
                     to={item.path}
-                    className={`mobile-grid-item ${location.pathname === item.path ? 'active' : ''}`}
+                    className={`mobile-grid-item ${location.pathname.endsWith(item.path) ? 'active' : ''}`}
                   >
                     <span className="mobile-item-icon">{item.icon}</span>
                     <span className="mobile-item-text">{t(item.nameKey)}</span>
-                  </Link>
+                  </LocalizedLink>
                 ))}
               </div>
             </div>
@@ -149,27 +162,27 @@ function Layout({ children }) {
             <div className="mobile-divider"></div>
 
             <div className="mobile-links">
-              <Link 
+              <LocalizedLink 
                 to="/learning-path" 
-                className={`mobile-link ${location.pathname === '/learning-path' ? 'active' : ''}`}
+                className={`mobile-link ${location.pathname.endsWith('/learning-path') ? 'active' : ''}`}
               >
                 <span className="mobile-link-icon">📖</span>
                 <span>{t('nav.learningPath')}</span>
-              </Link>
-              <Link 
+              </LocalizedLink>
+              <LocalizedLink 
                 to="/study-guide" 
-                className={`mobile-link ${location.pathname === '/study-guide' ? 'active' : ''}`}
+                className={`mobile-link ${location.pathname.endsWith('/study-guide') ? 'active' : ''}`}
               >
                 <span className="mobile-link-icon">📚</span>
                 <span>{t('nav.studyGuide')}</span>
-              </Link>
-              <Link 
+              </LocalizedLink>
+              <LocalizedLink 
                 to="/resources" 
-                className={`mobile-link ${location.pathname === '/resources' ? 'active' : ''}`}
+                className={`mobile-link ${location.pathname.endsWith('/resources') ? 'active' : ''}`}
               >
                 <span className="mobile-link-icon">🔗</span>
                 <span>{t('nav.resources')}</span>
-              </Link>
+              </LocalizedLink>
             </div>
 
             <div className="mobile-divider"></div>
@@ -179,13 +192,13 @@ function Layout({ children }) {
               <div className="mobile-language-buttons">
                 <button
                   className={`mobile-lang-btn ${i18n.language === 'en' ? 'active' : ''}`}
-                  onClick={() => i18n.changeLanguage('en')}
+                  onClick={() => handleLanguageChange('en')}
                 >
                   English
                 </button>
                 <button
                   className={`mobile-lang-btn ${i18n.language === 'zh' ? 'active' : ''}`}
-                  onClick={() => i18n.changeLanguage('zh')}
+                  onClick={() => handleLanguageChange('zh')}
                 >
                   中文
                 </button>
@@ -193,9 +206,9 @@ function Layout({ children }) {
             </div>
 
             <div className="mobile-cta">
-              <Link to="/learning-path" className="mobile-cta-btn">
+              <LocalizedLink to="/learning-path" className="mobile-cta-btn">
                 {t('nav.startLearningJourney')}
-              </Link>
+              </LocalizedLink>
             </div>
           </div>
       </nav>

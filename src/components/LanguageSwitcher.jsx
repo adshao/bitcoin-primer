@@ -1,9 +1,13 @@
 import { useState, useRef, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useLocation, useNavigate } from 'react-router-dom'
+import { getLocalizedPath } from '../utils/languageRouting'
 import './LanguageSwitcher.css'
 
 function LanguageSwitcher() {
   const { i18n } = useTranslation()
+  const location = useLocation()
+  const navigate = useNavigate()
   const [isOpen, setIsOpen] = useState(false)
   const dropdownRef = useRef(null)
   
@@ -15,7 +19,9 @@ function LanguageSwitcher() {
   const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0]
 
   const changeLanguage = (lng) => {
+    const newPath = getLocalizedPath(location.pathname, lng)
     i18n.changeLanguage(lng)
+    navigate(newPath)
     setIsOpen(false)
   }
 

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import LocalizedLink from '../components/LocalizedLink'
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
 import SEO from '../components/SEO'
 import { useSEO } from '../hooks/useSEO'
@@ -106,9 +106,9 @@ function LearningPath() {
                       </ul>
                     </div>
                     
-                    <Link to={module.path} className="module-link">
+                    <LocalizedLink to={module.path} className="module-link">
                       {t('learningPath:startLearning')}
-                    </Link>
+                    </LocalizedLink>
                   </div>
                 ))}
               </div>
@@ -170,18 +170,18 @@ function LearningPath() {
 
       <section className="path-navigation">
         <div className="nav-container">
-          <Link to="/study-guide" className="nav-card">
+          <LocalizedLink to="/study-guide" className="nav-card">
             <span className="nav-icon">📖</span>
             <h3>{t('learningPath:navigation.studyGuide.title')}</h3>
             <p>{t('learningPath:navigation.studyGuide.description')}</p>
             <span className="nav-arrow">→</span>
-          </Link>
-          <Link to="/resources" className="nav-card">
+          </LocalizedLink>
+          <LocalizedLink to="/resources" className="nav-card">
             <span className="nav-icon">📚</span>
             <h3>{t('learningPath:navigation.resources.title')}</h3>
             <p>{t('learningPath:navigation.resources.description')}</p>
             <span className="nav-arrow">→</span>
-          </Link>
+          </LocalizedLink>
         </div>
       </section>
     </div>

@@ -27,24 +27,36 @@ function App() {
     console.log('Detected language:', i18n.language)
     console.log('Available languages:', i18n.languages)
   }, [i18n])
+  
+  // Define routes for all pages
+  const pageRoutes = (
+    <>
+      <Route index element={<Home />} />
+      <Route path="computer-science" element={<ComputerScience />} />
+      <Route path="economics" element={<Economics />} />
+      <Route path="game-theory" element={<GameTheory />} />
+      <Route path="politics" element={<Politics />} />
+      <Route path="money" element={<Money />} />
+      <Route path="banking" element={<Banking />} />
+      <Route path="law" element={<Law />} />
+      <Route path="philosophy" element={<Philosophy />} />
+      <Route path="energy" element={<Energy />} />
+      <Route path="learning-path" element={<LearningPath />} />
+      <Route path="study-guide" element={<StudyGuide />} />
+      <Route path="resources" element={<Resources />} />
+    </>
+  )
+  
   return (
     <HelmetProvider>
       <Router>
         <Layout>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/computer-science" element={<ComputerScience />} />
-            <Route path="/economics" element={<Economics />} />
-            <Route path="/game-theory" element={<GameTheory />} />
-            <Route path="/politics" element={<Politics />} />
-            <Route path="/money" element={<Money />} />
-            <Route path="/banking" element={<Banking />} />
-            <Route path="/law" element={<Law />} />
-            <Route path="/philosophy" element={<Philosophy />} />
-            <Route path="/energy" element={<Energy />} />
-            <Route path="/learning-path" element={<LearningPath />} />
-            <Route path="/study-guide" element={<StudyGuide />} />
-            <Route path="/resources" element={<Resources />} />
+            {/* English routes (no prefix) */}
+            <Route path="/">{pageRoutes}</Route>
+            
+            {/* Chinese routes (with /zh prefix) */}
+            <Route path="/zh/*">{pageRoutes}</Route>
           </Routes>
         </Layout>
       </Router>
