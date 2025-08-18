@@ -80,9 +80,7 @@ function TopicTemplate({
                   </h3>
                   <div className="article-preview">
                     <h4 className="article-title">{deepArticle.title}</h4>
-                    <div className="article-summary">
-                      <p>{deepArticle.summary}</p>
-                    </div>
+                    <p>{deepArticle.summary}</p>
                     <Link 
                       to={`/${i18n.language}/${pageName}/articles/${deepArticle.urlSlug || 'article'}`} 
                       className="article-read-more"

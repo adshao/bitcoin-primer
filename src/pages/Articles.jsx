@@ -9,7 +9,7 @@ function Articles() {
   const { t, i18n } = useFormattedTranslation()
   const seoData = useSEO('articles')
   const [currentPage, setCurrentPage] = useState(1)
-  const articlesPerPage = 6
+  const articlesPerPage = 9
   
   // 获取所有文章数据
   const getAllArticles = () => {
