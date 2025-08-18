@@ -14,6 +14,7 @@
   border-bottom: 1px solid #e5e7eb;
   backdrop-filter: blur(8px);
   background: rgba(255, 255, 255, 0.95);
+  overflow: visible;
 }
 
 .header-container {
@@ -234,6 +235,8 @@
   background: transparent;
   border: none;
   cursor: pointer;
+  position: relative;
+  z-index: 1001;
 }
 
 @media (min-width: 1024px) {
@@ -284,6 +287,7 @@
   transition: transform 0.3s;
   overflow-y: auto;
   z-index: 999;
+  display: block;
 }
 
 .nav-mobile.open {
@@ -292,7 +296,7 @@
 
 @media (min-width: 1024px) {
   .nav-mobile {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -392,6 +396,40 @@
   font-size: 1.25rem;
 }
 
+.mobile-language-section {
+  margin-bottom: 2rem;
+}
+
+.mobile-language-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.mobile-lang-btn {
+  flex: 1;
+  padding: 0.75rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  color: #6b7280;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mobile-lang-btn:active {
+  transform: scale(0.98);
+}
+
+.mobile-lang-btn.active {
+  background: #fef3c7;
+  color: #f7931a;
+  border-color: #fbbf24;
+  font-weight: 600;
+}
+
 .mobile-cta {
   padding: 1rem;
   background: linear-gradient(135deg, #f8fafc, #f3f4f6);
@@ -487,6 +525,7 @@
 @media (max-width: 768px) {
   .header-container {
     padding: 0 1rem;
+    gap: 0.5rem;
   }
   
   .footer-content {

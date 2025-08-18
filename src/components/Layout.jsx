@@ -41,6 +41,7 @@ function Layout({ children }) {
   // 路径变化时关闭移动端菜单并滚动到顶部
   useEffect(() => {
     setMobileMenuOpen(false)
+    setDisciplinesOpen(false)
     window.scrollTo(0, 0)
   }, [location])
 
@@ -124,9 +125,10 @@ function Layout({ children }) {
             </span>
           </button>
         </div>
+      </header>
 
-        {/* Mobile Navigation */}
-        <nav className={`nav-mobile ${mobileMenuOpen ? 'open' : ''}`}>
+      {/* Mobile Navigation - Outside header */}
+      <nav className={`nav-mobile ${mobileMenuOpen ? 'open' : ''}`}>
           <div className="mobile-nav-content">
             <div className="mobile-section">
               <div className="mobile-section-title">{t('nav.disciplines')}</div>
@@ -170,14 +172,33 @@ function Layout({ children }) {
               </Link>
             </div>
 
+            <div className="mobile-divider"></div>
+
+            <div className="mobile-language-section">
+              <div className="mobile-section-title">{t('nav.language')}</div>
+              <div className="mobile-language-buttons">
+                <button
+                  className={`mobile-lang-btn ${i18n.language === 'en' ? 'active' : ''}`}
+                  onClick={() => i18n.changeLanguage('en')}
+                >
+                  English
+                </button>
+                <button
+                  className={`mobile-lang-btn ${i18n.language === 'zh' ? 'active' : ''}`}
+                  onClick={() => i18n.changeLanguage('zh')}
+                >
+                  中文
+                </button>
+              </div>
+            </div>
+
             <div className="mobile-cta">
               <Link to="/learning-path" className="mobile-cta-btn">
                 {t('nav.startLearningJourney')}
               </Link>
             </div>
           </div>
-        </nav>
-      </header>
+      </nav>
       
       <main className="main">
         {children}
