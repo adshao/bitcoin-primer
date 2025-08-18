@@ -1,5 +1,5 @@
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 import SEO from './SEO'
 import { useSEO } from '../hooks/useSEO'
 import './TopicTemplate.css'
@@ -10,13 +10,15 @@ function TopicTemplate({
   subtitle, 
   introduction, 
   sections, 
+  deepArticle,
   keyInsights, 
   resources, 
   reflectionQuestions 
 }) {
-  const { t } = useFormattedTranslation()
+  const { t, i18n } = useFormattedTranslation()
   const location = useLocation()
-  const pageName = location.pathname.slice(1) // Remove leading '/'
+  const pathParts = location.pathname.split('/').filter(Boolean)
+  const pageName = pathParts[pathParts.length - 1] // Get last part of path
   const seoData = useSEO(pageName)
   
   return (
@@ -69,6 +71,28 @@ function TopicTemplate({
 
             {/* Right Column - Sidebar */}
             <aside className="topic-sidebar">
+              {/* Deep Article Card */}
+              {deepArticle && (
+                <div className="sidebar-card article-card">
+                  <h3 className="card-title">
+                    <span className="card-icon">📖</span>
+                    {t('template.deepArticle')}
+                  </h3>
+                  <div className="article-preview">
+                    <h4 className="article-title">{deepArticle.title}</h4>
+                    <div className="article-summary">
+                      <p>{deepArticle.summary}</p>
+                    </div>
+                    <Link 
+                      to={`/${i18n.language}/${pageName}/articles/${deepArticle.urlSlug || 'article'}`} 
+                      className="article-read-more"
+                    >
+                      {t('template.readFullArticle')} →
+                    </Link>
+                  </div>
+                </div>
+              )}
+              
               {/* Key Insights Card */}
               <div className="sidebar-card insights-card">
                 <h3 className="card-title">

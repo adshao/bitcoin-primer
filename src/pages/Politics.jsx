@@ -9,6 +9,7 @@ function Politics() {
     title: t('title'),
     subtitle: t('subtitle'),
     introduction: t('introduction'),
+    deepArticle: t('deepArticle', { returnObjects: true }),
     sections: t('sections', { returnObjects: true }),
     keyInsights: t('keyInsights', { returnObjects: true }),
     resources: t('resources', { returnObjects: true }),
@@ -21,6 +22,7 @@ function Politics() {
       title={data.title}
       subtitle={data.subtitle}
       introduction={data.introduction}
+      deepArticle={data.deepArticle}
       sections={data.sections}
       keyInsights={data.keyInsights}
       resources={data.resources}

@@ -114,6 +114,12 @@ function Layout({ children }) {
                 {t('nav.studyGuide')}
               </LocalizedLink>
               <LocalizedLink 
+                to="/articles" 
+                className={`nav-item ${location.pathname.endsWith('/articles') ? 'active' : ''}`}
+              >
+                {t('nav.deepArticles')}
+              </LocalizedLink>
+              <LocalizedLink 
                 to="/resources" 
                 className={`nav-item ${location.pathname.endsWith('/resources') ? 'active' : ''}`}
               >
@@ -175,6 +181,13 @@ function Layout({ children }) {
               >
                 <span className="mobile-link-icon">📚</span>
                 <span>{t('nav.studyGuide')}</span>
+              </LocalizedLink>
+              <LocalizedLink 
+                to="/articles" 
+                className={`mobile-link ${location.pathname.endsWith('/articles') ? 'active' : ''}`}
+              >
+                <span className="mobile-link-icon">📖</span>
+                <span>{t('nav.deepArticles')}</span>
               </LocalizedLink>
               <LocalizedLink 
                 to="/resources" 

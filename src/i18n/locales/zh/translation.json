@@ -2,6 +2,7 @@
   "nav": {
     "logo": "Bitcoin Primer",
     "disciplines": "学科视角",
+    "deepArticles": "深度文章",
     "learningPath": "学习路径",
     "studyGuide": "自学指南",
     "resources": "资源汇总",
@@ -126,6 +127,9 @@
     "econStart": "从经济开始"
   },
   "template": {
+    "deepArticle": "深度文章",
+    "readFullArticle": "阅读全文",
+    "keyTakeaways": "核心要点",
     "keyInsights": "关键洞察",
     "resources": "推荐资源",
     "books": "经典书籍",

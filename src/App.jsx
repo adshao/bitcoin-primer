@@ -16,6 +16,8 @@ import Energy from './pages/Energy'
 import LearningPath from './pages/LearningPath'
 import StudyGuide from './pages/StudyGuide'
 import Resources from './pages/Resources'
+import Articles from './pages/Articles'
+import Article from './pages/Article'
 import './App.css'
 
 function App() {
@@ -43,7 +45,19 @@ function App() {
       <Route path="energy" element={<Energy />} />
       <Route path="learning-path" element={<LearningPath />} />
       <Route path="study-guide" element={<StudyGuide />} />
+      <Route path="articles" element={<Articles />} />
       <Route path="resources" element={<Resources />} />
+      
+      {/* Article routes for each discipline */}
+      <Route path="money/articles/:articleSlug" element={<Article />} />
+      <Route path="banking/articles/:articleSlug" element={<Article />} />
+      <Route path="economics/articles/:articleSlug" element={<Article />} />
+      <Route path="computer-science/articles/:articleSlug" element={<Article />} />
+      <Route path="game-theory/articles/:articleSlug" element={<Article />} />
+      <Route path="energy/articles/:articleSlug" element={<Article />} />
+      <Route path="politics/articles/:articleSlug" element={<Article />} />
+      <Route path="philosophy/articles/:articleSlug" element={<Article />} />
+      <Route path="law/articles/:articleSlug" element={<Article />} />
     </>
   )
   

@@ -135,6 +135,66 @@
   transform: rotate(180deg);
 }
 
+/* Articles Dropdown Styles */
+.articles-menu {
+  min-width: 360px;
+}
+
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.article-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #374151;
+  transition: all 0.2s ease;
+}
+
+.article-item:hover {
+  background: #f3f4f6;
+  transform: translateX(4px);
+}
+
+.article-item.active {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.article-icon {
+  font-size: 1.25rem;
+  margin-top: 0.125rem;
+}
+
+.article-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.article-title {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1.3;
+}
+
+.article-discipline {
+  font-size: 0.8125rem;
+  color: #6b7280;
+}
+
+.article-item.active .article-discipline {
+  color: #92400e;
+  opacity: 0.8;
+}
+
 .dropdown-menu {
   position: absolute;
   top: calc(100% + 0.5rem);
@@ -361,6 +421,62 @@
   height: 1px;
   background: #e5e7eb;
   margin: 2rem 0;
+}
+
+/* Mobile Articles Styles */
+.mobile-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+}
+
+.mobile-article-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #374151;
+  background: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+.mobile-article-item:active {
+  background: #e5e7eb;
+}
+
+.mobile-article-item.active {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.mobile-article-icon {
+  font-size: 1.25rem;
+}
+
+.mobile-article-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.mobile-article-title {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1.3;
+}
+
+.mobile-article-discipline {
+  font-size: 0.8125rem;
+  color: #6b7280;
+}
+
+.mobile-article-item.active .mobile-article-discipline {
+  color: #92400e;
+  opacity: 0.8;
 }
 
 .mobile-links {
