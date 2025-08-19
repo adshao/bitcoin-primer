@@ -56,6 +56,10 @@ function LearningPath() {
     <div className="learning-path">
       <SEO {...seoData} />
       <section className="path-hero">
+        <div className="path-hero-background">
+          <div className="path-grid-pattern"></div>
+          <div className="path-gradient-orb"></div>
+        </div>
         <div className="path-hero-content">
           <h1 className="path-title">{t('learningPath:title')}</h1>
           <p className="path-subtitle">

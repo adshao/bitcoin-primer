@@ -62,35 +62,6 @@
   font-size: 1.25rem;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 2rem;
-}
-
-.articles-stats {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  font-size: 1rem;
-}
-
-.stat-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.stat-number {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #f7931a;
-}
-
-.stat-label {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.stat-divider {
-  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Articles Main */

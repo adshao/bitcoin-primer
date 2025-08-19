@@ -4,28 +4,74 @@
   min-height: 100vh;
 }
 
-/* Hero Section */
+/* Animation for grid pattern */
+@keyframes grid-slide {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(40px, 40px);
+  }
+}
+
+/* Hero Section - matching Articles page style */
 .path-hero {
-  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  position: relative;
+  padding: 4rem 2rem 5rem;
+  background: linear-gradient(135deg, #0f0f23, #1a1a2e);
   color: white;
-  padding: 4rem 2rem;
-  text-align: center;
+  overflow: hidden;
+}
+
+.path-hero-background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.path-grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: grid-slide 30s linear infinite;
+}
+
+.path-gradient-orb {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(247, 147, 26, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  top: -300px;
+  right: -150px;
+  filter: blur(100px);
 }
 
 .path-hero-content {
-  max-width: 900px;
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .path-title {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #ffffff, #f7931a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .path-subtitle {
   font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* Stages Section */

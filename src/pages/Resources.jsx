@@ -216,6 +216,10 @@ function Resources() {
     <div className="resources">
       <SEO {...seoData} />
       <section className="resources-hero">
+        <div className="resources-hero-background">
+          <div className="resources-grid-pattern"></div>
+          <div className="resources-gradient-orb"></div>
+        </div>
         <div className="resources-hero-content">
           <h1 className="resources-title">{t('title')}</h1>
           <p className="resources-subtitle">

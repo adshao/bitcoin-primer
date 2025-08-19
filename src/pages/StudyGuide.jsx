@@ -37,6 +37,10 @@ function StudyGuide() {
     <div className="study-guide">
       <SEO {...seoData} />
       <section className="guide-hero">
+        <div className="guide-hero-background">
+          <div className="guide-grid-pattern"></div>
+          <div className="guide-gradient-orb"></div>
+        </div>
         <div className="guide-hero-content">
           <h1 className="guide-title">{t('studyGuide:title')}</h1>
           <p className="guide-subtitle">

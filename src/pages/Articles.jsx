@@ -76,17 +76,6 @@ function Articles() {
           <p className="articles-subtitle">
             {t('articlesPage.subtitle')}
           </p>
-          <div className="articles-stats">
-            <span className="stat-item">
-              <span className="stat-number">{allArticles.length}</span>
-              <span className="stat-label">{t('articlesPage.articlesCount')}</span>
-            </span>
-            <span className="stat-divider">•</span>
-            <span className="stat-item">
-              <span className="stat-number">9</span>
-              <span className="stat-label">{t('articlesPage.disciplinesCount')}</span>
-            </span>
-          </div>
         </div>
       </section>
       
