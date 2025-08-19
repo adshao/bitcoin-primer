@@ -5,13 +5,6 @@
   margin-right: 1rem;
 }
 
-/* Hide on mobile - will be shown in mobile menu instead */
-@media (max-width: 1023px) {
-  .header .language-switcher-dropdown {
-    display: none;
-  }
-}
-
 /* Toggle Button */
 .language-toggle {
   display: flex;
@@ -27,6 +20,17 @@
   color: #1f2937;
   transition: all 0.2s ease;
   min-width: 100px;
+}
+
+/* Globe Icon */
+.globe-icon {
+  flex-shrink: 0;
+  color: #6b7280;
+  transition: color 0.2s ease;
+}
+
+.language-toggle:hover .globe-icon {
+  color: #f7931a;
 }
 
 .language-toggle:hover {
@@ -163,6 +167,21 @@
     right: 0;
     min-width: 120px;
   }
+
+  /* Show only globe icon on mobile */
+  .lang-name {
+    display: none;
+  }
+
+  .globe-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .language-toggle {
+    padding: 0.5rem;
+    min-width: auto;
+  }
 }
 
 @media (max-width: 640px) {
@@ -171,6 +190,11 @@
   }
   
   .language-toggle {
-    padding: 0.375rem 0.5rem;
+    padding: 0.425rem;
+  }
+
+  .globe-icon {
+    width: 16px;
+    height: 16px;
   }
 }

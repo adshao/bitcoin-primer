@@ -284,6 +284,13 @@
   transform: translateX(2px);
 }
 
+/* Header Right Side */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 /* Mobile Menu Button */
 .mobile-menu-btn {
   display: flex;
@@ -510,40 +517,6 @@
 
 .mobile-link-icon {
   font-size: 1.25rem;
-}
-
-.mobile-language-section {
-  margin-bottom: 2rem;
-}
-
-.mobile-language-buttons {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 0.75rem;
-}
-
-.mobile-lang-btn {
-  flex: 1;
-  padding: 0.75rem;
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  color: #6b7280;
-  font-weight: 500;
-  font-size: 0.875rem;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.mobile-lang-btn:active {
-  transform: scale(0.98);
-}
-
-.mobile-lang-btn.active {
-  background: #fef3c7;
-  color: #f7931a;
-  border-color: #fbbf24;
-  font-weight: 600;
 }
 
 .mobile-cta {

@@ -128,21 +128,23 @@ function Layout({ children }) {
             </div>
           </nav>
           
-          {/* Language Switcher - Right side */}
-          <LanguageSwitcher />
-
-          {/* Mobile Menu Button */}
-          <button 
-            className="mobile-menu-btn"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            <span className={`burger ${mobileMenuOpen ? 'open' : ''}`}>
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </button>
+          {/* Language Switcher and Mobile Menu - Right side */}
+          <div className="header-right">
+            <LanguageSwitcher />
+            
+            {/* Mobile Menu Button */}
+            <button 
+              className="mobile-menu-btn"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              <span className={`burger ${mobileMenuOpen ? 'open' : ''}`}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
+          </div>
         </div>
       </header>
 
@@ -196,26 +198,6 @@ function Layout({ children }) {
                 <span className="mobile-link-icon">🔗</span>
                 <span>{t('nav.resources')}</span>
               </LocalizedLink>
-            </div>
-
-            <div className="mobile-divider"></div>
-
-            <div className="mobile-language-section">
-              <div className="mobile-section-title">{t('nav.language')}</div>
-              <div className="mobile-language-buttons">
-                <button
-                  className={`mobile-lang-btn ${i18n.language === 'en' ? 'active' : ''}`}
-                  onClick={() => handleLanguageChange('en')}
-                >
-                  English
-                </button>
-                <button
-                  className={`mobile-lang-btn ${i18n.language === 'zh' ? 'active' : ''}`}
-                  onClick={() => handleLanguageChange('zh')}
-                >
-                  中文
-                </button>
-              </div>
             </div>
 
             <div className="mobile-cta">
