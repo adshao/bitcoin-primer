@@ -316,8 +316,8 @@
         "language": "English"
       },
       {
-        "name": "Bitcoin Twitter",
-        "type": "Twitter",
+        "name": "Bitcoin X",
+        "type": "X (formerly Twitter)",
         "description": "Follow #Bitcoin tag and notable figures",
         "language": "Multilingual"
       },
@@ -326,17 +326,12 @@
         "type": "Tech Community",
         "description": "Technical resources for developers",
         "language": "English"
-      },
-      {
-        "name": "8btc",
-        "type": "Chinese Community",
-        "description": "Chinese blockchain news and community",
-        "language": "Chinese"
       }
     ]
   },
   "podcasts": {
     "host": "Host:",
+    "listen": "Listen →",
     "frequency": {
       "weekly": "Weekly",
       "daily": "Daily"
@@ -361,7 +356,7 @@
         "frequency": "Weekly"
       },
       {
-        "name": "Tales from the Crypt",
+        "name": "TFTC (Truth for the Commoner)",
         "host": "Marty Bent",
         "description": "Bitcoin culture and philosophy exploration",
         "frequency": "Weekly"

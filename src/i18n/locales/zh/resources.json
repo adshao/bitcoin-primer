@@ -316,8 +316,8 @@
         "language": "英文"
       },
       {
-        "name": "Bitcoin Twitter",
-        "type": "Twitter",
+        "name": "Bitcoin X",
+        "type": "X (原Twitter)",
         "description": "关注#Bitcoin标签和知名人士",
         "language": "多语言"
       },
@@ -326,17 +326,12 @@
         "type": "技术社区",
         "description": "面向开发者的技术资源",
         "language": "英文"
-      },
-      {
-        "name": "巴比特",
-        "type": "中文社区",
-        "description": "中文区块链资讯和社区",
-        "language": "中文"
       }
     ]
   },
   "podcasts": {
     "host": "主持人：",
+    "listen": "收听播客 →",
     "frequency": {
       "weekly": "每周更新",
       "daily": "每日更新"
@@ -361,7 +356,7 @@
         "frequency": "每周更新"
       },
       {
-        "name": "Tales from the Crypt",
+        "name": "TFTC (Truth for the Commoner)",
         "host": "Marty Bent",
         "description": "比特币文化和哲学探讨",
         "frequency": "每周更新"

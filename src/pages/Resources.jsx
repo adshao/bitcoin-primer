@@ -139,11 +139,11 @@ function Resources() {
     ...item,
     link: [
       'https://www.coursera.org/learn/cryptocurrency',
-      'https://www.unic.ac.cy/blockchain/free-mooc/',
-      'https://learn.saylor.org/course/PRDV151',
+      'https://www.unic.ac.cy/iff/education-and-training/free-courses-moocs/mooc-in-digital-currency/',
+      'https://learn.saylor.org/course/view.php?id=468',
       'https://www.youtube.com/user/aantonop',
       'https://pdos.csail.mit.edu/6.824/',
-      'https://www.khanacademy.org/economics-finance-domain/finance-and-capital-markets'
+      'https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/bitcoin/v/bitcoin-overview'
     ][index]
   }))
 
@@ -201,7 +201,7 @@ function Resources() {
           name: 'Bitcoin Testnet',
           type: t('tools.items.testnet.type'),
           description: t('tools.items.testnet.description'),
-          link: 'https://testnet.blockchain.info/'
+          link: 'https://blockstream.info/testnet/'
         },
         {
           name: 'BitcoinJS',
@@ -224,13 +224,20 @@ function Resources() {
     link: [
       'https://bitcointalk.org/',
       'https://www.reddit.com/r/Bitcoin/',
-      'https://twitter.com/search?q=%23Bitcoin',
-      'https://bitcoinops.org/',
-      'https://www.8btc.com/'
+      'https://x.com/search?q=%23Bitcoin',
+      'https://bitcoinops.org/'
     ][index]
   }))
 
-  const podcasts = t('podcasts.items', { returnObjects: true })
+  const podcasts = t('podcasts.items', { returnObjects: true }).map((item, index) => ({
+    ...item,
+    link: [
+      'https://www.whatbitcoindid.com/',
+      'https://pomp.substack.com/',
+      'https://stephanlivera.com/',
+      'https://www.tftc.io/'
+    ][index]
+  }))
 
   const disciplines = [
     'money', 'banking', 'economics', 'computerScience', 
@@ -417,7 +424,12 @@ function Resources() {
                 <h4 className="podcast-name">{podcast.name}</h4>
                 <p className="podcast-host">{t('podcasts.host')} {podcast.host}</p>
                 <p className="podcast-description">{podcast.description}</p>
-                <span className="podcast-frequency">{podcast.frequency}</span>
+                <div className="podcast-footer">
+                  <span className="podcast-frequency">{podcast.frequency}</span>
+                  <a href={podcast.link} target="_blank" rel="noopener noreferrer" className="podcast-link">
+                    {t('podcasts.listen')}
+                  </a>
+                </div>
               </div>
             ))}
           </div>
