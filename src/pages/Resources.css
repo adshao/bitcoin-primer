@@ -223,19 +223,24 @@
 .section-title {
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
   color: #0f0f23;
 }
 
 .resource-category {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.resource-category:last-child {
+  margin-bottom: 0;
 }
 
 .category-title {
   font-size: 1.5rem;
   font-weight: 500;
   color: #475569;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   padding-left: 1rem;
   border-left: 3px solid #f7931a;
 }
@@ -377,7 +382,7 @@
 
 /* Tools Section */
 .tools-section {
-  background: #f8fafc;
+  background: white;
 }
 
 .tools-grid {
@@ -439,7 +444,7 @@
 
 /* Community Section */
 .community-section {
-  background: white;
+  background: #f8fafc;
 }
 
 .community-grid {
@@ -571,15 +576,18 @@
 /* Discipline Resources Section */
 .discipline-resources {
   background: #f8fafc;
-  padding: 4rem 2rem;
 }
 
 .discipline-section {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   background: white;
   border-radius: 16px;
   padding: 2rem;
   border: 1px solid #e2e8f0;
+}
+
+.discipline-section:last-child {
+  margin-bottom: 0;
 }
 
 .discipline-title {
