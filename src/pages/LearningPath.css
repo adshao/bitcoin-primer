@@ -350,21 +350,19 @@
 .path-tips {
   padding: 4rem 2rem;
   background: linear-gradient(135deg, #f8fafc, #ffffff);
-  color: #0f0f23; /* Ensure text color is dark */
 }
 
 .tips-container {
   max-width: 1000px;
   margin: 0 auto;
-  color: #0f0f23; /* Ensure container text is dark */
 }
 
-.tips-title {
+.path-tips .tips-title {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
   margin-bottom: 3rem;
-  color: #0f0f23 !important; /* Force dark color */
+  color: #0f0f23 !important;
 }
 
 .tips-grid {

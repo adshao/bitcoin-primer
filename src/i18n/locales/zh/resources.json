@@ -1,6 +1,9 @@
 {
   "title": "资源汇总",
   "subtitle": "精选学习材料和工具",
+  "navigation": {
+    "quickNav": "快速导航"
+  },
   "sections": {
     "books": "推荐书籍",
     "courses": "在线课程",

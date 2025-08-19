@@ -1,6 +1,9 @@
 {
   "title": "Resources",
   "subtitle": "Curated Learning Materials and Tools",
+  "navigation": {
+    "quickNav": "Quick Navigation"
+  },
   "sections": {
     "books": "Recommended Books",
     "courses": "Online Courses",

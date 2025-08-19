@@ -1,12 +1,49 @@
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
 import SEO from '../components/SEO'
 import { useSEO } from '../hooks/useSEO'
+import { useState, useEffect } from 'react'
 import './Resources.css'
 
 function Resources() {
   const { t, i18n } = useFormattedTranslation('resources')
   const isZh = i18n.language === 'zh'
   const seoData = useSEO('resources')
+  const [activeSection, setActiveSection] = useState('discipline-resources')
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = [
+        'discipline-resources',
+        'courses-section', 
+        'tools-section',
+        'community-section',
+        'podcasts-section'
+      ]
+      
+      for (const sectionId of sections) {
+        const element = document.getElementById(sectionId)
+        if (element) {
+          const rect = element.getBoundingClientRect()
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            setActiveSection(sectionId)
+            break
+          }
+        }
+      }
+    }
+    
+    window.addEventListener('scroll', handleScroll)
+    handleScroll()
+    
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+  
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
   
   const books = [
     {
@@ -212,8 +249,34 @@ function Resources() {
     law: '⚖️'
   }
 
+  const navigationItems = [
+    { id: 'discipline-resources', icon: '📚', label: t('sections.books') },
+    { id: 'courses-section', icon: '🎓', label: t('sections.courses') },
+    { id: 'tools-section', icon: '🛠️', label: t('sections.tools') },
+    { id: 'community-section', icon: '👥', label: t('sections.community') },
+    { id: 'podcasts-section', icon: '🎧', label: t('sections.podcasts') }
+  ]
+
   return (
     <div className="resources">
+      <nav className="resources-nav">
+        <div className="resources-nav-content">
+          <h3 className="resources-nav-title">{t('navigation.quickNav')}</h3>
+          <ul className="resources-nav-list">
+            {navigationItems.map(item => (
+              <li key={item.id} className={`resources-nav-item ${activeSection === item.id ? 'active' : ''}`}>
+                <button 
+                  onClick={() => scrollToSection(item.id)}
+                  className="resources-nav-link"
+                >
+                  <span className="resources-nav-icon">{item.icon}</span>
+                  <span className="resources-nav-text">{item.label}</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
       <SEO {...seoData} />
       <section className="resources-hero">
         <div className="resources-hero-background">
@@ -228,7 +291,7 @@ function Resources() {
         </div>
       </section>
 
-      <section className="discipline-resources">
+      <section id="discipline-resources" className="discipline-resources">
         <div className="section-container">
           <h2 className="section-title">📚 {t('sections.books')}</h2>
           
@@ -261,7 +324,7 @@ function Resources() {
         </div>
       </section>
 
-      <section className="courses-section">
+      <section id="courses-section" className="courses-section">
         <div className="section-container">
           <h2 className="section-title">🎓 {t('sections.courses')}</h2>
           <div className="resource-category">
@@ -299,7 +362,7 @@ function Resources() {
         </div>
       </section>
 
-      <section className="tools-section">
+      <section id="tools-section" className="tools-section">
         <div className="section-container">
           <h2 className="section-title">🛠️ {t('sections.tools')}</h2>
           {tools.map((category, index) => (
@@ -322,7 +385,7 @@ function Resources() {
         </div>
       </section>
 
-      <section className="community-section">
+      <section id="community-section" className="community-section">
         <div className="section-container">
           <h2 className="section-title">👥 {t('sections.community')}</h2>
           <div className="community-grid">
@@ -345,7 +408,7 @@ function Resources() {
         </div>
       </section>
 
-      <section className="podcasts-section">
+      <section id="podcasts-section" className="podcasts-section">
         <div className="section-container">
           <h2 className="section-title">🎧 {t('sections.podcasts')}</h2>
           <div className="podcasts-grid">
@@ -361,7 +424,7 @@ function Resources() {
         </div>
       </section>
 
-      <section className="resources-tips">
+      <section id="resources-tips" className="resources-tips">
         <div className="tips-container">
           <h2 className="tips-title">{t('tips.title')}</h2>
           <div className="tips-content">
