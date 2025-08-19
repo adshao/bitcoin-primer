@@ -34,12 +34,19 @@ export const useSEO = (pageName) => {
   }
   
   // Add structured data for articles (non-home pages)
+  const publishedDate = "2024-01-01T00:00:00Z";
+  const modifiedDate = new Date().toISOString();
+  
   if (pageName !== 'home') {
+    seoData.type = 'article';
+    seoData.publishedTime = publishedDate;
+    seoData.modifiedTime = modifiedDate;
     seoData.jsonLd = {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": seoData.title,
       "description": seoData.description,
+      "image": "https://bitcoinprimer.com/bitcoin-og-image.png",
       "publisher": {
         "@type": "Organization",
         "name": "Bitcoin Primer",
@@ -50,10 +57,15 @@ export const useSEO = (pageName) => {
       },
       "author": {
         "@type": "Organization",
-        "name": "Bitcoin Primer"
+        "name": "Bitcoin Primer",
+        "url": "https://bitcoinprimer.com"
       },
-      "datePublished": "2024-01-01",
-      "dateModified": new Date().toISOString()
+      "datePublished": publishedDate,
+      "dateModified": modifiedDate,
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": `https://bitcoinprimer.com/${pageName}`
+      }
     }
   }
   

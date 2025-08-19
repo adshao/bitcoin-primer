@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run generate:seo && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate:images": "node scripts/generate-images.js",
+    "generate:seo": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
     "i18next": "^25.3.6",
@@ -22,10 +24,12 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "canvas": "^3.2.0",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.2",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "puppeteer": "^24.16.2",
     "terser": "^5.43.1",
     "vite": "^7.1.2"
   }

@@ -21,6 +21,8 @@ Allow: /law
 Allow: /learning-path
 Allow: /study-guide
 Allow: /resources
+Allow: /articles
+Allow: /en/
 
 # Sitemap location
 Sitemap: https://bitcoinprimer.com/sitemap.xml
