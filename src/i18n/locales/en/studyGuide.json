@@ -60,7 +60,7 @@
         { "phase": "Practice", "content": "Run nodes, develop applications, contribute to projects" }
       ],
       "resourcesLabel": "Recommended Resources",
-      "resources": ["Mastering Bitcoin", "Programming Bitcoin", "Bitcoin Core Source Code"]
+      "resourceKeys": ["masteringBitcoin", "programmingBitcoin", "bitcoinCore"]
     },
     {
       "type": "Economic Route",
@@ -74,7 +74,7 @@
         { "phase": "Practice", "content": "Market analysis, risk management, investment strategies" }
       ],
       "resourcesLabel": "Recommended Resources",
-      "resources": ["The Bitcoin Standard", "Denationalization of Money", "Stock-to-Flow Model"]
+      "resourceKeys": ["bitcoinStandard", "denationalizationMoney", "stockToFlow"]
     },
     {
       "type": "Social Route",
@@ -88,7 +88,7 @@
         { "phase": "Practice", "content": "Case studies, policy analysis, future outlook" }
       ],
       "resourcesLabel": "Recommended Resources",
-      "resources": ["The Sovereign Individual", "Digital Gold", "National Regulatory Policies"]
+      "resourceKeys": ["sovereignIndividual", "digitalGold", "regulatoryPolicies"]
     }
   ],
   "pathSuitable": "Suitable for:",
@@ -254,6 +254,44 @@
     }
   ],
   "visitLink": "Visit →",
+  "resources": {
+    "masteringBitcoin": {
+      "name": "Mastering Bitcoin",
+      "url": "https://github.com/bitcoinbook/bitcoinbook"
+    },
+    "programmingBitcoin": {
+      "name": "Programming Bitcoin",
+      "url": "https://programmingbitcoin.com/"
+    },
+    "bitcoinCore": {
+      "name": "Bitcoin Core Source Code",
+      "url": "https://github.com/bitcoin/bitcoin"
+    },
+    "bitcoinStandard": {
+      "name": "The Bitcoin Standard",
+      "url": "https://saifedean.com/thebitcoinstandard/"
+    },
+    "denationalizationMoney": {
+      "name": "Denationalization of Money",
+      "url": "https://mises.org/library/denationalisation-money-argument-refined"
+    },
+    "stockToFlow": {
+      "name": "Stock-to-Flow Model",
+      "url": "https://www.lookintobitcoin.com/charts/stock-to-flow-model/"
+    },
+    "sovereignIndividual": {
+      "name": "The Sovereign Individual",
+      "url": "https://www.amazon.com/Sovereign-Individual-Mastering-Transition-Information/dp/0684832720"
+    },
+    "digitalGold": {
+      "name": "Digital Gold",
+      "url": "https://www.amazon.com/Digital-Gold-Bitcoin-Millionaires-Reinvent/dp/006236250X"
+    },
+    "regulatoryPolicies": {
+      "name": "National Regulatory Policies",
+      "url": null
+    }
+  },
   "summary": {
     "content": "Learning Bitcoin is an ongoing process that requires patience and persistence. Choose a path that suits you, apply the right methods, deepen understanding through practice, engage with the community, and you will gradually build a deep understanding of Bitcoin.",
     "viewPath": "View Learning Path",

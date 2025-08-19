@@ -60,7 +60,7 @@
         { "phase": "实践", "content": "搭建节点、开发应用、参与贡献" }
       ],
       "resourcesLabel": "推荐资源",
-      "resources": ["Mastering Bitcoin", "Programming Bitcoin", "Bitcoin Core源码"]
+      "resourceKeys": ["masteringBitcoin", "programmingBitcoin", "bitcoinCore"]
     },
     {
       "type": "经济路线",
@@ -74,7 +74,7 @@
         { "phase": "实践", "content": "市场分析、风险管理、投资策略" }
       ],
       "resourcesLabel": "推荐资源",
-      "resources": ["The Bitcoin Standard", "货币的非国家化", "Stock-to-Flow模型"]
+      "resourceKeys": ["bitcoinStandard", "denationalizationMoney", "stockToFlow"]
     },
     {
       "type": "社会路线",
@@ -88,7 +88,7 @@
         { "phase": "实践", "content": "案例研究、政策分析、未来展望" }
       ],
       "resourcesLabel": "推荐资源",
-      "resources": ["The Sovereign Individual", "Digital Gold", "各国监管政策"]
+      "resourceKeys": ["sovereignIndividual", "digitalGold", "regulatoryPolicies"]
     }
   ],
   "pathSuitable": "适合：",
@@ -254,6 +254,44 @@
     }
   ],
   "visitLink": "访问 →",
+  "resources": {
+    "masteringBitcoin": {
+      "name": "Mastering Bitcoin",
+      "url": "https://github.com/bitcoinbook/bitcoinbook"
+    },
+    "programmingBitcoin": {
+      "name": "Programming Bitcoin",
+      "url": "https://programmingbitcoin.com/"
+    },
+    "bitcoinCore": {
+      "name": "Bitcoin Core源码",
+      "url": "https://github.com/bitcoin/bitcoin"
+    },
+    "bitcoinStandard": {
+      "name": "The Bitcoin Standard",
+      "url": "https://saifedean.com/thebitcoinstandard/"
+    },
+    "denationalizationMoney": {
+      "name": "货币的非国家化",
+      "url": "https://mises.org/library/denationalisation-money-argument-refined"
+    },
+    "stockToFlow": {
+      "name": "Stock-to-Flow模型",
+      "url": "https://www.lookintobitcoin.com/charts/stock-to-flow-model/"
+    },
+    "sovereignIndividual": {
+      "name": "The Sovereign Individual",
+      "url": "https://www.amazon.com/Sovereign-Individual-Mastering-Transition-Information/dp/0684832720"
+    },
+    "digitalGold": {
+      "name": "Digital Gold",
+      "url": "https://www.amazon.com/Digital-Gold-Bitcoin-Millionaires-Reinvent/dp/006236250X"
+    },
+    "regulatoryPolicies": {
+      "name": "各国监管政策",
+      "url": null
+    }
+  },
   "summary": {
     "content": "比特币学习是一个持续的过程，需要耐心和坚持。选择适合自己的路径，运用正确的方法，通过实践加深理解，参与社区交流，你将逐步建立对比特币的深刻认识。",
     "viewPath": "查看学习路径",

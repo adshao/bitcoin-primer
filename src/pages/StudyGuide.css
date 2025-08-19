@@ -173,14 +173,16 @@
   border-radius: 12px;
   padding: 2rem;
   border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .path-header {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
 }
 
 .path-icon {
@@ -191,16 +193,14 @@
   font-size: 1.5rem;
   font-weight: 600;
   color: #0f0f23;
+  margin: 0;
   flex: 1;
 }
 
 .path-suitable {
-  padding: 0.25rem 0.75rem;
-  background: #e0f2fe;
-  color: #0369a1;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 500;
+  color: #64748b;
+  font-size: 0.875rem;
+  margin: 0 0 0.75rem 0;
 }
 
 .path-focus {
@@ -211,6 +211,9 @@
 
 .path-steps {
   margin-bottom: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .path-steps h4,
@@ -223,12 +226,20 @@
   letter-spacing: 0.5px;
 }
 
+.steps-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .step-item {
   display: grid;
   grid-template-columns: 100px 1fr;
   gap: 2rem;
-  margin-bottom: 0.75rem;
-  align-items: flex-start;
+  align-items: center;
+  min-height: 50px;
+  padding: 0.75rem 0;
 }
 
 .step-phase {
@@ -251,6 +262,24 @@
   text-align: left;
 }
 
+.step-content-link {
+  color: #f7931a;
+  text-decoration: none;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+  border-bottom: 1px dashed #f7931a;
+  text-align: left;
+}
+
+.step-content-link:hover {
+  color: #d87000;
+  border-bottom-style: solid;
+}
+
+.path-resources {
+  margin-top: auto;
+}
+
 .path-resources ul {
   list-style: none;
   padding: 0;
@@ -264,6 +293,17 @@
 
 .path-resources li:last-child {
   border-bottom: none;
+}
+
+.resource-link {
+  color: #f7931a;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.resource-link:hover {
+  color: #d87000;
+  text-decoration: underline;
 }
 
 /* Study Methods Section */

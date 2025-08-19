@@ -1,3 +1,4 @@
+import LocalizedLink from '../components/LocalizedLink'
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
 import SEO from '../components/SEO'
 import { useSEO } from '../hooks/useSEO'
@@ -12,6 +13,7 @@ function StudyGuide() {
   const studyMethods = t('studyGuide:methods', { returnObjects: true })
   const exerciseLevels = t('studyGuide:exercises.levels', { returnObjects: true })
   const communityEngagement = t('studyGuide:community', { returnObjects: true })
+  const resourcesData = t('studyGuide:resources', { returnObjects: true })
 
   // Icons for each section (not translated)
   const principleIcons = ['💡', '🔬', '🔍', '🤔']
@@ -31,6 +33,28 @@ function StudyGuide() {
     'Bitcoin.org': 'https://bitcoin.org',
     'Lopp.net': 'https://lopp.net/bitcoin.html',
     '21 Lessons': 'https://21lessons.com'
+  }
+
+  // Define path mappings for each learning path and step
+  const pathMappings = {
+    0: { // Technical route
+      0: '/computer-science', // Basics - cryptography
+      1: '/computer-science', // Core - blockchain structure
+      2: '/computer-science', // Advanced - source code
+      3: null // Practice - no specific page
+    },
+    1: { // Economic route
+      0: '/economics', // Basics - monetary theory
+      1: '/money', // Core - scarcity, store of value
+      2: '/banking', // Advanced - macroeconomic impacts
+      3: null // Practice - no specific page
+    },
+    2: { // Social route
+      0: '/philosophy', // Basics - decentralization ideology
+      1: '/politics', // Core - trust mechanisms, power structures
+      2: '/law', // Advanced - legal frameworks
+      3: null // Practice - no specific page
+    }
   }
 
   return (
@@ -80,26 +104,49 @@ function StudyGuide() {
                 <div className="path-header">
                   <span className="path-icon">{pathIcons[index]}</span>
                   <h3 className="path-type">{path.type}</h3>
-                  <span className="path-suitable">{t('studyGuide:pathSuitable')} {path.suitable}</span>
                 </div>
+                <p className="path-suitable">{t('studyGuide:pathSuitable')} {path.suitable}</p>
                 <p className="path-focus">{path.focus}</p>
                 
                 <div className="path-steps">
                   <h4>{path.stepsLabel}</h4>
-                  {path.steps.map((step, i) => (
-                    <div key={i} className="step-item">
-                      <span className="step-phase">{step.phase}</span>
-                      <span className="step-content">{step.content}</span>
-                    </div>
-                  ))}
+                  <div className="steps-list">
+                    {path.steps.map((step, stepIndex) => {
+                      const stepPath = pathMappings[index]?.[stepIndex]
+                      return (
+                        <div key={stepIndex} className="step-item">
+                          <span className="step-phase">{step.phase}</span>
+                          {stepPath ? (
+                            <LocalizedLink to={stepPath} className="step-content-link">
+                              {step.content}
+                            </LocalizedLink>
+                          ) : (
+                            <span className="step-content">{step.content}</span>
+                          )}
+                        </div>
+                      )
+                    })}
+                  </div>
                 </div>
                 
                 <div className="path-resources">
                   <h4>{path.resourcesLabel}</h4>
                   <ul>
-                    {path.resources.map((resource, i) => (
-                      <li key={i}>{resource}</li>
-                    ))}
+                    {path.resourceKeys?.map((resourceKey, i) => {
+                      const resource = resourcesData[resourceKey]
+                      if (!resource) return null
+                      return (
+                        <li key={i}>
+                          {resource.url ? (
+                            <a href={resource.url} target="_blank" rel="noopener noreferrer" className="resource-link">
+                              {resource.name}
+                            </a>
+                          ) : (
+                            resource.name
+                          )}
+                        </li>
+                      )
+                    })}
                   </ul>
                 </div>
               </div>

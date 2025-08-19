@@ -115,7 +115,7 @@ function Layout({ children }) {
               </LocalizedLink>
               <LocalizedLink 
                 to="/articles" 
-                className={`nav-item ${location.pathname.endsWith('/articles') ? 'active' : ''}`}
+                className={`nav-item ${location.pathname.includes('/articles') ? 'active' : ''}`}
               >
                 {t('nav.deepArticles')}
               </LocalizedLink>
@@ -184,7 +184,7 @@ function Layout({ children }) {
               </LocalizedLink>
               <LocalizedLink 
                 to="/articles" 
-                className={`mobile-link ${location.pathname.endsWith('/articles') ? 'active' : ''}`}
+                className={`mobile-link ${location.pathname.includes('/articles') ? 'active' : ''}`}
               >
                 <span className="mobile-link-icon">📖</span>
                 <span>{t('nav.deepArticles')}</span>
