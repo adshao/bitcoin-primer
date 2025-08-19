@@ -107,6 +107,21 @@ function TopicTemplate({
                 </div>
               </div>
 
+              {/* Reflection Questions Card */}
+              <div className="sidebar-card reflection-card">
+                <h3 className="card-title">
+                  <span className="card-icon">🤔</span>
+                  {t('template.reflection')}
+                </h3>
+                <div className="reflection-content">
+                  {reflectionQuestions.map((question, index) => (
+                    <p key={index} className="reflection-question">
+                      {question}
+                    </p>
+                  ))}
+                </div>
+              </div>
+
               {/* Resources Card */}
               <div className="sidebar-card resources-card">
                 <h3 className="card-title">
@@ -160,21 +175,6 @@ function TopicTemplate({
                       </ul>
                     </div>
                   )}
-                </div>
-              </div>
-
-              {/* Reflection Questions Card */}
-              <div className="sidebar-card reflection-card">
-                <h3 className="card-title">
-                  <span className="card-icon">🤔</span>
-                  {t('template.reflection')}
-                </h3>
-                <div className="reflection-content">
-                  {reflectionQuestions.map((question, index) => (
-                    <p key={index} className="reflection-question">
-                      {question}
-                    </p>
-                  ))}
                 </div>
               </div>
             </aside>
