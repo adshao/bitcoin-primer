@@ -2,6 +2,7 @@ import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
 import SEO from '../components/SEO'
 import { useSEO } from '../hooks/useSEO'
 import { useState, useEffect } from 'react'
+import { disciplineResources } from '../data/disciplineResources'
 import './Resources.css'
 
 function Resources() {
@@ -15,9 +16,9 @@ function Resources() {
       const sections = [
         'discipline-resources',
         'courses-section', 
+        'podcasts-section',
         'tools-section',
-        'community-section',
-        'podcasts-section'
+        'community-section'
       ]
       
       for (const sectionId of sections) {
@@ -235,7 +236,7 @@ function Resources() {
       'https://www.whatbitcoindid.com/',
       'https://pomp.substack.com/',
       'https://stephanlivera.com/',
-      'https://www.tftc.io/'
+      'https://www.tftc.io/r/?ref=BTC5ed77f08-a24f-4ae0-9e9b-08691935b334'
     ][index]
   }))
 
@@ -259,9 +260,9 @@ function Resources() {
   const navigationItems = [
     { id: 'discipline-resources', icon: '📚', label: t('sections.books') },
     { id: 'courses-section', icon: '🎓', label: t('sections.courses') },
+    { id: 'podcasts-section', icon: '🎧', label: t('sections.podcasts') },
     { id: 'tools-section', icon: '🛠️', label: t('sections.tools') },
-    { id: 'community-section', icon: '👥', label: t('sections.community') },
-    { id: 'podcasts-section', icon: '🎧', label: t('sections.podcasts') }
+    { id: 'community-section', icon: '👥', label: t('sections.community') }
   ]
 
   return (
@@ -302,32 +303,45 @@ function Resources() {
         <div className="section-container">
           <h2 className="section-title">📚 {t('sections.books')}</h2>
           
-          {disciplines.map(discipline => (
-            <div key={discipline} className="discipline-section">
-              <h3 className="discipline-title">
-                <span className="discipline-icon">{disciplineIcons[discipline]}</span>
-                {t(`disciplines.${discipline}.title`)}
-              </h3>
-              <div className="discipline-content">
-                <div className="resource-list">
-                  <h4>{t(`disciplines.${discipline}.books`)}</h4>
-                  <ul>
-                    {t(`disciplines.${discipline}.booksList`, { returnObjects: true }).map((book, i) => (
-                      <li key={i}>{book}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="resource-list">
-                  <h4>{t(`disciplines.${discipline}.${discipline === 'banking' ? 'research' : 'papers'}`)}</h4>
-                  <ul>
-                    {t(`disciplines.${discipline}.${discipline === 'banking' ? 'researchList' : 'papersList'}`, { returnObjects: true }).map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
+          {disciplines.map(discipline => {
+            const resources = disciplineResources[discipline]
+            const disciplineKey = discipline === 'computerScience' ? 'computerScience' : discipline
+            
+            return (
+              <div key={discipline} className="discipline-section">
+                <h3 className="discipline-title">
+                  <span className="discipline-icon">{disciplineIcons[discipline]}</span>
+                  {t(`disciplines.${discipline}.title`)}
+                </h3>
+                <div className="discipline-content">
+                  <div className="resource-list">
+                    <h4>{t(`disciplines.${discipline}.books`)}</h4>
+                    <ul>
+                      {resources.books.map((book, i) => (
+                        <li key={i}>
+                          <a href={book.link} target="_blank" rel="noopener noreferrer" className="resource-link">
+                            《{book.title}》 - {book.author}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="resource-list">
+                    <h4>{t(`disciplines.${discipline}.${discipline === 'banking' ? 'research' : 'papers'}`)}</h4>
+                    <ul>
+                      {(resources[discipline === 'banking' ? 'research' : 'papers'] || []).map((paper, i) => (
+                        <li key={i}>
+                          <a href={paper.link} target="_blank" rel="noopener noreferrer" className="resource-link">
+                            {paper.title} {paper.author && `- ${paper.author}`}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </section>
 
@@ -365,6 +379,27 @@ function Resources() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="podcasts-section" className="podcasts-section">
+        <div className="section-container">
+          <h2 className="section-title">🎧 {t('sections.podcasts')}</h2>
+          <div className="podcasts-grid">
+            {podcasts.map((podcast, index) => (
+              <div key={index} className="podcast-card">
+                <h4 className="podcast-name">{podcast.name}</h4>
+                <p className="podcast-host">{t('podcasts.host')} {podcast.host}</p>
+                <p className="podcast-description">{podcast.description}</p>
+                <div className="podcast-footer">
+                  <span className="podcast-frequency">{podcast.frequency}</span>
+                  <a href={podcast.link} target="_blank" rel="noopener noreferrer" className="podcast-link">
+                    {t('podcasts.listen')}
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -407,27 +442,6 @@ function Resources() {
                   <span className="community-language">{community.language}</span>
                   <a href={community.link} target="_blank" rel="noopener noreferrer" className="community-link">
                     {t('community.visit')}
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="podcasts-section" className="podcasts-section">
-        <div className="section-container">
-          <h2 className="section-title">🎧 {t('sections.podcasts')}</h2>
-          <div className="podcasts-grid">
-            {podcasts.map((podcast, index) => (
-              <div key={index} className="podcast-card">
-                <h4 className="podcast-name">{podcast.name}</h4>
-                <p className="podcast-host">{t('podcasts.host')} {podcast.host}</p>
-                <p className="podcast-description">{podcast.description}</p>
-                <div className="podcast-footer">
-                  <span className="podcast-frequency">{podcast.frequency}</span>
-                  <a href={podcast.link} target="_blank" rel="noopener noreferrer" className="podcast-link">
-                    {t('podcasts.listen')}
                   </a>
                 </div>
               </div>

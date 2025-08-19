@@ -646,10 +646,10 @@
   
   .footer-content {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
   }
   
   .footer-links {
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
