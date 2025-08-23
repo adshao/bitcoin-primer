@@ -1,4 +1,4 @@
-import { useParams, Link, useLocation } from 'react-router-dom'
+import { useParams, Link, useLocation, useNavigate } from 'react-router-dom'
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
 import { useArticle } from '../hooks/useArticles'
 import './Article.css'
@@ -6,6 +6,7 @@ import './Article.css'
 function Article() {
   const { articleSlug } = useParams()
   const location = useLocation()
+  const navigate = useNavigate()
   const { t, i18n } = useFormattedTranslation()
   
   // Extract the discipline from the article slug
@@ -178,9 +179,9 @@ function Article() {
               <span className="tag">{t('articlePage.deepAnalysis')}</span>
             </div>
             <div className="article-actions">
-              <Link to={topicPath} className="back-to-topic">
+              <button onClick={() => navigate(-1)} className="back-to-topic">
                 ← {t('articlePage.back')}
-              </Link>
+              </button>
             </div>
           </div>
         </div>
