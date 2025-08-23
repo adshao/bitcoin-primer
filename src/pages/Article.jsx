@@ -24,7 +24,8 @@ function Article() {
     'bitcoin-energy-paradigm': 'energy',
     'sovereign-individual-in-digital-age': 'politics',
     'digital-gold-philosophical-revolution': 'philosophy',
-    'code-is-law-paradigm-shift': 'law'
+    'code-is-law-paradigm-shift': 'law',
+    'social-security-ponzi-bitcoin-retirement': 'social'
   }
   
   const disciplineSlug = articleToDiscipline[articleSlug] || 'money'
@@ -40,12 +41,23 @@ function Article() {
       'energy': 'energy',
       'politics': 'politics',
       'philosophy': 'philosophy',
-      'law': 'law'
+      'law': 'law',
+      'social': 'social'
     }
     
     const namespace = articleMap[disciplineSlug] || 'money'
-    const { t: topicT } = useFormattedTranslation(namespace)
     const article = useArticle(namespace)
+    
+    // Special handling for social security article
+    if (disciplineSlug === 'social') {
+      const topicTitle = lang === 'zh' ? '社会' : 'Social'
+      const topicIcon = '🏛️'
+      const topicPath = lang === 'zh' ? '/zh/economics' : '/economics'
+      return { article, topicTitle, topicIcon, topicPath }
+    }
+    
+    // Regular discipline articles
+    const { t: topicT } = useFormattedTranslation(namespace)
     
     try {
       const topicTitle = topicT('title')

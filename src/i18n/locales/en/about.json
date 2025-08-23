@@ -1,0 +1,42 @@
+{
+  "title": "About Us",
+  "subtitle": "Bitcoin Primer - Bitcoin Education",
+  "intro": {
+    "title": "Open Source Project Focused on Bitcoin Education",
+    "description": "Bitcoin Primer helps you comprehensively understand Bitcoin's essence, technical principles, and social significance through multidisciplinary perspectives."
+  },
+  "principles": {
+    "title": "Our Principles",
+    "item1": {
+      "title": "Non-Profit",
+      "description": "Pure public education project, no participation in any commissions, promotions, or commercial activities."
+    },
+    "item2": {
+      "title": "Objective and Fair",
+      "description": "Based on facts and academic research, no exaggerated promotion, no profit through false information."
+    },
+    "item3": {
+      "title": "Bitcoin-Only",
+      "description": "Focus only on Bitcoin, not involving other cryptocurrencies, contract trading, or high-risk investments."
+    },
+    "item4": {
+      "title": "Open and Transparent",
+      "description": "Fully open source code, free knowledge sharing, welcome community contributions."
+    }
+  },
+  "contribute": {
+    "title": "Contribute",
+    "description": "The project is fully open source, welcoming everyone to contribute. Whether you're a developer, educator, or Bitcoin enthusiast, you can help us improve this educational platform by submitting code, improving content, or providing suggestions.",
+    "viewOnGithub": "View on GitHub",
+    "repoUrl": "github.com/adshao/bitcoin-primer"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "For any questions, suggestions, or collaboration intentions, please feel free to contact us via email.",
+    "email": "contact@bitcoinprimer.org"
+  },
+  "disclaimer": {
+    "title": "Disclaimer",
+    "description": "This website content is for educational reference only and does not constitute investment advice. Bitcoin price is highly volatile, please invest rationally at your own risk."
+  }
+}

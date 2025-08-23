@@ -8,6 +8,7 @@ import bitcoinEnergyParadigm from './bitcoin-energy-paradigm.json'
 import sovereignIndividualInDigitalAge from './sovereign-individual-in-digital-age.json'
 import digitalGoldPhilosophicalRevolution from './digital-gold-philosophical-revolution.json'
 import codeIsLawParadigmShift from './code-is-law-paradigm-shift.json'
+import socialSecurityPonziBitcoinRetirement from './social-security-ponzi-bitcoin-retirement.json'
 
 // Export as a single object with discipline keys
 export const articles = {
@@ -19,7 +20,8 @@ export const articles = {
   energy: bitcoinEnergyParadigm,
   politics: sovereignIndividualInDigitalAge,
   philosophy: digitalGoldPhilosophicalRevolution,
-  law: codeIsLawParadigmShift
+  law: codeIsLawParadigmShift,
+  social: socialSecurityPonziBitcoinRetirement
 }
 
 export default articles

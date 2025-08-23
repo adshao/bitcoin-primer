@@ -1,0 +1,52 @@
+{
+  "title": "Buy Bitcoin",
+  "subtitle": "Choose the investment method that suits you",
+  "howToChoose": "How to Choose?",
+  "ifYou": "If you",
+  "or": "or",
+  "etfChoice": "Don't want to learn key management · Need tax documents · Prefer traditional investing",
+  "exchangeChoice": "Want true Bitcoin ownership · Willing to learn technology · Pursue decentralization",
+  "option1": "Option 1",
+  "option2": "Option 2",
+  "bitcoinETF": "Bitcoin ETF",
+  "recommended": "Recommended",
+  "suitableForMost": "Suitable for most investors",
+  "suitableForTech": "Suitable for technical users",
+  "exchanges": "Exchanges",
+  "etfDescription": "Buy Bitcoin ETF through traditional brokers, as simple as trading stocks, no need to manage private keys.",
+  "exchangeDescription": "Buy Bitcoin directly, truly own it, recommend withdrawing to cold wallet for safekeeping.",
+  "ibkr": {
+    "name": "Interactive Brokers",
+    "englishName": "Interactive Brokers",
+    "description": "Leading global online broker, low fees, professional platform",
+    "features": ["Global market coverage", "Low trading fees", "Professional trading tools", "Powerful API"]
+  },
+  "etf": {
+    "ticker": "IBIT",
+    "name": "iShares Bitcoin Trust",
+    "provider": "BlackRock",
+    "description": "Issued by BlackRock, world's largest asset manager, best liquidity"
+  },
+  "binance": {
+    "name": "Binance",
+    "description": "World's largest exchange",
+    "features": ["Highest trading volume", "Best liquidity", "Low fees"]
+  },
+  "coinbase": {
+    "name": "Coinbase",
+    "description": "US public company",
+    "features": ["Strong compliance", "Beginner friendly", "Insurance protection"]
+  },
+  "kraken": {
+    "name": "Kraken",
+    "description": "Established exchange",
+    "features": ["Long history", "High security", "Professional features"]
+  },
+  "openAccount": "Open Account →",
+  "goRegister": "Register Now →",
+  "advantages": "Advantages",
+  "etfAdvantages": ["No key management", "Regulatory protection", "Simple taxation", "Easy trading"],
+  "exchangeAdvantages": ["True Bitcoin ownership", "Withdrawable to wallet", "Complete control", "No third party"],
+  "riskWarning": "Risk Warning",
+  "riskDescription": "Bitcoin price is volatile, only invest what you can afford to lose. Do your research, understand tax requirements, secure your accounts."
+}

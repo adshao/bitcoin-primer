@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { Link, useSearchParams, useNavigate } from 'react-router-dom'
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
 import { useArticles } from '../hooks/useArticles'
 import SEO from '../components/SEO'
@@ -10,41 +10,67 @@ function Articles() {
   const { t, i18n } = useFormattedTranslation()
   const seoData = useSEO('articles')
   const articlesData = useArticles()
-  const [currentPage, setCurrentPage] = useState(1)
+  const [searchParams] = useSearchParams()
+  const navigate = useNavigate()
+  
+  // Get page from URL query params, default to 1
+  const pageParam = searchParams.get('page')
+  const initialPage = pageParam ? parseInt(pageParam, 10) : 1
+  const [currentPage, setCurrentPage] = useState(initialPage)
   const articlesPerPage = 9
+  
+  // Update state when URL changes
+  useEffect(() => {
+    const page = searchParams.get('page')
+    if (page) {
+      setCurrentPage(parseInt(page, 10))
+    } else {
+      setCurrentPage(1)
+    }
+  }, [searchParams])
   
   // 获取所有文章数据
   const getAllArticles = () => {
     const articles = []
-    const disciplines = [
-      { key: 'money', icon: '💰', path: '/money' },
-      { key: 'banking', icon: '🏦', path: '/banking' },
-      { key: 'economics', icon: '📊', path: '/economics' },
-      { key: 'computerScience', icon: '💻', path: '/computer-science' },
-      { key: 'gameTheory', icon: '🎯', path: '/game-theory' },
-      { key: 'energy', icon: '⚡', path: '/energy' },
-      { key: 'politics', icon: '🏛️', path: '/politics' },
-      { key: 'philosophy', icon: '🔮', path: '/philosophy' },
-      { key: 'law', icon: '⚖️', path: '/law' }
-    ]
+    const disciplineMap = {
+      money: { icon: '💰', path: '/money' },
+      banking: { icon: '🏦', path: '/banking' },
+      economics: { icon: '📊', path: '/economics' },
+      computerScience: { icon: '💻', path: '/computer-science' },
+      gameTheory: { icon: '🎯', path: '/game-theory' },
+      energy: { icon: '⚡', path: '/energy' },
+      politics: { icon: '🏛️', path: '/politics' },
+      philosophy: { icon: '🔮', path: '/philosophy' },
+      law: { icon: '⚖️', path: '/law' },
+      social: { icon: '🏛️', path: '/economics' } // 社会文章归类到经济学
+    }
     
-    disciplines.forEach(discipline => {
-      try {
-        const { t: disciplineT } = useFormattedTranslation(discipline.key)
-        const article = articlesData[discipline.key]
-        const disciplineTitle = disciplineT('title')
+    // 遍历所有文章数据
+    Object.keys(articlesData).forEach(key => {
+      const article = articlesData[key]
+      if (article && article.title) {
+        const disciplineInfo = disciplineMap[key] || { icon: '📄', path: '/' }
         
-        if (article && article.title) {
-          articles.push({
-            ...article,
-            discipline: disciplineTitle,
-            disciplineIcon: discipline.icon,
-            disciplinePath: discipline.path,
-            articlePath: `/articles/${article.urlSlug || 'article'}`
-          })
+        // 尝试获取学科标题
+        let disciplineTitle = ''
+        try {
+          if (key === 'social') {
+            disciplineTitle = i18n.language === 'zh' ? '社会' : 'Social'
+          } else {
+            const { t: disciplineT } = useFormattedTranslation(key)
+            disciplineTitle = disciplineT('title')
+          }
+        } catch (error) {
+          disciplineTitle = key
         }
-      } catch (error) {
-        // 该学科暂无文章
+        
+        articles.push({
+          ...article,
+          discipline: disciplineTitle,
+          disciplineIcon: disciplineInfo.icon,
+          disciplinePath: disciplineInfo.path,
+          articlePath: `/articles/${article.urlSlug || 'article'}`
+        })
       }
     })
     
@@ -59,7 +85,14 @@ function Articles() {
   const currentArticles = allArticles.slice(indexOfFirstArticle, indexOfLastArticle)
   const totalPages = Math.ceil(allArticles.length / articlesPerPage)
   
-  const paginate = (pageNumber) => setCurrentPage(pageNumber)
+  const paginate = (pageNumber) => {
+    const basePath = i18n.language === 'en' ? '/articles' : `/${i18n.language}/articles`
+    if (pageNumber === 1) {
+      navigate(basePath)
+    } else {
+      navigate(`${basePath}?page=${pageNumber}`)
+    }
+  }
   
   return (
     <div className="articles-page">

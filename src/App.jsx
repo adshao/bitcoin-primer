@@ -18,6 +18,8 @@ import StudyGuide from './pages/StudyGuide'
 import Resources from './pages/Resources'
 import Articles from './pages/Articles'
 import Article from './pages/Article'
+import BuyBitcoin from './pages/BuyBitcoin'
+import About from './pages/About'
 import './App.css'
 
 function App() {
@@ -47,6 +49,8 @@ function App() {
       <Route path="study-guide" element={<StudyGuide />} />
       <Route path="articles" element={<Articles />} />
       <Route path="resources" element={<Resources />} />
+      <Route path="buy-bitcoin" element={<BuyBitcoin />} />
+      <Route path="about" element={<About />} />
       
       {/* Article route */}
       <Route path="articles/:articleSlug" element={<Article />} />
@@ -59,10 +63,14 @@ function App() {
         <Layout>
           <Routes>
             {/* English routes (no prefix) */}
-            <Route path="/">{pageRoutes}</Route>
+            {pageRoutes}
             
             {/* Chinese routes (with /zh prefix) */}
-            <Route path="/zh/*">{pageRoutes}</Route>
+            <Route path="/zh/*" element={
+              <Routes>
+                {pageRoutes}
+              </Routes>
+            } />
           </Routes>
         </Layout>
       </Router>

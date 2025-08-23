@@ -1,0 +1,443 @@
+/* About Page Styles - Clean Design */
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Animation for grid pattern */
+@keyframes grid-slide {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(40px, 40px);
+  }
+}
+
+/* Hero Section - matching Study Guide style */
+.about-hero {
+  position: relative;
+  padding: 4rem 2rem 5rem;
+  background: linear-gradient(135deg, #0f0f23, #1a1a2e);
+  color: white;
+  overflow: hidden;
+}
+
+.about-hero-background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.about-grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: grid-slide 30s linear infinite;
+}
+
+.about-gradient-orb {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(247, 147, 26, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  top: -300px;
+  right: -150px;
+  filter: blur(100px);
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #ffffff, #f7931a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Common Section Title */
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #0f0f23;
+}
+
+/* Intro Section */
+.about-intro {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.intro-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro-content {
+  text-align: center;
+}
+
+.intro-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #0f0f23;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.title-icon {
+  font-size: 2.5rem;
+  color: #f7931a;
+}
+
+.intro-description {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #64748b;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Principles Section */
+.about-principles {
+  padding: 5rem 2rem;
+  background: #f8fafc;
+}
+
+.about-principles-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-principles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.principle-item {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.principle-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f7931a;
+  opacity: 0.3;
+  line-height: 1;
+  min-width: 80px;
+}
+
+.principle-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f0f23;
+  margin-bottom: 0.75rem;
+}
+
+.principle-content p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Contribute Section */
+.about-contribute {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.contribute-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contribute-content {
+  text-align: center;
+}
+
+.contribute-text p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #64748b;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contribute-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: #0f0f23;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.github-button:hover {
+  background: #1a1a2e;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.github-icon {
+  flex-shrink: 0;
+}
+
+.contribute-info {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  font-family: 'Courier New', monospace;
+}
+
+/* Contact Section */
+.about-contact {
+  padding: 5rem 2rem;
+  background: #f8fafc;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-content {
+  text-align: center;
+}
+
+.contact-description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #64748b;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: white;
+  color: #0f0f23;
+  border: 2px solid #f7931a;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: all 0.3s ease;
+}
+
+.contact-email:hover {
+  background: #f7931a;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(247, 147, 26, 0.2);
+}
+
+.email-icon {
+  flex-shrink: 0;
+}
+
+/* Disclaimer Section */
+.about-disclaimer {
+  padding: 5rem 2rem;
+  background: #f8fafc;
+}
+
+.disclaimer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.disclaimer-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.disclaimer-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.disclaimer-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 0.75rem;
+}
+
+.disclaimer-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 3rem 1.5rem 4rem;
+  }
+  
+  .about-title {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+  }
+  
+  .about-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-intro,
+  .about-principles,
+  .about-contribute,
+  .about-contact,
+  .about-disclaimer {
+    padding: 3rem 1.5rem;
+  }
+  
+  .intro-title {
+    font-size: 1.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .title-icon {
+    font-size: 2rem;
+  }
+  
+  .intro-description {
+    font-size: 1.1rem;
+  }
+  
+  .principle-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .principle-number {
+    font-size: 2rem;
+    min-width: auto;
+  }
+  
+  .principle-content h3 {
+    font-size: 1.25rem;
+  }
+  
+  .principle-content p {
+    font-size: 1rem;
+  }
+  
+  .contribute-text p {
+    font-size: 1rem;
+  }
+  
+  .github-button {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .contact-description {
+    font-size: 1rem;
+  }
+  
+  .contact-email {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .disclaimer-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .disclaimer-icon {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 2.5rem 1rem 3.5rem;
+  }
+  
+  .about-gradient-orb {
+    width: 400px;
+    height: 400px;
+    top: -200px;
+    right: -100px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .principles-list {
+    gap: 2rem;
+  }
+  
+  .principle-content h3 {
+    font-size: 1.125rem;
+  }
+  
+  .disclaimer-content h3 {
+    font-size: 1.125rem;
+  }
+}

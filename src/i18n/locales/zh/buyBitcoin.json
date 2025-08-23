@@ -1,0 +1,52 @@
+{
+  "title": "购买比特币",
+  "subtitle": "选择适合你的投资方式",
+  "howToChoose": "如何选择？",
+  "ifYou": "如果你",
+  "or": "或",
+  "etfChoice": "不想学习私钥管理 · 需要税务文件 · 偏好传统投资",
+  "exchangeChoice": "想真正拥有比特币 · 愿意学习技术 · 追求去中心化",
+  "option1": "方式 1",
+  "option2": "方式 2",
+  "bitcoinETF": "比特币ETF",
+  "recommended": "推荐",
+  "suitableForMost": "适合大部分投资者",
+  "suitableForTech": "适合技术用户",
+  "exchanges": "交易所",
+  "etfDescription": "通过传统券商购买比特币ETF，像买卖股票一样简单，无需管理私钥。",
+  "exchangeDescription": "直接购买比特币，真正拥有所有权，建议提取到冷钱包保管。",
+  "ibkr": {
+    "name": "盈透证券",
+    "englishName": "Interactive Brokers",
+    "description": "全球领先的在线券商，费用低廉，平台专业",
+    "features": ["全球市场覆盖", "交易费用低", "专业交易工具", "强大的API"]
+  },
+  "etf": {
+    "ticker": "IBIT",
+    "name": "iShares Bitcoin Trust",
+    "provider": "BlackRock",
+    "description": "全球最大资产管理公司贝莱德发行，流动性最好"
+  },
+  "binance": {
+    "name": "Binance",
+    "description": "全球最大交易所",
+    "features": ["交易量最大", "流动性最好", "手续费低"]
+  },
+  "coinbase": {
+    "name": "Coinbase",
+    "description": "美国上市公司",
+    "features": ["合规性强", "新手友好", "保险保障"]
+  },
+  "kraken": {
+    "name": "Kraken",
+    "description": "老牌交易所",
+    "features": ["历史悠久", "安全性高", "专业功能"]
+  },
+  "openAccount": "立即开户 →",
+  "goRegister": "去注册 →",
+  "advantages": "优势",
+  "etfAdvantages": ["无需管理私钥", "监管保护", "税务简单", "买卖方便"],
+  "exchangeAdvantages": ["真正拥有比特币", "可提取到钱包", "完全自主掌控", "无需第三方"],
+  "riskWarning": "风险提示",
+  "riskDescription": "比特币价格波动大，只投资你能承受损失的金额。做好研究，了解税务要求，保护账户安全。"
+}

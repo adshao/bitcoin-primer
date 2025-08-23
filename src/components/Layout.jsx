@@ -74,7 +74,7 @@ function Layout({ children }) {
               {/* Disciplines Dropdown */}
               <div className="dropdown" ref={dropdownRef}>
                 <button 
-                  className={`nav-item dropdown-toggle ${disciplines.some(d => d.path === location.pathname) ? 'active' : ''}`}
+                  className={`nav-item dropdown-toggle ${disciplines.some(d => location.pathname.endsWith(d.path)) ? 'active' : ''}`}
                   onClick={() => setDisciplinesOpen(!disciplinesOpen)}
                 >
                   {t('nav.disciplines')}
@@ -124,6 +124,18 @@ function Layout({ children }) {
                 className={`nav-item ${location.pathname.endsWith('/resources') ? 'active' : ''}`}
               >
                 {t('nav.resources')}
+              </LocalizedLink>
+              <LocalizedLink 
+                to="/buy-bitcoin" 
+                className={`nav-item ${location.pathname.endsWith('/buy-bitcoin') ? 'active' : ''}`}
+              >
+                {t('nav.buyBitcoin')}
+              </LocalizedLink>
+              <LocalizedLink 
+                to="/about" 
+                className={`nav-item ${location.pathname.endsWith('/about') ? 'active' : ''}`}
+              >
+                {t('nav.about')}
               </LocalizedLink>
             </div>
           </nav>
@@ -197,6 +209,20 @@ function Layout({ children }) {
               >
                 <span className="mobile-link-icon">🔗</span>
                 <span>{t('nav.resources')}</span>
+              </LocalizedLink>
+              <LocalizedLink 
+                to="/buy-bitcoin" 
+                className={`mobile-link ${location.pathname.endsWith('/buy-bitcoin') ? 'active' : ''}`}
+              >
+                <span className="mobile-link-icon">💳</span>
+                <span>{t('nav.buyBitcoin')}</span>
+              </LocalizedLink>
+              <LocalizedLink 
+                to="/about" 
+                className={`mobile-link ${location.pathname.endsWith('/about') ? 'active' : ''}`}
+              >
+                <span className="mobile-link-icon">ℹ️</span>
+                <span>{t('nav.about')}</span>
               </LocalizedLink>
             </div>
 

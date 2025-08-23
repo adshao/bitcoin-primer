@@ -1,0 +1,42 @@
+{
+  "title": "关于我们",
+  "subtitle": "Bitcoin Primer - 比特币启蒙教育",
+  "intro": {
+    "title": "专注比特币教育的开源项目",
+    "description": "Bitcoin Primer 通过多学科视角，帮助你全面理解比特币的本质、技术原理和社会意义。"
+  },
+  "principles": {
+    "title": "我们的原则",
+    "item1": {
+      "title": "非盈利性",
+      "description": "纯公益教育项目，不参与任何返佣、推广等商业活动。"
+    },
+    "item2": {
+      "title": "客观公正",
+      "description": "基于事实和学术研究，不做夸大宣传，不通过虚假信息盈利。"
+    },
+    "item3": {
+      "title": "比特币本位",
+      "description": "只关注比特币，不涉及其他加密货币、合约交易或高风险投资。"
+    },
+    "item4": {
+      "title": "开源透明",
+      "description": "代码完全开源，知识免费共享，欢迎社区参与贡献。"
+    }
+  },
+  "contribute": {
+    "title": "参与贡献",
+    "description": "项目完全开源，欢迎所有人参与贡献。无论你是开发者、教育工作者还是比特币爱好者，都可以通过提交代码、改进内容或提供建议来帮助我们完善这个教育平台。",
+    "viewOnGithub": "在 GitHub 上查看",
+    "repoUrl": "github.com/adshao/bitcoin-primer"
+  },
+  "contact": {
+    "title": "联系我们",
+    "description": "如有任何问题、建议或合作意向，欢迎通过邮件与我们联系。",
+    "email": "contact@bitcoinprimer.org"
+  },
+  "disclaimer": {
+    "title": "免责声明",
+    "description": "本网站内容仅供教育参考，不构成投资建议。比特币价格波动较大，请理性投资，风险自担。"
+  }
+}

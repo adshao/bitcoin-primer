@@ -1,0 +1,577 @@
+/* Buy Bitcoin Page - Compact Design */
+.buy-bitcoin {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Animation for grid pattern */
+@keyframes grid-slide {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(40px, 40px); }
+}
+
+/* Hero Section - matching Resources page style */
+.buy-hero {
+  position: relative;
+  padding: 4rem 2rem 5rem;
+  background: linear-gradient(135deg, #0f0f23, #1a1a2e);
+  color: white;
+  overflow: hidden;
+}
+
+.buy-hero-background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.buy-grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: grid-slide 30s linear infinite;
+}
+
+.buy-gradient-orb {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(247, 147, 26, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  top: -300px;
+  right: -150px;
+  filter: blur(100px);
+}
+
+.buy-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.buy-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #ffffff, #f7931a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.buy-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Main Content - Compact */
+.buy-content {
+  padding: 2.5rem 1.5rem;
+  background: #f8fafc;
+}
+
+.buy-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Two Column Grid */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.option-column {
+  background: white;
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.option-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.option-badge {
+  background: linear-gradient(135deg, #f7931a, #ff9a00);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.option-badge.secondary {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.option-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f0f23;
+  margin: 0;
+  flex: 1;
+}
+
+.recommended {
+  background: #10b981;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.option-subtitle {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin: 0 0 1rem 0;
+}
+
+.option-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.option-description {
+  color: #475569;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ETF Product Highlight */
+.product-highlight {
+  background: linear-gradient(135deg, #fff9f0, #fffaf5);
+  border: 1px solid #fed7aa;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ticker {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f7931a;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-name {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.product-meta {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* Compact Broker/Exchange Cards */
+.broker-compact,
+.exchange-compact {
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 1.25rem;
+  border: 1px solid #e2e8f0;
+}
+
+.broker-main,
+.exchange-main {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Logo Wrapper */
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.broker-compact .logo-wrapper {
+  background: white;
+  border: 1px solid #e2e8f0;
+  width: 100px;  /* IBKR logo需要更宽的空间 */
+  height: 50px;  /* 增加高度以匹配交易所logo */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.company-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 针对不同Logo的特殊处理 */
+.broker-compact .company-logo {
+  max-height: 24px;  /* IBKR logo高度限制 */
+}
+
+/* 统一交易所logo尺寸 */
+.exchange-compact .logo-wrapper {
+  width: 90px;
+  height: 50px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #e2e8f0;
+}
+
+.exchange-compact .company-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-height: 30px;
+}
+
+/* Kraken logo 紫色 */
+.exchange-compact:nth-child(3) .company-logo {
+  filter: brightness(0) saturate(100%) invert(19%) sepia(95%) saturate(4940%) hue-rotate(258deg) brightness(96%) contrast(98%);
+}
+
+.logo-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: white;
+  background: linear-gradient(135deg, #1e293b, #334155);
+  border-radius: 6px;
+}
+
+.broker-info-compact,
+.exchange-info-compact {
+  flex: 1;
+}
+
+.broker-info-compact h4,
+.exchange-info-compact h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f0f23;
+  margin: 0 0 0.2rem 0;
+}
+
+.broker-info-compact p,
+.exchange-info-compact p {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.features-compact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.features-compact li {
+  background: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+.exchanges-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Action Buttons */
+.action-button {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  text-align: center;
+  width: auto;
+  cursor: pointer;
+}
+
+.action-button.primary {
+  background: linear-gradient(135deg, #f7931a, #ff9a00);
+  color: white;
+}
+
+.action-button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(247, 147, 26, 0.25);
+}
+
+.action-button.secondary {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+}
+
+.action-button.secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.25);
+}
+
+/* Pulse animation for buttons */
+.action-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.action-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.action-button:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+/* Advantages Compact */
+.advantages-compact {
+  background: linear-gradient(135deg, #f0fdf4, #f8fafc);
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.advantages-compact h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #166534;
+  margin: 0 0 0.5rem 0;
+}
+
+.advantages-compact ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages-compact li {
+  font-size: 0.85rem;
+  color: #15803d;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.advantages-compact li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* Warning Compact */
+.warning-compact {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 0.85rem;
+  color: #7f1d1d;
+  line-height: 1.4;
+}
+
+.warning-compact strong {
+  color: #dc2626;
+}
+
+/* Decision Helper */
+.decision-helper {
+  background: white;
+  border-radius: 12px;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.decision-helper h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f0f23;
+  text-align: center;
+  margin: 0 0 1.25rem 0;
+}
+
+.decision-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.decision-box {
+  flex: 1;
+  max-width: 350px;
+  padding: 1.25rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.decision-box.etf {
+  background: linear-gradient(135deg, #fff9f0, #fffaf5);
+  border: 1px solid #fed7aa;
+}
+
+.decision-box.exchange {
+  background: linear-gradient(135deg, #eff6ff, #f0f9ff);
+  border: 1px solid #bfdbfe;
+}
+
+.decision-box h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: #1e293b;
+}
+
+.decision-box p {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.decision-arrow {
+  text-align: center;
+  font-size: 2rem;
+  color: #cbd5e0;
+  margin: 1rem 0 -0.5rem 0;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+.decision-divider {
+  padding: 0.5rem 1rem;
+  background: #f1f5f9;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Risk Compact */
+.risk-compact {
+  background: #fff5f5;
+  border: 1px solid #fecaca;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.risk-compact h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #dc2626;
+  margin: 0 0 0.75rem 0;
+}
+
+.risk-compact p {
+  font-size: 0.9rem;
+  color: #7f1d1d;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive Design */
+/* Responsive Design */
+@media (max-width: 768px) {
+  .buy-hero {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .buy-title {
+    font-size: 1.75rem;
+  }
+  
+  .buy-subtitle {
+    font-size: 1rem;
+  }
+  
+  .buy-content {
+    padding: 2rem 1rem;
+  }
+  
+  .options-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .option-column {
+    padding: 1.5rem;
+  }
+  
+  .decision-flow {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .decision-divider {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  .advantages-compact ul {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-compact {
+    justify-content: flex-start;
+  }
+}

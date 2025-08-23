@@ -8,6 +8,7 @@ import energyArticle from './bitcoin-energy-paradigm.json'
 import politicsArticle from './sovereign-individual-in-digital-age.json'
 import philosophyArticle from './digital-gold-philosophical-revolution.json'
 import lawArticle from './code-is-law-paradigm-shift.json'
+import socialArticle from './social-security-ponzi-bitcoin-retirement.json'
 
 // 文章映射
 export const articles = {
@@ -19,7 +20,8 @@ export const articles = {
   energy: energyArticle,
   politics: politicsArticle,
   philosophy: philosophyArticle,
-  law: lawArticle
+  law: lawArticle,
+  social: socialArticle
 }
 
 export default articles

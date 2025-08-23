@@ -31,6 +31,10 @@ import enPhilosophy from './locales/en/philosophy.json';
 import zhPhilosophy from './locales/zh/philosophy.json';
 import enLaw from './locales/en/law.json';
 import zhLaw from './locales/zh/law.json';
+import enBuyBitcoin from './locales/en/buyBitcoin.json';
+import zhBuyBitcoin from './locales/zh/buyBitcoin.json';
+import enAbout from './locales/en/about.json';
+import zhAbout from './locales/zh/about.json';
 
 i18n
   .use(LanguageDetector)
@@ -51,7 +55,9 @@ i18n
         energy: enEnergy,
         politics: enPolitics,
         philosophy: enPhilosophy,
-        law: enLaw
+        law: enLaw,
+        buyBitcoin: enBuyBitcoin,
+        about: enAbout
       },
       zh: {
         translation: zhTranslations,
@@ -67,7 +73,9 @@ i18n
         energy: zhEnergy,
         politics: zhPolitics,
         philosophy: zhPhilosophy,
-        law: zhLaw
+        law: zhLaw,
+        buyBitcoin: zhBuyBitcoin,
+        about: zhAbout
       }
       // Easy to add more languages:
       // es: { translation: esTranslations },
