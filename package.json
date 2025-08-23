@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "generate:images": "node scripts/generate-images.js",
-    "generate:seo": "node scripts/generate-sitemap.js"
+    "generate:seo": "node scripts/generate-sitemap.js",
+    "check:seo": "node scripts/check-seo.js"
   },
   "dependencies": {
     "i18next": "^25.3.6",
@@ -29,7 +30,7 @@
     "eslint-plugin-react": "^7.34.2",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
-    "puppeteer": "^24.16.2",
+    "puppeteer": "^24.17.0",
     "terser": "^5.43.1",
     "vite": "^7.1.2"
   }

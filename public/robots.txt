@@ -22,7 +22,9 @@ Allow: /learning-path
 Allow: /study-guide
 Allow: /resources
 Allow: /articles
-Allow: /en/
+Allow: /buy-bitcoin
+Allow: /about
+Allow: /zh/
 
 # Sitemap location
 Sitemap: https://bitcoinprimer.com/sitemap.xml

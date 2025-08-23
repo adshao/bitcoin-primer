@@ -2,13 +2,14 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
+import { generateAlternateUrls, languages } from '../config/languages';
 
 const SEO = ({ 
-  title = 'Bitcoin Primer', 
-  description = 'Understanding Bitcoin from multiple disciplinary perspectives: money, banking, economics, computer science, game theory, energy, politics, philosophy, and law. Comprehensive Bitcoin education resources.',
-  keywords = 'Bitcoin,cryptocurrency,blockchain,decentralization,digital currency,Bitcoin education,Bitcoin learning,monetary economics,cryptography,distributed systems,proof of work',
+  title = '', 
+  description = '',
+  keywords = '',
   image = '/bitcoin-og-image.png',
-  url = 'https://bitcoinprimer.com',
+  url = '',
   type = 'website',
   author = 'Bitcoin Primer',
   jsonLd = null,
@@ -17,17 +18,37 @@ const SEO = ({
 }) => {
   const { i18n } = useTranslation();
   const location = useLocation();
-  const currentLang = i18n.language || 'zh';
-  const siteTitle = title === 'Bitcoin Primer' ? title : `${title} | Bitcoin Primer`;
+  const currentLang = i18n.language || 'en';
   
-  // Generate alternate language URLs
+  // 默认中文内容
+  const defaultTitleZh = 'Bitcoin Primer - 从多学科视角理解比特币';
+  const defaultDescriptionZh = 'Bitcoin Primer 是一个全面的比特币教育网站，从货币、银行、经济学、计算机科学、博弈论、能源、政治、哲学和法律等9个学科视角深入解析比特币。提供结构化的10周学习路径。';
+  const defaultKeywordsZh = '比特币,Bitcoin,加密货币,区块链,货币理论,经济学,计算机科学,博弈论,能源,政治,哲学,法律,比特币教育,Bitcoin教程,数字货币,去中心化,工作量证明';
+  
+  // 默认英文内容
+  const defaultTitleEn = 'Bitcoin Primer - Understanding Bitcoin from Multiple Perspectives';
+  const defaultDescriptionEn = 'Comprehensive Bitcoin education platform exploring Bitcoin through 9 disciplinary perspectives: money, banking, economics, computer science, game theory, energy, politics, philosophy, and law.';
+  const defaultKeywordsEn = 'Bitcoin,cryptocurrency,blockchain,decentralization,digital currency,Bitcoin education,monetary economics,cryptography,distributed systems,proof of work';
+  
+  // 根据语言选择默认值
+  const isZh = currentLang === 'zh';
+  const defaultTitle = isZh ? defaultTitleZh : defaultTitleEn;
+  const defaultDescription = isZh ? defaultDescriptionZh : defaultDescriptionEn;
+  const defaultKeywords = isZh ? defaultKeywordsZh : defaultKeywordsEn;
+  
+  // 使用传入的值或默认值
+  const finalTitle = title || defaultTitle;
+  const finalDescription = description || defaultDescription;
+  const finalKeywords = keywords || defaultKeywords;
+  const siteTitle = title ? `${title} | Bitcoin Primer` : defaultTitle;
+  
+  // Generate URLs
   const baseUrl = 'https://bitcoinprimer.com';
   const currentPath = location.pathname;
-  const alternateUrls = {
-    'zh': `${baseUrl}/zh${currentPath}`,
-    'en': `${baseUrl}/en${currentPath}`,
-    'x-default': `${baseUrl}${currentPath}`
-  };
+  const finalUrl = url || `${baseUrl}${currentPath}`;
+  
+  // Generate alternate language URLs using the centralized config
+  const alternateUrls = generateAlternateUrls(currentPath, baseUrl);
   
   // Full image URL
   const fullImageUrl = image.startsWith('http') ? image : `${baseUrl}${image}`;
@@ -36,22 +57,26 @@ const SEO = ({
     <Helmet>
       <html lang={currentLang} />
       <title>{siteTitle}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
+      <meta name="description" content={finalDescription} />
+      <meta name="keywords" content={finalKeywords} />
       <meta name="author" content={author} />
       <meta name="generator" content="React + Vite" />
       
       {/* Open Graph */}
       <meta property="og:title" content={siteTitle} />
-      <meta property="og:description" content={description} />
+      <meta property="og:description" content={finalDescription} />
       <meta property="og:type" content={type} />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={finalUrl} />
       <meta property="og:image" content={fullImageUrl} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content="Bitcoin Primer" />
-      <meta property="og:locale" content={currentLang === 'zh' ? 'zh_CN' : 'en_US'} />
-      <meta property="og:locale:alternate" content={currentLang === 'zh' ? 'en_US' : 'zh_CN'} />
+      <meta property="og:locale" content={languages[currentLang]?.locale || 'en_US'} />
+      {Object.entries(languages)
+        .filter(([code]) => code !== currentLang)
+        .map(([code, config]) => (
+          <meta key={code} property="og:locale:alternate" content={config.locale} />
+        ))}
       
       {/* Article specific */}
       {publishedTime && <meta property="article:published_time" content={publishedTime} />}
@@ -61,15 +86,15 @@ const SEO = ({
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={siteTitle} />
-      <meta name="twitter:description" content={description} />
+      <meta name="twitter:description" content={finalDescription} />
       <meta name="twitter:image" content={fullImageUrl} />
       <meta name="twitter:site" content="@bitcoinprimer" />
       
       {/* Canonical and hreflang */}
-      <link rel="canonical" href={url} />
-      <link rel="alternate" hrefLang="zh" href={alternateUrls.zh} />
-      <link rel="alternate" hrefLang="en" href={alternateUrls.en} />
-      <link rel="alternate" hrefLang="x-default" href={alternateUrls['x-default']} />
+      <link rel="canonical" href={finalUrl} />
+      {Object.entries(alternateUrls).map(([lang, url]) => (
+        <link key={lang} rel="alternate" hrefLang={lang} href={url} />
+      ))}
       
       {/* Performance optimizations */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />

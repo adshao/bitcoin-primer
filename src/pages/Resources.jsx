@@ -236,7 +236,7 @@ function Resources() {
       'https://www.whatbitcoindid.com/',
       'https://pomp.substack.com/',
       'https://stephanlivera.com/',
-      'https://www.tftc.io/r/?ref=BTC5ed77f08-a24f-4ae0-9e9b-08691935b334'
+      'https://www.tftc.io/'
     ][index]
   }))
 

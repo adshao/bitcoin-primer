@@ -12,7 +12,9 @@ function Layout({ children }) {
   const { t, i18n } = useFormattedTranslation()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [disciplinesOpen, setDisciplinesOpen] = useState(false)
+  const [learningOpen, setLearningOpen] = useState(false)
   const dropdownRef = useRef(null)
+  const learningDropdownRef = useRef(null)
   
   // Sync language from URL
   useLanguageSync()
@@ -43,6 +45,9 @@ function Layout({ children }) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setDisciplinesOpen(false)
       }
+      if (learningDropdownRef.current && !learningDropdownRef.current.contains(event.target)) {
+        setLearningOpen(false)
+      }
     }
     
     document.addEventListener('mousedown', handleClickOutside)
@@ -55,6 +60,7 @@ function Layout({ children }) {
   useEffect(() => {
     setMobileMenuOpen(false)
     setDisciplinesOpen(false)
+    setLearningOpen(false)
     window.scrollTo(0, 0)
   }, [location])
 
@@ -100,19 +106,37 @@ function Layout({ children }) {
                 </div>
               </div>
 
-              {/* Direct Links */}
-              <LocalizedLink 
-                to="/learning-path" 
-                className={`nav-item ${location.pathname.endsWith('/learning-path') ? 'active' : ''}`}
-              >
-                {t('nav.learningPath')}
-              </LocalizedLink>
-              <LocalizedLink 
-                to="/study-guide" 
-                className={`nav-item ${location.pathname.endsWith('/study-guide') ? 'active' : ''}`}
-              >
-                {t('nav.studyGuide')}
-              </LocalizedLink>
+              {/* Learning Dropdown */}
+              <div className="dropdown" ref={learningDropdownRef}>
+                <button 
+                  className={`nav-item dropdown-toggle ${['/learning-path', '/study-guide'].some(path => location.pathname.endsWith(path)) ? 'active' : ''}`}
+                  onClick={() => setLearningOpen(!learningOpen)}
+                >
+                  {t('nav.learning')}
+                  <svg className={`dropdown-arrow ${learningOpen ? 'open' : ''}`} width="12" height="12" viewBox="0 0 12 12">
+                    <path d="M2 4L6 8L10 4" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  </svg>
+                </button>
+                
+                <div className={`dropdown-menu learning-dropdown ${learningOpen ? 'open' : ''}`}>
+                  <LocalizedLink
+                    to="/learning-path"
+                    className={`dropdown-item ${location.pathname.endsWith('/learning-path') ? 'active' : ''}`}
+                    onClick={() => setLearningOpen(false)}
+                  >
+                    <span className="item-icon">📖</span>
+                    <span className="item-text">{t('nav.learningPath')}</span>
+                  </LocalizedLink>
+                  <LocalizedLink
+                    to="/study-guide"
+                    className={`dropdown-item ${location.pathname.endsWith('/study-guide') ? 'active' : ''}`}
+                    onClick={() => setLearningOpen(false)}
+                  >
+                    <span className="item-icon">📚</span>
+                    <span className="item-text">{t('nav.studyGuide')}</span>
+                  </LocalizedLink>
+                </div>
+              </div>
               <LocalizedLink 
                 to="/articles" 
                 className={`nav-item ${location.pathname.includes('/articles') ? 'active' : ''}`}
@@ -181,21 +205,29 @@ function Layout({ children }) {
 
             <div className="mobile-divider"></div>
 
+            <div className="mobile-section">
+              <div className="mobile-section-title">{t('nav.learning')}</div>
+              <div className="mobile-links">
+                <LocalizedLink 
+                  to="/learning-path" 
+                  className={`mobile-link ${location.pathname.endsWith('/learning-path') ? 'active' : ''}`}
+                >
+                  <span className="mobile-link-icon">📖</span>
+                  <span>{t('nav.learningPath')}</span>
+                </LocalizedLink>
+                <LocalizedLink 
+                  to="/study-guide" 
+                  className={`mobile-link ${location.pathname.endsWith('/study-guide') ? 'active' : ''}`}
+                >
+                  <span className="mobile-link-icon">📚</span>
+                  <span>{t('nav.studyGuide')}</span>
+                </LocalizedLink>
+              </div>
+            </div>
+
+            <div className="mobile-divider"></div>
+
             <div className="mobile-links">
-              <LocalizedLink 
-                to="/learning-path" 
-                className={`mobile-link ${location.pathname.endsWith('/learning-path') ? 'active' : ''}`}
-              >
-                <span className="mobile-link-icon">📖</span>
-                <span>{t('nav.learningPath')}</span>
-              </LocalizedLink>
-              <LocalizedLink 
-                to="/study-guide" 
-                className={`mobile-link ${location.pathname.endsWith('/study-guide') ? 'active' : ''}`}
-              >
-                <span className="mobile-link-icon">📚</span>
-                <span>{t('nav.studyGuide')}</span>
-              </LocalizedLink>
               <LocalizedLink 
                 to="/articles" 
                 className={`mobile-link ${location.pathname.includes('/articles') ? 'active' : ''}`}

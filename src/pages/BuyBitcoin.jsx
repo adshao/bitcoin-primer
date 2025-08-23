@@ -1,5 +1,7 @@
 import React from 'react';
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation';
+import { useTranslation } from 'react-i18next';
+import SEO from '../components/SEO';
 import './BuyBitcoin.css';
 import ibkrLogo from '../assets/logos/ibkr.svg';
 import binanceLogo from '../assets/logos/binance.png';
@@ -8,6 +10,7 @@ import krakenLogo from '../assets/logos/kraken.svg';
 
 const BuyBitcoin = () => {
   const { t } = useFormattedTranslation('buyBitcoin');
+  const { i18n } = useTranslation();
 
   const etfBroker = {
     name: t('ibkr.name'),
@@ -52,8 +55,21 @@ const BuyBitcoin = () => {
     }
   ];
 
+  const isZh = i18n.language === 'zh';
+  
   return (
     <div className="buy-bitcoin">
+      <SEO 
+        title={isZh ? "购买比特币指南" : "Buy Bitcoin Guide"}
+        description={isZh ? 
+          "了解如何安全购买比特币：通过ETF投资、主流交易所购买，包括盈透证券、币安、Coinbase、Kraken等平台详细指南。" : 
+          "Learn how to buy Bitcoin safely: ETF investment, major exchanges including Interactive Brokers, Binance, Coinbase, Kraken detailed guides."
+        }
+        keywords={isZh ? 
+          "购买比特币,比特币ETF,IBIT,盈透证券,币安,Coinbase,Kraken,比特币交易所" :
+          "buy bitcoin,bitcoin ETF,IBIT,Interactive Brokers,Binance,Coinbase,Kraken,bitcoin exchanges"
+        }
+      />
       {/* Hero Section */}
       <section className="buy-hero">
         <div className="buy-hero-background">

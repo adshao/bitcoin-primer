@@ -5,6 +5,34 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Import language configuration
+// Note: Since this is a Node script, we'll duplicate the config here
+// In production, you might want to share this config differently
+const languages = {
+  en: {
+    code: 'en',
+    name: 'English',
+    locale: 'en_US',
+    path: '', // Empty for default language
+    isDefault: true
+  },
+  zh: {
+    code: 'zh',
+    name: '中文',
+    locale: 'zh_CN',
+    path: '/zh',
+    isDefault: false
+  },
+  // Future languages can be added here
+  // ko: {
+  //   code: 'ko',
+  //   name: '한국어',
+  //   locale: 'ko_KR',
+  //   path: '/ko',
+  //   isDefault: false
+  // }
+};
+
 // Define all routes
 const routes = [
   { path: '/', priority: 1.0, changefreq: 'weekly' },
@@ -20,13 +48,39 @@ const routes = [
   { path: '/learning-path', priority: 0.8, changefreq: 'monthly' },
   { path: '/study-guide', priority: 0.8, changefreq: 'monthly' },
   { path: '/resources', priority: 0.8, changefreq: 'weekly' },
-  { path: '/articles', priority: 0.8, changefreq: 'weekly' }
+  { path: '/articles', priority: 0.8, changefreq: 'weekly' },
+  { path: '/buy-bitcoin', priority: 0.7, changefreq: 'monthly' },
+  { path: '/about', priority: 0.6, changefreq: 'monthly' }
 ];
 
-// Supported languages
-const languages = ['zh', 'en'];
-const defaultLang = 'zh';
 const baseUrl = 'https://bitcoinprimer.com';
+
+// Get supported language codes
+const supportedLanguages = Object.keys(languages);
+const defaultLanguage = Object.values(languages).find(lang => lang.isDefault)?.code || 'en';
+
+// Generate alternate URLs for a given path
+function generateAlternateUrls(routePath) {
+  const urls = [];
+  
+  for (const [code, config] of Object.entries(languages)) {
+    let url;
+    if (config.isDefault) {
+      url = `${baseUrl}${routePath}`;
+    } else {
+      url = `${baseUrl}${config.path}${routePath}`;
+    }
+    urls.push({ lang: code, url });
+  }
+  
+  // Add x-default
+  urls.push({ 
+    lang: 'x-default', 
+    url: `${baseUrl}${routePath}` 
+  });
+  
+  return urls;
+}
 
 // Generate sitemap XML
 function generateSitemap() {
@@ -37,36 +91,28 @@ function generateSitemap() {
   xml += '        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
   
   routes.forEach(route => {
-    // Add default URL (without language prefix, defaults to Chinese)
-    xml += '  <url>\n';
-    xml += `    <loc>${baseUrl}${route.path}</loc>\n`;
-    xml += `    <lastmod>${lastmod}</lastmod>\n`;
-    xml += `    <changefreq>${route.changefreq}</changefreq>\n`;
-    xml += `    <priority>${route.priority}</priority>\n`;
-    
-    // Add hreflang links
-    languages.forEach(lang => {
-      const langPath = lang === defaultLang ? route.path : `/${lang}${route.path}`;
-      xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${baseUrl}${langPath}"/>\n`;
-    });
-    xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${baseUrl}${route.path}"/>\n`;
-    
-    xml += '  </url>\n';
-    
-    // Add language-specific URLs (for /en paths)
-    if (route.path !== '/') {
+    // Generate URL entries for each language
+    for (const [code, config] of Object.entries(languages)) {
       xml += '  <url>\n';
-      xml += `    <loc>${baseUrl}/en${route.path}</loc>\n`;
+      
+      // Generate the URL for this language
+      let url;
+      if (config.isDefault) {
+        url = `${baseUrl}${route.path}`;
+      } else {
+        url = `${baseUrl}${config.path}${route.path === '/' ? '' : route.path}`;
+      }
+      
+      xml += `    <loc>${url}</loc>\n`;
       xml += `    <lastmod>${lastmod}</lastmod>\n`;
       xml += `    <changefreq>${route.changefreq}</changefreq>\n`;
       xml += `    <priority>${route.priority}</priority>\n`;
       
-      // Add hreflang links for English version
-      languages.forEach(lang => {
-        const langPath = lang === 'en' ? `/en${route.path}` : route.path;
-        xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${baseUrl}${langPath}"/>\n`;
+      // Add hreflang links for all language versions
+      const alternateUrls = generateAlternateUrls(route.path);
+      alternateUrls.forEach(({ lang, url }) => {
+        xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${url}"/>\n`;
       });
-      xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${baseUrl}${route.path}"/>\n`;
       
       xml += '  </url>\n';
     }
@@ -77,12 +123,22 @@ function generateSitemap() {
   // Write sitemap
   const sitemapPath = path.join(__dirname, '../public/sitemap.xml');
   fs.writeFileSync(sitemapPath, xml);
-  console.log('Sitemap generated successfully at:', sitemapPath);
-  console.log(`Total URLs: ${routes.length * 2} (including language variants)`);
+  
+  const totalUrls = routes.length * supportedLanguages.length;
+  console.log('✅ Sitemap generated successfully');
+  console.log(`📍 Location: ${sitemapPath}`);
+  console.log(`🌐 Languages: ${supportedLanguages.join(', ')}`);
+  console.log(`📄 Total URLs: ${totalUrls} (${routes.length} routes × ${supportedLanguages.length} languages)`);
 }
 
-// Generate robots.txt with updated sitemap reference
+// Generate robots.txt with dynamic language paths
 function generateRobotsTxt() {
+  // Build Allow directives for language paths
+  const languagePaths = Object.values(languages)
+    .filter(lang => !lang.isDefault)
+    .map(lang => `Allow: ${lang.path}/`)
+    .join('\n');
+  
   const robotsTxt = `# Bitcoin Primer Robots.txt
 # https://bitcoinprimer.com
 
@@ -107,7 +163,9 @@ Allow: /learning-path
 Allow: /study-guide
 Allow: /resources
 Allow: /articles
-Allow: /en/
+Allow: /buy-bitcoin
+Allow: /about
+${languagePaths}
 
 # Sitemap location
 Sitemap: https://bitcoinprimer.com/sitemap.xml
@@ -133,9 +191,11 @@ Crawl-delay: 1
   
   const robotsPath = path.join(__dirname, '../public/robots.txt');
   fs.writeFileSync(robotsPath, robotsTxt);
-  console.log('robots.txt updated successfully');
+  console.log('✅ robots.txt updated successfully');
 }
 
 // Run generators
+console.log('🚀 Starting sitemap and robots.txt generation...\n');
 generateSitemap();
 generateRobotsTxt();
+console.log('\n✨ Generation complete!');
