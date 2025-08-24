@@ -14,11 +14,11 @@ const About = () => {
       <SEO 
         title={isZh ? "关于我们" : "About Us"}
         description={isZh ? 
-          "Bitcoin Primer 致力于提供全面、深入、多角度的比特币教育资源，帮助读者从根本上理解比特币的本质和价值。" : 
+          "Bitcoin Primer 致力于提供全面、深入、多角度的比特币科普资源，帮助读者从根本上理解比特币的本质和价值。" : 
           "Bitcoin Primer is dedicated to providing comprehensive, in-depth, multi-perspective Bitcoin educational resources."
         }
         keywords={isZh ? 
-          "关于Bitcoin Primer,比特币教育平台,比特币学习资源" :
+          "关于Bitcoin Primer,比特币科普平台,比特币学习资源" :
           "about Bitcoin Primer,bitcoin education platform,bitcoin learning resources"
         }
       />

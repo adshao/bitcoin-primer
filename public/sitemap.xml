@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bitcoinprimer.com/</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/"/>
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/"/>
@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/money</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/money"/>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh/money</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/money"/>
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/banking</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/banking"/>
@@ -48,7 +48,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh/banking</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/banking"/>
@@ -57,7 +57,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/economics</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/economics"/>
@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh/economics</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/economics"/>
@@ -75,7 +75,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/computer-science</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/computer-science"/>
@@ -84,7 +84,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh/computer-science</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/computer-science"/>
@@ -93,7 +93,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/game-theory</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/game-theory"/>
@@ -102,7 +102,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh/game-theory</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/game-theory"/>
@@ -111,7 +111,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/energy</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/energy"/>
@@ -120,7 +120,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh/energy</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/energy"/>
@@ -129,7 +129,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/politics</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/politics"/>
@@ -138,7 +138,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh/politics</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/politics"/>
@@ -147,7 +147,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/philosophy</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/philosophy"/>
@@ -156,7 +156,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh/philosophy</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/philosophy"/>
@@ -165,7 +165,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/law</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/law"/>
@@ -174,7 +174,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh/law</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/law"/>
@@ -183,7 +183,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/learning-path</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/learning-path"/>
@@ -192,7 +192,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh/learning-path</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/learning-path"/>
@@ -201,7 +201,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/study-guide</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/study-guide"/>
@@ -210,7 +210,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh/study-guide</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/study-guide"/>
@@ -219,7 +219,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/resources</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/resources"/>
@@ -228,7 +228,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh/resources</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/resources"/>
@@ -237,7 +237,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/articles</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/articles"/>
@@ -246,7 +246,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh/articles</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/articles"/>
@@ -255,7 +255,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/buy-bitcoin</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/buy-bitcoin"/>
@@ -264,7 +264,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh/buy-bitcoin</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/buy-bitcoin"/>
@@ -273,7 +273,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/about</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/about"/>
@@ -282,7 +282,7 @@
   </url>
   <url>
     <loc>https://bitcoinprimer.com/zh/about</loc>
-    <lastmod>2025-08-23</lastmod>
+    <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/about"/>

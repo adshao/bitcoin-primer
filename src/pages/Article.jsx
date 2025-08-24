@@ -1,6 +1,7 @@
 import { useParams, Link, useLocation, useNavigate } from 'react-router-dom'
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
 import { useArticle } from '../hooks/useArticles'
+import SEO from '../components/SEO'
 import './Article.css'
 
 function Article() {
@@ -85,6 +86,11 @@ function Article() {
   
   return (
     <div className="article-page">
+      <SEO 
+        title={article.title}
+        description={article.summary}
+        keywords={`${topicTitle},Bitcoin,${lang === 'zh' ? '比特币,区块链,加密货币' : 'cryptocurrency,blockchain,crypto'}`}
+      />
       {/* Hero Section */}
       <section className="article-hero">
         <div className="article-hero-background">

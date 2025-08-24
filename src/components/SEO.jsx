@@ -22,8 +22,8 @@ const SEO = ({
   
   // 默认中文内容
   const defaultTitleZh = 'Bitcoin Primer - 从多学科视角理解比特币';
-  const defaultDescriptionZh = 'Bitcoin Primer 是一个全面的比特币教育网站，从货币、银行、经济学、计算机科学、博弈论、能源、政治、哲学和法律等9个学科视角深入解析比特币。提供结构化的10周学习路径。';
-  const defaultKeywordsZh = '比特币,Bitcoin,加密货币,区块链,货币理论,经济学,计算机科学,博弈论,能源,政治,哲学,法律,比特币教育,Bitcoin教程,数字货币,去中心化,工作量证明';
+  const defaultDescriptionZh = 'Bitcoin Primer 是一个全面的比特币科普网站，从货币、银行、经济学、计算机科学、博弈论、能源、政治、哲学和法律等9个学科视角深入解析比特币。提供结构化的10周学习路径。';
+  const defaultKeywordsZh = '比特币,Bitcoin,加密货币,区块链,货币理论,经济学,计算机科学,博弈论,能源,政治,哲学,法律,比特币科普,Bitcoin教程,数字货币,去中心化,工作量证明';
   
   // 默认英文内容
   const defaultTitleEn = 'Bitcoin Primer - Understanding Bitcoin from Multiple Perspectives';
