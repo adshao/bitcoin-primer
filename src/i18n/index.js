@@ -90,6 +90,9 @@ i18n
     interpolation: {
       escapeValue: false // React already escapes values
     },
+    // Add cache busting for development
+    load: 'currentOnly',
+    cleanCode: true,
     detection: {
       // Order of detection methods
       // First check localStorage (if user has selected), then browser language

@@ -4,6 +4,7 @@ import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
 import LocalizedLink from './LocalizedLink'
 import LanguageSwitcher from './LanguageSwitcher'
 import { useLanguageSync, getLocalizedPath } from '../utils/languageRouting'
+import { disciplineMenuItems } from '../config/navigation'
 import './Layout.css'
 
 function Layout({ children }) {
@@ -26,18 +27,8 @@ function Layout({ children }) {
     navigate(newPath)
   }
   
-  // 学科导航项
-  const disciplines = [
-    { nameKey: 'disciplines.money.title', path: '/money', icon: '💰' },
-    { nameKey: 'disciplines.banking.title', path: '/banking', icon: '🏦' },
-    { nameKey: 'disciplines.economics.title', path: '/economics', icon: '📊' },
-    { nameKey: 'disciplines.computerScience.title', path: '/computer-science', icon: '💻' },
-    { nameKey: 'disciplines.gameTheory.title', path: '/game-theory', icon: '🎯' },
-    { nameKey: 'disciplines.energy.title', path: '/energy', icon: '⚡' },
-    { nameKey: 'disciplines.politics.title', path: '/politics', icon: '🏛️' },
-    { nameKey: 'disciplines.philosophy.title', path: '/philosophy', icon: '🔮' },
-    { nameKey: 'disciplines.law.title', path: '/law', icon: '⚖️' }
-  ]
+  // 学科导航项 - 从配置文件导入以避免 HMR 缓存问题
+  const disciplines = disciplineMenuItems
 
   // 点击外部关闭下拉菜单
   useEffect(() => {

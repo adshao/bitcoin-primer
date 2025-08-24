@@ -3,6 +3,15 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  server: {
+    hmr: {
+      overlay: true,
+      // Force full reload for specific files
+      fullReload: ['src/config/navigation.js']
+    },
+    // Clear cache on server start
+    force: true
+  },
   build: {
     minify: 'terser',
     terserOptions: {
