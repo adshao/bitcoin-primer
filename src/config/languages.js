@@ -57,7 +57,7 @@ export const getLanguagePaths = () => {
 };
 
 // Generate alternate URLs for a given path
-export const generateAlternateUrls = (currentPath, baseUrl = 'https://bitcoinprimer.com') => {
+export const generateAlternateUrls = (currentPath, baseUrl = 'https://bitcoinprimer.org') => {
   const alternateUrls = {};
   
   // Remove any language prefix from the current path

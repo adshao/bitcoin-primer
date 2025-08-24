@@ -2,291 +2,291 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bitcoinprimer.com/</loc>
+    <loc>https://bitcoinprimer.org/</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh</loc>
+    <loc>https://bitcoinprimer.org/zh</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/money</loc>
+    <loc>https://bitcoinprimer.org/money</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/money"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/money"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/money"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/money"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/money"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/money"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh/money</loc>
+    <loc>https://bitcoinprimer.org/zh/money</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/money"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/money"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/money"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/money"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/money"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/money"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/banking</loc>
+    <loc>https://bitcoinprimer.org/banking</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/banking"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/banking"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/banking"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/banking"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/banking"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/banking"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh/banking</loc>
+    <loc>https://bitcoinprimer.org/zh/banking</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/banking"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/banking"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/banking"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/banking"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/banking"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/banking"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/economics</loc>
+    <loc>https://bitcoinprimer.org/economics</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/economics"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/economics"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/economics"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/economics"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/economics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/economics"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh/economics</loc>
+    <loc>https://bitcoinprimer.org/zh/economics</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/economics"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/economics"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/economics"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/economics"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/economics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/economics"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/computer-science</loc>
+    <loc>https://bitcoinprimer.org/computer-science</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/computer-science"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/computer-science"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/computer-science"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/computer-science"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/computer-science"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/computer-science"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh/computer-science</loc>
+    <loc>https://bitcoinprimer.org/zh/computer-science</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/computer-science"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/computer-science"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/computer-science"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/computer-science"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/computer-science"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/computer-science"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/game-theory</loc>
+    <loc>https://bitcoinprimer.org/game-theory</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/game-theory"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/game-theory"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/game-theory"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/game-theory"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/game-theory"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/game-theory"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh/game-theory</loc>
+    <loc>https://bitcoinprimer.org/zh/game-theory</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/game-theory"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/game-theory"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/game-theory"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/game-theory"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/game-theory"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/game-theory"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/energy</loc>
+    <loc>https://bitcoinprimer.org/energy</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/energy"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/energy"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/energy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/energy"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/energy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/energy"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh/energy</loc>
+    <loc>https://bitcoinprimer.org/zh/energy</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/energy"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/energy"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/energy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/energy"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/energy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/energy"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/politics</loc>
+    <loc>https://bitcoinprimer.org/politics</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/politics"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/politics"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/politics"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/politics"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/politics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/politics"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh/politics</loc>
+    <loc>https://bitcoinprimer.org/zh/politics</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/politics"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/politics"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/politics"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/politics"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/politics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/politics"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/philosophy</loc>
+    <loc>https://bitcoinprimer.org/philosophy</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/philosophy"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/philosophy"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/philosophy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/philosophy"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/philosophy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/philosophy"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh/philosophy</loc>
+    <loc>https://bitcoinprimer.org/zh/philosophy</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/philosophy"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/philosophy"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/philosophy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/philosophy"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/philosophy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/philosophy"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/law</loc>
+    <loc>https://bitcoinprimer.org/law</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/law"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/law"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/law"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/law"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/law"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/law"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh/law</loc>
+    <loc>https://bitcoinprimer.org/zh/law</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/law"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/law"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/law"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/law"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/law"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/law"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/learning-path</loc>
+    <loc>https://bitcoinprimer.org/learning-path</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/learning-path"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/learning-path"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/learning-path"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/learning-path"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/learning-path"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/learning-path"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh/learning-path</loc>
+    <loc>https://bitcoinprimer.org/zh/learning-path</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/learning-path"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/learning-path"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/learning-path"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/learning-path"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/learning-path"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/learning-path"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/study-guide</loc>
+    <loc>https://bitcoinprimer.org/study-guide</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/study-guide"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/study-guide"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/study-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/study-guide"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/study-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/study-guide"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh/study-guide</loc>
+    <loc>https://bitcoinprimer.org/zh/study-guide</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/study-guide"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/study-guide"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/study-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/study-guide"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/study-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/study-guide"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/resources</loc>
+    <loc>https://bitcoinprimer.org/resources</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/resources"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/resources"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/resources"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/resources"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/resources"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh/resources</loc>
+    <loc>https://bitcoinprimer.org/zh/resources</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/resources"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/resources"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/resources"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/resources"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/resources"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/resources"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/articles</loc>
+    <loc>https://bitcoinprimer.org/articles</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/articles"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/articles"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/articles"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/articles"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/articles"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/articles"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh/articles</loc>
+    <loc>https://bitcoinprimer.org/zh/articles</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/articles"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/articles"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/articles"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/articles"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/articles"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/articles"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/buy-bitcoin</loc>
+    <loc>https://bitcoinprimer.org/buy-bitcoin</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/buy-bitcoin"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/buy-bitcoin"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/buy-bitcoin"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/buy-bitcoin"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/buy-bitcoin"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/buy-bitcoin"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh/buy-bitcoin</loc>
+    <loc>https://bitcoinprimer.org/zh/buy-bitcoin</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/buy-bitcoin"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/buy-bitcoin"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/buy-bitcoin"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/buy-bitcoin"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/buy-bitcoin"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/buy-bitcoin"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/about</loc>
+    <loc>https://bitcoinprimer.org/about</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/about"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/about"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/about"/>
   </url>
   <url>
-    <loc>https://bitcoinprimer.com/zh/about</loc>
+    <loc>https://bitcoinprimer.org/zh/about</loc>
     <lastmod>2025-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.com/about"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.com/zh/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.com/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bitcoinprimer.org/about"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bitcoinprimer.org/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bitcoinprimer.org/about"/>
   </url>
 </urlset>

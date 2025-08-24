@@ -43,7 +43,7 @@ const SEO = ({
   const siteTitle = title ? `${title} | Bitcoin Primer` : defaultTitle;
   
   // Generate URLs
-  const baseUrl = 'https://bitcoinprimer.com';
+  const baseUrl = 'https://bitcoinprimer.org';
   const currentPath = location.pathname;
   const finalUrl = url || `${baseUrl}${currentPath}`;
   

@@ -130,7 +130,6 @@ i18n
       }
     },
     // Support for multiple language variants
-    load: 'languageOnly', // e.g., 'en-US' becomes 'en'
     supportedLngs: ['en', 'zh'], // List will grow as we add languages
     nonExplicitSupportedLngs: true
   });

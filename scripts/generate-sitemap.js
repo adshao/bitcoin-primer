@@ -53,7 +53,7 @@ const routes = [
   { path: '/about', priority: 0.6, changefreq: 'monthly' }
 ];
 
-const baseUrl = 'https://bitcoinprimer.com';
+const baseUrl = 'https://bitcoinprimer.org';
 
 // Get supported language codes
 const supportedLanguages = Object.keys(languages);
@@ -140,7 +140,7 @@ function generateRobotsTxt() {
     .join('\n');
   
   const robotsTxt = `# Bitcoin Primer Robots.txt
-# https://bitcoinprimer.com
+# https://bitcoinprimer.org
 
 User-agent: *
 Allow: /
@@ -168,7 +168,7 @@ Allow: /about
 ${languagePaths}
 
 # Sitemap location
-Sitemap: https://bitcoinprimer.com/sitemap.xml
+Sitemap: https://bitcoinprimer.org/sitemap.xml
 
 # Crawl-delay for responsible crawling
 Crawl-delay: 1

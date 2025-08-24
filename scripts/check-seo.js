@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const URL = 'http://localhost:5174';
+const URL = 'http://localhost:5173';
 
 // Import route configuration (same as sitemap generator)
 const routes = [

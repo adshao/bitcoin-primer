@@ -1,5 +1,5 @@
 # Bitcoin Primer Robots.txt
-# https://bitcoinprimer.com
+# https://bitcoinprimer.org
 
 User-agent: *
 Allow: /
@@ -27,7 +27,7 @@ Allow: /about
 Allow: /zh/
 
 # Sitemap location
-Sitemap: https://bitcoinprimer.com/sitemap.xml
+Sitemap: https://bitcoinprimer.org/sitemap.xml
 
 # Crawl-delay for responsible crawling
 Crawl-delay: 1

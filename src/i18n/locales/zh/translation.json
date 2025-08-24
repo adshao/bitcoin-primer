@@ -243,6 +243,21 @@
       "title": "资源中心 - Bitcoin Primer",
       "description": "汇集比特币学习的最佳资源：书籍、论文、视频、播客、工具、社区等全方位学习材料。",
       "keywords": "比特币资源,学习材料,技术文档,白皮书,开发工具,社区论坛,数据分析"
+    },
+    "articles": {
+      "title": "文章专栏 - Bitcoin Primer",
+      "description": "深度比特币文章，探讨技术实现、经济理论、哲学意义和实际应用。",
+      "keywords": "比特币文章,技术分析,经济理论,区块链技术,加密货币研究,比特币哲学,数字货币"
+    },
+    "buyBitcoin": {
+      "title": "购买比特币指南 - Bitcoin Primer",
+      "description": "了解如何安全购买比特币：通过ETF投资、主流交易所购买，包括盈透证券、币安、Coinbase、Kraken等平台详细指南。",
+      "keywords": "购买比特币,比特币ETF,IBIT,盈透证券,币安,Coinbase,Kraken,比特币交易所,如何买比特币"
+    },
+    "about": {
+      "title": "关于我们 - Bitcoin Primer",
+      "description": "Bitcoin Primer 致力于提供全面、深入、多角度的比特币科普资源，帮助读者从根本上理解比特币的本质和价值。",
+      "keywords": "关于Bitcoin Primer,比特币科普平台,比特币学习资源,教育使命,比特币知识"
     }
   }
 }

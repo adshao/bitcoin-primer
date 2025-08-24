@@ -243,6 +243,21 @@
       "title": "Resources - Bitcoin Primer",
       "description": "Comprehensive collection of Bitcoin learning resources: books, papers, videos, podcasts, tools, communities, and educational materials.",
       "keywords": "Bitcoin resources,learning materials,technical documentation,whitepaper,development tools,community forums,data analysis"
+    },
+    "articles": {
+      "title": "Articles - Bitcoin Primer",
+      "description": "In-depth Bitcoin articles exploring technical implementations, economic theories, philosophical implications, and practical applications.",
+      "keywords": "Bitcoin articles,technical analysis,economic theory,blockchain technology,cryptocurrency research,Bitcoin philosophy,digital currency"
+    },
+    "buyBitcoin": {
+      "title": "Buy Bitcoin Guide - Bitcoin Primer",
+      "description": "Learn how to buy Bitcoin safely: ETF investment, major exchanges including Interactive Brokers, Binance, Coinbase, Kraken detailed guides.",
+      "keywords": "buy bitcoin,bitcoin ETF,IBIT,Interactive Brokers,Binance,Coinbase,Kraken,bitcoin exchanges,how to buy bitcoin"
+    },
+    "about": {
+      "title": "About Us - Bitcoin Primer",
+      "description": "Bitcoin Primer is dedicated to providing comprehensive, in-depth, multi-perspective Bitcoin educational resources.",
+      "keywords": "about Bitcoin Primer,bitcoin education platform,bitcoin learning resources,educational mission,Bitcoin knowledge"
     }
   }
 }

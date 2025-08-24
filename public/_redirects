@@ -1,0 +1,6 @@
+# Force HTTPS
+http://bitcoinprimer.org/* https://bitcoinprimer.org/:splat 301!
+http://www.bitcoinprimer.org/* https://bitcoinprimer.org/:splat 301!
+
+# Redirect www to non-www
+https://www.bitcoinprimer.org/* https://bitcoinprimer.org/:splat 301!

@@ -92,10 +92,10 @@ function Home() {
     "@type": "WebSite",
     "name": "Bitcoin Primer",
     "description": seoData.description,
-    "url": "https://bitcoinprimer.com",
+    "url": "https://bitcoinprimer.org",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://bitcoinprimer.com/search?q={search_term_string}",
+      "target": "https://bitcoinprimer.org/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     },
     "publisher": {
@@ -103,7 +103,7 @@ function Home() {
       "name": "Bitcoin Primer",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bitcoinprimer.com/bitcoin-icon.svg"
+        "url": "https://bitcoinprimer.org/bitcoin-icon.svg"
       }
     }
   }

@@ -17,7 +17,10 @@ export const useSEO = (pageName) => {
     'learning-path': 'learningPath',
     'study-guide': 'studyGuide',
     'resources': 'resources',
-    'home': 'home'
+    'home': 'home',
+    'buy-bitcoin': 'buyBitcoin',
+    'about': 'about',
+    'articles': 'articles'
   }
   
   const seoKey = seoKeyMap[pageName]
@@ -46,25 +49,25 @@ export const useSEO = (pageName) => {
       "@type": "Article",
       "headline": seoData.title,
       "description": seoData.description,
-      "image": "https://bitcoinprimer.com/bitcoin-og-image.png",
+      "image": "https://bitcoinprimer.org/bitcoin-og-image.png",
       "publisher": {
         "@type": "Organization",
         "name": "Bitcoin Primer",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://bitcoinprimer.com/bitcoin-icon.svg"
+          "url": "https://bitcoinprimer.org/bitcoin-icon.svg"
         }
       },
       "author": {
         "@type": "Organization",
         "name": "Bitcoin Primer",
-        "url": "https://bitcoinprimer.com"
+        "url": "https://bitcoinprimer.org"
       },
       "datePublished": publishedDate,
       "dateModified": modifiedDate,
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": `https://bitcoinprimer.com/${pageName}`
+        "@id": `https://bitcoinprimer.org/${pageName}`
       }
     }
   }
