@@ -2,6 +2,7 @@ import puppeteer from 'puppeteer';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import https from 'https';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -84,7 +85,7 @@ async function checkPageSEO(page, url, pageName = 'Page') {
   return { pageName, url, ...seoData };
 }
 
-async function validateSEO(seoData) {
+async function validateSEO(seoData, expectedUrl, expectedLang) {
   const issues = [];
   const warnings = [];
   const success = [];
@@ -110,15 +111,19 @@ async function validateSEO(seoData) {
   // Check language
   if (!seoData.lang) {
     issues.push('❌ Missing HTML lang attribute');
+  } else if (expectedLang && seoData.lang !== expectedLang) {
+    warnings.push(`⚠️  Language mismatch: expected '${expectedLang}', got '${seoData.lang}'`);
   } else {
-    success.push(`✅ Language set to: ${seoData.lang}`);
+    success.push(`✅ Language correctly set to: ${seoData.lang}`);
   }
   
   // Check canonical
   if (!seoData.canonical) {
-    warnings.push('⚠️  Missing canonical URL');
+    issues.push('❌ Missing canonical URL');
+  } else if (expectedUrl && !seoData.canonical.includes(expectedUrl)) {
+    issues.push(`❌ Incorrect canonical URL: expected to contain '${expectedUrl}', got '${seoData.canonical}'`);
   } else {
-    success.push('✅ Canonical URL present');
+    success.push(`✅ Canonical URL correctly set: ${seoData.canonical}`);
   }
   
   // Check hreflang
@@ -140,7 +145,7 @@ async function validateSEO(seoData) {
   }
   
   // Check Twitter Card
-  const twitterRequired = ['twitter:card', 'twitter:title', 'twitter:description'];
+  const twitterRequired = ['twitter:card', 'twitter:title', 'twitter:description', 'twitter:image'];
   const missingTwitter = twitterRequired.filter(tag => !seoData.meta[tag]);
   if (missingTwitter.length > 0) {
     warnings.push(`⚠️  Missing Twitter Card tags: ${missingTwitter.join(', ')}`);
@@ -148,32 +153,63 @@ async function validateSEO(seoData) {
     success.push('✅ All required Twitter Card tags present');
   }
   
+  // Check OG image file existence
+  if (seoData.meta['og:image']) {
+    const imagePath = seoData.meta['og:image'].replace('https://bitcoinprimer.org/', '');
+    if (imagePath && !imagePath.startsWith('http')) {
+      success.push(`✅ OG image URL configured: ${imagePath}`);
+    }
+  }
+  
+  // Check if OG URL matches expected URL
+  if (seoData.meta['og:url'] && expectedUrl) {
+    const expectedFullUrl = `https://bitcoinprimer.org${expectedUrl}`;
+    if (seoData.meta['og:url'] !== expectedFullUrl) {
+      issues.push(`❌ OG URL mismatch: expected '${expectedFullUrl}', got '${seoData.meta['og:url']}'`);
+    }
+  }
+  
+  // Verify keywords are present
+  if (!seoData.meta?.keywords) {
+    warnings.push('⚠️  Missing meta keywords');
+  } else if (seoData.meta.keywords.length < 30) {
+    warnings.push('⚠️  Keywords too short (consider adding more relevant keywords)');
+  } else {
+    success.push('✅ Keywords present');
+  }
+  
   return { issues, warnings, success };
 }
 
-async function checkSEO() {
+async function checkSEO(options = {}) {
+  const { quick = false, verbose = true } = options;
+  
   console.log('🔍 Starting Comprehensive SEO Check...\n');
   console.log('=====================================\n');
   
   const browser = await puppeteer.launch({ headless: 'new' });
   const page = await browser.newPage();
   
+  // Set timeout for page loads
+  page.setDefaultTimeout(10000);
+  
   try {
     const results = [];
     let totalIssues = 0;
     let totalWarnings = 0;
+    let skippedPages = 0;
     
     // Check sample pages from each language
     for (const lang of languages) {
       console.log(`\n🌐 Checking ${lang.name} version...`);
       console.log('-----------------------------------');
       
-      // Check homepage and a few content pages
-      const pagesToCheck = [
+      // In quick mode, only check a few pages; otherwise check all
+      const pagesToCheck = quick ? [
         { path: '/', name: 'Homepage' },
         { path: '/money', name: 'Money Page' },
         { path: '/buy-bitcoin', name: 'Buy Bitcoin Page' }
-      ];
+      ] : routes.filter(r => r.path !== '/articles/:articleSlug').map(r => ({ path: r.path, name: r.name }));
       
       for (const pageInfo of pagesToCheck) {
         const fullUrl = `${URL}${lang.path}${pageInfo.path}`;
@@ -182,32 +218,47 @@ async function checkSEO() {
         console.log(`\n📄 Checking: ${pageName}`);
         console.log(`   URL: ${fullUrl}`);
         
-        try {
-          const seoData = await checkPageSEO(page, fullUrl, pageName);
-          const validation = await validateSEO(seoData);
-          
-          results.push({ ...seoData, validation });
-          
-          // Display results
-          if (validation.issues.length > 0) {
-            console.log('\n   Issues:');
-            validation.issues.forEach(issue => console.log(`   ${issue}`));
-            totalIssues += validation.issues.length;
+        let retries = 2;
+        let success = false;
+        
+        while (retries > 0 && !success) {
+          try {
+            const seoData = await checkPageSEO(page, fullUrl, pageName);
+            const expectedPath = `${lang.path}${pageInfo.path}`.replace('//', '/');
+            const expectedLang = lang.code;
+            const validation = await validateSEO(seoData, expectedPath, expectedLang);
+            
+            results.push({ ...seoData, validation });
+            success = true;
+            
+            // Display results
+            if (validation.issues.length > 0) {
+              console.log('\n   Issues:');
+              validation.issues.forEach(issue => console.log(`   ${issue}`));
+              totalIssues += validation.issues.length;
+            }
+            
+            if (validation.warnings.length > 0) {
+              console.log('\n   Warnings:');
+              validation.warnings.forEach(warning => console.log(`   ${warning}`));
+              totalWarnings += validation.warnings.length;
+            }
+            
+            if (validation.success.length > 0 && verbose) {
+              console.log('\n   Success:');
+              validation.success.forEach(item => console.log(`   ${item}`));
+            }
+            
+          } catch (error) {
+            retries--;
+            if (retries === 0) {
+              console.log(`   ❌ Error checking page: ${error.message}`);
+              skippedPages++;
+            } else {
+              console.log(`   ⚠️  Retrying... (${retries} attempts left)`);
+              await new Promise(resolve => setTimeout(resolve, 1000));
+            }
           }
-          
-          if (validation.warnings.length > 0) {
-            console.log('\n   Warnings:');
-            validation.warnings.forEach(warning => console.log(`   ${warning}`));
-            totalWarnings += validation.warnings.length;
-          }
-          
-          if (validation.success.length > 0) {
-            console.log('\n   Success:');
-            validation.success.forEach(item => console.log(`   ${item}`));
-          }
-          
-        } catch (error) {
-          console.log(`   ❌ Error checking page: ${error.message}`);
         }
       }
     }
@@ -240,10 +291,35 @@ async function checkSEO() {
       console.log('❌ robots.txt not found');
     }
     
+    // Check if referenced images exist
+    console.log('\n🖼️  Checking Image Files...');
+    const imagesToCheck = [
+      '/bitcoin-icon.svg',
+      '/bitcoin-icon-192.png',
+      '/bitcoin-icon-512.png',
+      '/bitcoin-og-image.png'
+    ];
+    
+    let missingImages = [];
+    for (const image of imagesToCheck) {
+      const imagePath = path.join(__dirname, '../public', image);
+      if (!fs.existsSync(imagePath)) {
+        missingImages.push(image);
+      }
+    }
+    
+    if (missingImages.length > 0) {
+      console.log(`❌ Missing image files: ${missingImages.join(', ')}`);
+      totalIssues += missingImages.length;
+    } else {
+      console.log('✅ All referenced images exist');
+    }
+    
     // Overall score
     const score = totalIssues === 0 && totalWarnings <= 3 ? '🌟 EXCELLENT' : 
-                  totalIssues === 0 ? '✅ GOOD' : 
-                  '⚠️  NEEDS IMPROVEMENT';
+                  totalIssues === 0 && totalWarnings <= 6 ? '✅ GOOD' : 
+                  totalIssues === 0 ? '⚠️  MINOR ISSUES' :
+                  '❌ NEEDS IMPROVEMENT';
     
     console.log(`\n📈 Overall SEO Score: ${score}`);
     
@@ -252,6 +328,36 @@ async function checkSEO() {
     fs.writeFileSync(reportPath, JSON.stringify(results, null, 2));
     console.log(`\n📝 Detailed report saved to: ${reportPath}`);
     
+    // Generate summary report
+    const summary = {
+      timestamp: new Date().toISOString(),
+      pagesChecked: results.length,
+      totalIssues,
+      totalWarnings,
+      score,
+      commonIssues: {},
+      pageScores: results.map(r => ({
+        page: r.pageName,
+        issues: r.validation?.issues?.length || 0,
+        warnings: r.validation?.warnings?.length || 0
+      }))
+    };
+    
+    // Identify common issues
+    results.forEach(r => {
+      r.validation?.issues?.forEach(issue => {
+        const key = issue.replace(/[^a-zA-Z]/g, '');
+        summary.commonIssues[key] = (summary.commonIssues[key] || 0) + 1;
+      });
+    });
+    
+    const summaryPath = path.join(__dirname, '../seo-summary.json');
+    fs.writeFileSync(summaryPath, JSON.stringify(summary, null, 2));
+    
+    if (verbose) {
+      console.log(`📊 Summary report saved to: ${summaryPath}`);
+    }
+    
   } catch (error) {
     console.error('❌ Error:', error.message);
   } finally {
@@ -259,5 +365,30 @@ async function checkSEO() {
   }
 }
 
+// Parse command line arguments
+const args = process.argv.slice(2);
+const options = {
+  quick: args.includes('--quick') || args.includes('-q'),
+  verbose: !args.includes('--quiet')
+};
+
+if (args.includes('--help') || args.includes('-h')) {
+  console.log(`
+SEO Checker for Bitcoin Primer
+
+Usage: npm run check:seo [options]
+
+Options:
+  --quick, -q     Quick mode - only check sample pages
+  --quiet         Less verbose output
+  --help, -h      Show this help message
+
+Examples:
+  npm run check:seo           # Full check of all pages
+  npm run check:seo --quick   # Quick check of sample pages
+`);
+  process.exit(0);
+}
+
 // Run the check
-checkSEO();
+checkSEO(options);

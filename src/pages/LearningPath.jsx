@@ -2,6 +2,7 @@ import LocalizedLink from '../components/LocalizedLink'
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
 import SEO from '../components/SEO'
 import { useSEO } from '../hooks/useSEO'
+import { getCourseSchema, getBreadcrumbSchema } from '../utils/structuredData'
 import './LearningPath.css'
 
 function LearningPath() {
@@ -51,10 +52,24 @@ function LearningPath() {
   }))
 
   const milestones = t('learningPath:milestones', { returnObjects: true })
+  
+  const currentLang = i18n.language || 'en'
+  
+  // Structured data for Course schema
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      getCourseSchema(currentLang),
+      getBreadcrumbSchema([
+        { name: currentLang === 'zh' ? '首页' : 'Home', url: currentLang === 'zh' ? '/zh' : '/' },
+        { name: currentLang === 'zh' ? '学习路径' : 'Learning Path' }
+      ], currentLang)
+    ]
+  }
 
   return (
     <div className="learning-path">
-      <SEO {...seoData} />
+      <SEO {...seoData} jsonLd={structuredData} />
       <section className="path-hero">
         <div className="path-hero-background">
           <div className="path-grid-pattern"></div>
