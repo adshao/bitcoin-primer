@@ -3,6 +3,7 @@ import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
 import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
 import { useSEO } from '../hooks/useSEO'
+import { getOrganizationSchema, getWebSiteSchema, getBreadcrumbSchema } from '../utils/structuredData'
 import './Home.css'
 
 function Home() {
@@ -87,25 +88,18 @@ function Home() {
     }
   ]
 
+  const currentLang = i18n.language || 'en'
+  
+  // Combine multiple schemas
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Bitcoin Primer",
-    "description": seoData.description,
-    "url": "https://bitcoinprimer.org",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://bitcoinprimer.org/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Bitcoin Primer",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://bitcoinprimer.org/bitcoin-icon.svg"
-      }
-    }
+    "@graph": [
+      getOrganizationSchema(currentLang),
+      getWebSiteSchema(currentLang),
+      getBreadcrumbSchema([
+        { name: currentLang === 'zh' ? '首页' : 'Home' }
+      ], currentLang)
+    ]
   }
 
   return (

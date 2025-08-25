@@ -3,11 +3,12 @@ import SEO from '../components/SEO'
 import { useSEO } from '../hooks/useSEO'
 import { useState, useEffect } from 'react'
 import { disciplineResources } from '../data/disciplineResources'
+import { getCollectionPageSchema, getBreadcrumbSchema } from '../utils/structuredData'
 import './Resources.css'
 
 function Resources() {
   const { t, i18n } = useFormattedTranslation('resources')
-  const isZh = i18n.language === 'zh'
+  const currentLang = i18n.language || 'en'
   const seoData = useSEO('resources')
   const [activeSection, setActiveSection] = useState('discipline-resources')
   
@@ -264,6 +265,23 @@ function Resources() {
     { id: 'tools-section', icon: '🛠️', label: t('sections.tools') },
     { id: 'community-section', icon: '👥', label: t('sections.community') }
   ]
+  
+  // Structured data for Collection Page schema
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      getCollectionPageSchema({
+        title: seoData.title,
+        description: seoData.description,
+        url: currentLang === 'zh' ? 'https://bitcoinprimer.org/zh/resources' : 'https://bitcoinprimer.org/resources',
+        lang: currentLang
+      }),
+      getBreadcrumbSchema([
+        { name: currentLang === 'zh' ? '首页' : 'Home', url: currentLang === 'zh' ? '/zh' : '/' },
+        { name: currentLang === 'zh' ? '资源' : 'Resources' }
+      ], currentLang)
+    ]
+  }
 
   return (
     <div className="resources">
@@ -285,7 +303,7 @@ function Resources() {
           </ul>
         </div>
       </nav>
-      <SEO {...seoData} />
+      <SEO {...seoData} jsonLd={structuredData} />
       <section className="resources-hero">
         <div className="resources-hero-background">
           <div className="resources-grid-pattern"></div>

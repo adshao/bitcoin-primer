@@ -2,6 +2,7 @@ import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
 import { useLocation, Link } from 'react-router-dom'
 import SEO from './SEO'
 import { useSEO } from '../hooks/useSEO'
+import { getEducationalContentSchema, getBreadcrumbSchema } from '../utils/structuredData'
 import './TopicTemplate.css'
 
 function TopicTemplate({ 
@@ -21,9 +22,29 @@ function TopicTemplate({
   const pageName = pathParts[pathParts.length - 1] // Get last part of path
   const seoData = useSEO(pageName)
   
+  const currentLang = i18n.language || 'en'
+  
+  // Structured data for Educational Content schema
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      getEducationalContentSchema({
+        title,
+        description: subtitle,
+        url: `https://bitcoinprimer.org${location.pathname}`,
+        discipline: title,
+        lang: currentLang
+      }),
+      getBreadcrumbSchema([
+        { name: currentLang === 'zh' ? '首页' : 'Home', url: currentLang === 'zh' ? '/zh' : '/' },
+        { name: title }
+      ], currentLang)
+    ]
+  }
+  
   return (
     <div className="topic-template">
-      <SEO {...seoData} />
+      <SEO {...seoData} jsonLd={structuredData} />
       {/* Hero Section */}
       <section className="topic-hero">
         <div className="topic-hero-background">

@@ -180,13 +180,13 @@
   },
   "seo": {
     "home": {
-      "title": "Bitcoin Primer - Understanding Bitcoin from Multiple Perspectives",
-      "description": "Deep dive into Bitcoin from nine disciplinary perspectives: money, banking, economics, computer science, game theory, energy, politics, philosophy, and law. Systematic learning path and comprehensive educational resources.",
+      "title": "Bitcoin Primer - 9 Perspectives on Bitcoin",
+      "description": "Learn Bitcoin through 9 disciplines: economics, computer science, philosophy & more. Free comprehensive education with structured learning path.",
       "keywords": "Bitcoin,Bitcoin education,cryptocurrency,blockchain,decentralization,digital currency,Bitcoin learning,monetary economics,cryptography,distributed systems,proof of work"
     },
     "money": {
       "title": "Money Perspective - Bitcoin Primer",
-      "description": "Understanding Bitcoin through the lens of money: exploring the nature of money, monetary history, and how Bitcoin redefines digital currency with revolutionary features.",
+      "description": "Explore Bitcoin as money: monetary history, digital currency evolution, and how Bitcoin redefines value with scarcity and decentralization.",
       "keywords": "Bitcoin money,digital currency,monetary history,currency evolution,decentralized money,Bitcoin value,monetary properties,scarcity,sound money"
     },
     "banking": {
@@ -200,7 +200,7 @@
       "keywords": "Bitcoin economics,Austrian school,deflation,store of value,economic incentives,Bitcoin halving,supply and demand,monetary policy"
     },
     "computerScience": {
-      "title": "Computer Science Perspective - Bitcoin Primer",
+      "title": "Computer Science - Bitcoin Primer",
       "description": "Deep dive into Bitcoin's technical architecture: blockchain, cryptography, consensus mechanisms, network protocols, and core technical components.",
       "keywords": "blockchain technology,Bitcoin protocol,cryptography,hash functions,digital signatures,proof of work,P2P network,Merkle trees,distributed systems"
     },
