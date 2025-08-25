@@ -37,7 +37,7 @@ export const useSEO = (pageName) => {
   }
   
   // Add structured data for articles (non-home pages)
-  const publishedDate = "2024-01-01T00:00:00Z";
+  const publishedDate = "2025-08-01T00:00:00Z";
   const modifiedDate = new Date().toISOString();
   
   if (pageName !== 'home') {

@@ -21,16 +21,15 @@ export const getOrganizationSchema = (lang = 'en') => ({
   '@type': 'EducationalOrganization',
   name: 'Bitcoin Primer',
   url: 'https://bitcoinprimer.org',
-  logo: 'https://bitcoinprimer.org/bitcoin-logo.png',
+  logo: 'https://bitcoinprimer.org/bitcoin-icon-512.png',
   description: getLocalizedContent(lang, {
     en: 'Comprehensive Bitcoin education platform exploring Bitcoin through 9 disciplinary perspectives',
     zh: '全面的比特币教育平台，从9个学科视角深入解析比特币'
   }),
   sameAs: [
-    'https://github.com/adshao/bitcoinprimer',
-    'https://twitter.com/bitcoinprimer'
+    'https://github.com/adshao/bitcoin-primer'
   ],
-  foundingDate: '2024',
+  foundingDate: '2025',
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'customer support',
@@ -93,7 +92,7 @@ export const getArticleSchema = ({ title, description, publishedDate, modifiedDa
     name: 'Bitcoin Primer',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://bitcoinprimer.org/bitcoin-logo.png'
+      url: 'https://bitcoinprimer.org/bitcoin-icon-512.png'
     }
   },
   mainEntityOfPage: {

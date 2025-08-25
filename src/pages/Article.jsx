@@ -92,7 +92,7 @@ function Article() {
       getArticleSchema({
         title: article.title,
         description: article.summary,
-        publishedDate: article.publishedDate || '2024-01-01',
+        publishedDate: article.publishedDate || '2025-08-01',
         modifiedDate: article.modifiedDate || new Date().toISOString(),
         topic: articleSlug,
         lang

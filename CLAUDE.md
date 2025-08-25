@@ -341,3 +341,12 @@ After making changes:
 - Sitemap.xml and robots.txt are in `/public/`
 - These files are regenerated on build
 - Verify production URLs in sitemap after deployment
+
+## Important Rules for Claude Code
+
+### Getting Current Date
+- **NEVER assume the current date** - Always run a command to get it
+- Use `date` command in Bash to get the current date/time
+- Example: `date +"%Y-%m-%d"` for YYYY-MM-DD format
+- Example: `date +"%Y年%m月"` for Chinese date format
+- This ensures accuracy when updating dates in code or content

@@ -34,8 +34,8 @@ Bitcoin Primer is designed to be a comprehensive educational resource that appro
 
 ```bash
 # Clone the repository
-git clone https://github.com/adshao/bitcoinprimer.git
-cd bitcoinprimer
+git clone https://github.com/adshao/bitcoin-primer.git
+cd bitcoin-primer
 
 # Install dependencies
 npm install
