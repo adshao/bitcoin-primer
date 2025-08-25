@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { HelmetProvider } from 'react-helmet-async'
 import Layout from './components/Layout'
+import LanguageRoute from './components/LanguageRoute'
 import Home from './pages/Home'
 import ComputerScience from './pages/ComputerScience'
 import Economics from './pages/Economics'
@@ -63,13 +64,21 @@ function App() {
         <Layout>
           <Routes>
             {/* English routes (no prefix) */}
-            {pageRoutes}
+            <Route path="/*" element={
+              <LanguageRoute language="en">
+                <Routes>
+                  {pageRoutes}
+                </Routes>
+              </LanguageRoute>
+            } />
             
             {/* Chinese routes (with /zh prefix) */}
             <Route path="/zh/*" element={
-              <Routes>
-                {pageRoutes}
-              </Routes>
+              <LanguageRoute language="zh">
+                <Routes>
+                  {pageRoutes}
+                </Routes>
+              </LanguageRoute>
             } />
           </Routes>
         </Layout>

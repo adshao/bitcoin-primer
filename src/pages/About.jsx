@@ -3,16 +3,37 @@ import { useFormattedTranslation } from '../hooks/useFormattedTranslation';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 import { useSEO } from '../hooks/useSEO';
+import { getOrganizationSchema, getBreadcrumbSchema } from '../utils/structuredData';
 import './About.css';
 
 const About = () => {
   const { t } = useFormattedTranslation('about');
   const { i18n } = useTranslation();
   const seoData = useSEO('about');
+  
+  const currentLang = i18n.language || 'en';
+  
+  // Structured data for About page with Organization schema
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        ...getOrganizationSchema(currentLang),
+        "@type": "EducationalOrganization",
+        "description": t('intro.description'),
+        "educationalCredentialAwarded": currentLang === 'zh' ? "比特币知识认证" : "Bitcoin Knowledge Certification",
+        "areaServed": "Worldwide"
+      },
+      getBreadcrumbSchema([
+        { name: currentLang === 'zh' ? '首页' : 'Home', url: currentLang === 'zh' ? '/zh' : '/' },
+        { name: currentLang === 'zh' ? '关于' : 'About' }
+      ], currentLang)
+    ]
+  };
 
   return (
     <div className="about-page">
-      <SEO {...seoData} />
+      <SEO {...seoData} jsonLd={structuredData} />
       <section className="about-hero">
         <div className="about-hero-background">
           <div className="about-grid-pattern"></div>

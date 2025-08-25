@@ -71,6 +71,14 @@ Additional pages:
 - **Chinese**: `/zh/` paths
 - **Language Config**: `/src/config/languages.js`
 
+### Language Path Rules
+- **English (Default)**: All paths start with `/` 
+  - Examples: `/`, `/money`, `/economics`, `/about`, `/learning-path`
+- **Chinese**: All paths start with `/zh/`
+  - Examples: `/zh/`, `/zh/money`, `/zh/economics`, `/zh/about`, `/zh/learning-path`
+- **Future Languages**: Will follow the pattern `/{language-code}/`
+  - Example for Korean: `/ko/`, `/ko/money`, `/ko/economics`
+
 ### Language Detection
 - Uses `react-i18next` with browser detection
 - Falls back to English if unsupported language
@@ -107,7 +115,17 @@ ko: {
 } />
 ```
 
-5. **Regenerate SEO Files**:
+5. **Update Structured Data** (`/src/utils/structuredData.js`):
+- Add Korean content to `getLocalizedContent` calls:
+```javascript
+description: getLocalizedContent(lang, {
+  en: 'English description',
+  zh: '中文描述',
+  ko: '한국어 설명'  // Add Korean content
+})
+```
+
+6. **Regenerate SEO Files**:
 ```bash
 npm run generate:seo
 ```
@@ -124,18 +142,65 @@ import { useTranslation } from 'react-i18next';
 
 const MyPage = () => {
   const { i18n } = useTranslation();
-  const isZh = i18n.language === 'zh';
+  const currentLang = i18n.language || 'en';
   
   return (
     <div>
       <SEO 
-        title={isZh ? "中文标题" : "English Title"}
-        description={isZh ? "中文描述..." : "English description..."}
-        keywords={isZh ? "中文,关键词" : "english,keywords"}
+        title={currentLang === 'zh' ? "中文标题" : "English Title"}
+        description={currentLang === 'zh' ? "中文描述..." : "English description..."}
+        keywords={currentLang === 'zh' ? "中文,关键词" : "english,keywords"}
       />
       {/* Page content */}
     </div>
   );
+};
+```
+
+### Structured Data (Schema.org)
+
+The site implements comprehensive structured data for better SEO:
+
+- **Organization Schema**: Main website identity
+- **Course Schema**: Learning path pages
+- **Article Schema**: Article pages
+- **Educational Content Schema**: Discipline pages
+- **BreadcrumbList Schema**: Navigation structure
+- **Collection Page Schema**: Resource pages
+
+#### Language-Scalable Implementation
+
+**IMPORTANT**: Use language codes instead of boolean flags for better extensibility:
+
+```javascript
+// ❌ BAD - Not scalable
+const isZh = i18n.language === 'zh';
+const title = isZh ? '中文标题' : 'English Title';
+
+// ✅ GOOD - Scalable for multiple languages
+const currentLang = i18n.language || 'en';
+const title = getLocalizedContent(currentLang, {
+  en: 'English Title',
+  zh: '中文标题',
+  ko: '한국어 제목',  // Easy to add new languages
+  ja: '日本語タイトル'
+});
+```
+
+#### Structured Data Functions
+
+All structured data functions in `/src/utils/structuredData.js` accept a `lang` parameter:
+
+```javascript
+import { getOrganizationSchema, getCourseSchema } from '../utils/structuredData';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    getOrganizationSchema(currentLang),
+    getCourseSchema(currentLang),
+    getBreadcrumbSchema(breadcrumbs, currentLang)
+  ]
 };
 ```
 
@@ -214,13 +279,17 @@ const MyPage = () => {
 - **Alternating Backgrounds**: Sections alternate between #f8fafc and white for visual separation
 - **Consistent Titles**: All discipline pages use simple names without "视角" suffix
 - **Mobile First**: Responsive design with 768px breakpoint
+- **Language Scalability**: Use language codes (`lang`) instead of boolean flags (`isZh`) for extensibility
 
 ## Routing
 
 - All routes defined in `src/App.jsx` using React Router v6
 - Path naming follows kebab-case convention (e.g., `/computer-science`)
-- Language prefixes: `/zh/`, `/ko/` (future), etc.
-- Default language (English) has no prefix
+- **Language URL Structure**:
+  - English (default): No prefix - `/`, `/money`, `/articles`
+  - Chinese: `/zh/` prefix - `/zh/`, `/zh/money`, `/zh/articles`
+  - Future languages: `/{lang}/` prefix - `/ko/`, `/ko/money`, `/ko/articles`
+- **Important**: English is the default language with clean URLs (no language prefix)
 
 ## Styling
 

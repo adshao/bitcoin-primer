@@ -2,6 +2,7 @@ import { useParams, Link, useLocation, useNavigate } from 'react-router-dom'
 import { useFormattedTranslation } from '../hooks/useFormattedTranslation'
 import { useArticle } from '../hooks/useArticles'
 import SEO from '../components/SEO'
+import { getArticleSchema, getBreadcrumbSchema } from '../utils/structuredData'
 import './Article.css'
 
 function Article() {
@@ -84,12 +85,34 @@ function Article() {
   
   const { article, topicTitle, topicIcon, topicPath } = data
   
+  // Structured data for Article schema
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      getArticleSchema({
+        title: article.title,
+        description: article.summary,
+        publishedDate: article.publishedDate || '2024-01-01',
+        modifiedDate: article.modifiedDate || new Date().toISOString(),
+        topic: articleSlug,
+        lang
+      }),
+      getBreadcrumbSchema([
+        { name: lang === 'zh' ? '首页' : 'Home', url: lang === 'zh' ? '/zh' : '/' },
+        { name: lang === 'zh' ? '文章' : 'Articles', url: lang === 'zh' ? '/zh/articles' : '/articles' },
+        { name: article.title }
+      ], lang)
+    ]
+  }
+  
   return (
     <div className="article-page">
       <SEO 
         title={article.title}
         description={article.summary}
         keywords={`${topicTitle},Bitcoin,${lang === 'zh' ? '比特币,区块链,加密货币' : 'cryptocurrency,blockchain,crypto'}`}
+        jsonLd={structuredData}
+        type="article"
       />
       {/* Hero Section */}
       <section className="article-hero">
